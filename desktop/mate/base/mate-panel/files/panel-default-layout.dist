@@ -35,6 +35,20 @@ toplevel-id=top
 position=30
 locked=true
 
+[Object email-client]
+object-type=launcher
+launcher-location=/usr/share/applications/claws-mail.desktop
+toplevel-id=top
+position=40
+locked=true
+
+[Object messenger-client]
+object-type=launcher
+launcher-location=/usr/share/applications/pidgin.desktop
+toplevel-id=top
+position=50
+locked=true
+
 [Object notification-area]
 object-type=applet
 applet-iid=NotificationAreaAppletFactory::NotificationArea
