@@ -1,0 +1,48 @@
+<PISI>
+    <Components>
+        <Component>
+            <Name>desktop</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.mate</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.mate.base</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Maintainer>
+        </Component>
+        <Component>
+            <Name>desktop.mate.extras</Name>
+            <LocalName xml:lang="en">FIXME</LocalName>
+            <Summary xml:lang="en">FIXME</Summary>
+            <Description xml:lang="en">FIXME</Description>
+            <Group>desktop</Group>
+            <Maintainer>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Maintainer>
+        </Component>
+    </Components>
+</PISI>
