@@ -65,6 +65,7 @@
 	    <Path fileType="executable">/usr/bin</Path>
 	    <Path fileType="config">/etc/</Path>
 	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/libs/mate-applets/</Path>
         </Files>
     </Package>
 
