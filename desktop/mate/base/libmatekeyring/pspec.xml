@@ -12,33 +12,34 @@
         <IsA>library</IsA>
         <Summary>Compatibility library for accessing mate-keyring</Summary>
         <Description>libmatekeyring is a library that used by applications to integrate with the mate-keyring system.</Description>
-	<Archive sha1sum="69ef377a6b2336ee4da9b6582829b1cb8ee70f0e" type="tarxz">http://pub.mate-desktop.org/releases/1.6/libmatekeyring-1.6.0.tar.xz</Archive>
+        <Archive sha1sum="69ef377a6b2336ee4da9b6582829b1cb8ee70f0e" type="tarxz">http://pub.mate-desktop.org/releases/1.6/libmatekeyring-1.6.0.tar.xz</Archive>
         <BuildDependencies>
-	   <Dependency>mate-common</Dependency>
-	   <Dependency>gtk-doc</Dependency>
-	</BuildDependencies>
+            <Dependency>mate-common</Dependency>
+            <Dependency>gtk-doc</Dependency>
+        </BuildDependencies>
     </Source>
     
     <Package>
         <Name>libmatekeyring</Name>
-	<RuntimeDependencies>
-	   <Dependency>mate-common</Dependency>
-	   <Dependency>gtk-doc</Dependency>
-	</RuntimeDependencies>
+        <RuntimeDependencies>
+            <Dependency>mate-common</Dependency>
+            <Dependency>gtk-doc</Dependency>
+        </RuntimeDependencies>
         <Files>
            <Path fileType="data">/usr/share</Path>
-	   <Path fileType="library">/usr/lib</Path>
+           <Path fileType="library">/usr/lib/libmate-keyring*</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>libmatekeyring-devel</Name>
         <Summary>libmatekeyring için geliştirme dosyaları</Summary>
-	<RuntimeDependencies>
-	    <Dependency release="current">libmatekeyring</Dependency>
-	 </RuntimeDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">libmatekeyring</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
