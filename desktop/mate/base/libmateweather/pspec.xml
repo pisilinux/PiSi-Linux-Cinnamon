@@ -12,51 +12,57 @@
         <IsA>library</IsA>
         <Summary>libmateweather</Summary>
         <Description>libmateweather is a collection of documentation utilities for the Mate project.</Description>
-	<Archive sha1sum="912ebf5c0fdb79c0aa816aefb8f6f776d73df0ee" type="tarxz">http://pub.mate-desktop.org/releases/1.6/libmateweather-1.6.1.tar.xz</Archive>
-	<BuildDependencies>
-	    <Dependency>libsoup-devel</Dependency>
-	    <Dependency>libsoup-gnome</Dependency>
-	    <Dependency>mate-common</Dependency>
-	    <Dependency>python-gudev</Dependency>
-	    <Dependency>python-gtk-devel</Dependency>
+        <Archive sha1sum="912ebf5c0fdb79c0aa816aefb8f6f776d73df0ee" type="tarxz">http://pub.mate-desktop.org/releases/1.6/libmateweather-1.6.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libsoup-gnome</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>python-gudev</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>libmateweather</Name>
-	 <RuntimeDependencies>
-	    <Dependency>libsoup</Dependency>
-	    <Dependency>mate-common</Dependency>
-	    <Dependency>python-gudev</Dependency>
-	    <Dependency>python-gtk</Dependency>
+        <RuntimeDependencies>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libsoup-gnome</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>python-gudev</Dependency>
+            <Dependency>python-gtk</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-	 </RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="config">/etc/mateconf/schemas/mateweather.schemas</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib/libmateweather*</Path>
+            <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="config">/etc/mateconf/schemas/mateweather.schemas</Path>
         </Files>
     </Package>
 
     <Package>
         <Name>libmateweather-devel</Name>
         <Summary>libmateweather için geliştirme dosyaları</Summary>
-	<RuntimeDependencies>
-	    <Dependency release="current">libmateweather</Dependency>
-	 </RuntimeDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">libmateweather</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include/libmateweather/</Path>
+            <Path fileType="header">/usr/include/libmateweather/</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
