@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="2561e4ab3a0a0b3fe73fc2b4901706df68f9e88a" type="tarxz">mirrors://gnome/gnome-control-center/3.9/gnome-control-center-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="d77ad909174e7ccb2ea2d9afc983ad6f8a38b8e4" type="tarxz">mirrors://gnome/gnome-control-center/3.9/gnome-control-center-3.9.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
@@ -22,10 +22,12 @@
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>libunique</Dependency>
+            <Dependency>colord-gtk-devel</Dependency>
             <Dependency>libXScrnSaver-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
             <Dependency>cups-devel</Dependency>
             <Dependency>libgtop-devel</Dependency>
+            <Dependency>libpwquality-devel</Dependency>
             <Dependency>gsettings-desktop-schemas3-devel</Dependency>
             <Dependency>gnome-settings-daemon-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -57,6 +59,8 @@
             <Dependency>gnome-doc-utils</Dependency>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>docbook-xml</Dependency>
+            <Dependency>colord-gtk</Dependency>
+            <Dependency>libpwquality</Dependency>
             <Dependency>libunique</Dependency>
             <Dependency>libXft</Dependency>
             <Dependency>cups</Dependency>
@@ -83,9 +87,13 @@
             <Path fileType="config">/etc</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/gnome-shell/</Path>
+            <Path fileType="data">/usr/share/bash-completion/</Path>
+            <Path fileType="data">/usr/share/dbus-1/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/desktop-directories</Path>
@@ -123,7 +131,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.9.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>

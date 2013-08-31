@@ -4,4 +4,5 @@
 4. libsoup              güncellendi             programming/misc
 5. gtk3                 güncellendi             desktop/tolkit/gtk3
 6. glib2                güncellendi             system/base
-7. 
+7. colord-gtk           yeni paket              desktop/toolkit/gtk
+8. 

@@ -6,19 +6,17 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fiv")
-    shelltools.system("intltoolize --force --copy --automake")
-    autotools.configure("--disable-static")
+    autotools.autoreconf("-vfi")
+    autotools.configure("--disable-static \
+                         --enable-introspection=yes")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    pisitools.domove("/usr/share/pkgconfig/*","/usr/lib/pkgconfig")
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "NEWS", "README")
