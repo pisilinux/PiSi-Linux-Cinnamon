@@ -10,14 +10,10 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static\
-                         --disable-scrollkeeper\
-                         --enable-introspection=yes \
+    autotools.configure("--disable-static \
                          --libexecdir=/usr/lib/gnome-desktop-3.0 \
                          --with-gnome-distributor=PisiLinux")
-
-    pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
-
+                       
 def build():
     autotools.make()
 
