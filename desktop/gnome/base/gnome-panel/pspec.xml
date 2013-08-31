@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
-        <Archive sha1sum="887b59caedb9370f1cc223a26fbf49f3e5787125" type="tarxz">mirrors://gnome/gnome-panel/3.5/gnome-panel-3.5.3.tar.xz</Archive>
+        <Archive sha1sum="9e7a94dedba0e6514c8dd634f08bc7c1c3d3b338" type="tarxz">mirrors://gnome/gnome-panel/3.6/gnome-panel-3.6.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>gnome-menus-devel</Dependency>
@@ -109,7 +109,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.5.3</Version>
+            <Version>3.6.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

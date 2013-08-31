@@ -11,8 +11,6 @@ from pisi.actionsapi import shelltools
 
 def setup():
     pisitools.dosed("configure.ac", "AM_CONFIG_HEADER", "AC_CONFIG_HEADER")
-    pisitools.dosed("gnome-panel/libpanel-util/panel-dconf.c", "dconf-client.h", "dconf/client/dconf-client.h")
-    pisitools.dosed("gnome-panel/libpanel-util/panel-dconf.c", "dconf-paths.h", "dconf/common/dconf-paths.h")
     autotools.autoreconf("-fi")
     autotools.configure("--disable-static \
                          --disable-schemas-compile")
