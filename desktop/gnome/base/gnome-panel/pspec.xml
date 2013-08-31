@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-panel</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Burak Çalışkan</Name>
+            <Email>burakclskn@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>GNOME panel</Summary>
+        <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
+        <Archive sha1sum="887b59caedb9370f1cc223a26fbf49f3e5787125" type="tarxz">mirrors://gnome/gnome-panel/3.5/gnome-panel-3.5.3.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gnome-menus-devel</Dependency>
+            <Dependency>orbit2-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>dconf-devel</Dependency>
+            <Dependency>libgweather-devel</Dependency>
+            <Dependency>libwnck3-devel</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>libbonoboui-devel</Dependency>
+            <Dependency>docbook-xml</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
+            <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnome-panel-3.6.2-drop-commandline.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-fix-animation.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-fix-black.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-generic-marshaller.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-gweather-include.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-resurrect-function.patch</Patch>
+            <Patch level="1">gnome-panel-3.6.2-rename-function.patch</Patch>
+            <Patch level="1">18_fix_force_quit_applet.patch</Patch>
+            <Patch level="1">0001-Add-the-GNOME-Flashback-session.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>gnome-panel</Name>
+        <RuntimeDependencies>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>orbit2</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>libgweather</Dependency>
+            <Dependency>libwnck3</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>libbonoboui</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libXrandr</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/gnome-2.0</Path>
+            <Path fileType="data">/usr/share/gnome-panel</Path>
+            <Path fileType="data">/usr/share/gnome-panelrc</Path>
+            <Path fileType="data">/usr/share/gnome</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/idl</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+        </Files>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+
+    <Package>
+        <Name>gnome-panel-docs</Name>
+        <Summary>Reference documents for gnome-panel</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gnome-panel-devel</Name>
+        <Summary>Development files for gnome-panel</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">gnome-panel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-08-30</Date>
+            <Version>3.5.3</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>libgweather</Name>
+        <Homepage>https://live.gnome.org/LibGWeather</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>library</IsA>
+        <Summary>GNOME weather library</Summary>
+        <Description>libgweather is a library to access weather information from online services for numerous locations.</Description>
+        <Archive sha1sum="6b6a94459481cb3a68266d3af4e0d7111a9021cf" type="tarxz">mirrors://gnome/libgweather/3.9/libgweather-3.9.90.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libproxy-devel</Dependency>
+        </BuildDependencies>
+      </Source>
+
+      <Package>
+        <Name>libgweather</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libsoup-gnome</Dependency>
+            <Dependency>libproxy</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/gconf</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/glade/catalogs/</Path>
+            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="data">/usr/share/libgweather</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libgweather-docs</Name>
+        <IsA>data:doc</IsA>
+        <Summary>libgweather reference documents</Summary>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libgweather-devel</Name>
+        <Summary>Development files for libgweather</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libgweather</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-08-30</Date>
+            <Version>3.9.90</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
