@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="0780fdb109333e1e392c3173048370a58fb303c3" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.9/gnome-settings-daemon-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="55c7235eefb6ee54a3fa95b5e5a2d411bfd7627d" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.9/gnome-settings-daemon-3.9.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>nss-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
@@ -34,8 +34,9 @@
             <Dependency>gsettings-desktop-schemas3-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
             <Patch level="1">gnome-settings-daemon-3.7.90-short-touchpad-timeout.patch</Patch>
-            <Patch level="1">gnome-settings-daemon-3.7.90-optional-color-wacom.patch</Patch>
+            <Patch level="1">gnome-settings-daemon-3.5.4-ppc-no-wacom.patch</Patch>
         </Patches>
     </Source>
 
@@ -56,29 +57,23 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxklavier</Dependency>
             <Dependency>libgnomekbd</Dependency>
-            <Dependency>gnome-desktop</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
         </RuntimeDependencies>
-        <Conflicts>
-            <Package>gtk-qt-engine</Package>
-            <Package>gtk-qt-engine-kde4</Package>
-        </Conflicts>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="executable">/usr/libexec</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/gnome-settings-daemon</Path>
             <Path fileType="data">/usr/share/gnome-settings-daemon-3.0</Path>
             <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="man">/usr/share/man</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
-            <Path fileType="data">/usr/share/GConf</Path>
-            <Path fileType="data">/usr/share/glib-2.0</Path>
         </Files>
     </Package>
 
@@ -97,7 +92,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.9.3</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>
