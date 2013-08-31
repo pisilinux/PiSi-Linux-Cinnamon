@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>GNOME weather library</Summary>
         <Description>libgweather is a library to access weather information from online services for numerous locations.</Description>
-        <Archive sha1sum="6b6a94459481cb3a68266d3af4e0d7111a9021cf" type="tarxz">mirrors://gnome/libgweather/3.9/libgweather-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="f8fc3772e7c48b084e39e05f997d30016ca4a76c" type="tarxz">mirrors://gnome/libgweather/3.8/libgweather-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
@@ -73,7 +73,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.8.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

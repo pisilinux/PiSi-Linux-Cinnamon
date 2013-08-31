@@ -15,9 +15,8 @@
         <Archive sha1sum="2561e4ab3a0a0b3fe73fc2b4901706df68f9e88a" type="tarxz">mirrors://gnome/gnome-control-center/3.9/gnome-control-center-3.9.90.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency>gnome-desktop-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>gnome-settings-daemon</Dependency>
-            <Dependency>gnome-panel</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>gnome-doc-utils</Dependency>
             <Dependency>desktop-file-utils</Dependency>
@@ -51,10 +50,9 @@
         <Name>gnome-control-center</Name>
         <RuntimeDependencies>
             <Dependency>libcanberra</Dependency>
-            <Dependency>gnome-desktop</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
             <Dependency>desktop-file-utils</Dependency>
             <Dependency>gnome-settings-daemon</Dependency>
-            <Dependency>gnome-panel</Dependency>
             <Dependency>libglade</Dependency>
             <Dependency>gnome-doc-utils</Dependency>
             <Dependency>desktop-file-utils</Dependency>
