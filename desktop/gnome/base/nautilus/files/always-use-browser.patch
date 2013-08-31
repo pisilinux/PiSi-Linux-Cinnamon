@@ -1,0 +1,10 @@
+--- libnautilus-private/apps_nautilus_preferences.schemas.in	2008-03-29 11:40:43.000000000 +0200
+@@ -43,7 +43,7 @@
+       <applyto>/apps/nautilus/preferences/always_use_browser</applyto>
+       <owner>nautilus</owner>
+       <type>bool</type>
+-      <default>false</default>
++      <default>true</default>
+       <locale name="C">
+          <short>Enables the classic Nautilus behavior, where all windows are browsers</short>
+          <long>
