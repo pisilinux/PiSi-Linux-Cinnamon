@@ -9,13 +9,14 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
+shelltools.export("LC_ALL", "C")
+
 def setup():
     autotools.autoreconf("-vif")
-    shelltools.touch("backends/telepathy/lib/tpf-persona.vala")
     autotools.configure("--disable-static \
                          --disable-fatal-warnings \
-                         --disable-eds-backend \
-                         --disable-telepathy-backend \
+                         --enable-eds-backend \
+                         --enable-telepathy-backend \
                          --enable-vala \
                          --enable-inspect-tool \
                          --disable-libsocialweb-backend")
