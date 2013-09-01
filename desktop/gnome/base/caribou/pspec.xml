@@ -18,6 +18,7 @@
             <Dependency>libgee-devel</Dependency>
             <Dependency>clutter-devel</Dependency>
             <Dependency>at-spi2-atk-devel</Dependency>
+            <Dependency>libxklavier-devel</Dependency>
             <Dependency>at-spi2-core-devel</Dependency>
             <Dependency>python-pygobject3-devel</Dependency>
         </BuildDependencies>
@@ -30,6 +31,7 @@
             <Dependency>libgee</Dependency>
             <Dependency>clutter</Dependency>
             <Dependency>at-spi2-atk</Dependency>
+            <Dependency>libxklavier</Dependency>
             <Dependency>at-spi2-core</Dependency>
             <Dependency>python-pygobject3</Dependency>
         </RuntimeDependencies>

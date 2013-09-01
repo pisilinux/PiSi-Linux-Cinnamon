@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>gnome3-session</Name>
+        <Name>gnome-session</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
             <Name>Necdet Yücel</Name>
@@ -30,14 +30,14 @@
             <Dependency>libXcomposite-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">0001-main-Set-XDG_MENU_PREFIX.patch</Patch>
+            <!--<Patch level="1">0001-main-Set-XDG_MENU_PREFIX.patch</Patch>
             <Patch level="1">gnome-session-3.3.92-nv30.patch</Patch>
-            <Patch level="1">gnome-session-3.6.2-swrast.patch</Patch>
+            <Patch level="1">gnome-session-3.6.2-swrast.patch</Patch>-->
         </Patches>
     </Source>
 
     <Package>
-        <Name>gnome3-session</Name>
+        <Name>gnome-session</Name>
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>mesa</Dependency>
