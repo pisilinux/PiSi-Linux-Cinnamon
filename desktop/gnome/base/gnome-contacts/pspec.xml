@@ -18,6 +18,7 @@
             <Dependency>cairo-devel</Dependency>
             <Dependency>folks-devel</Dependency>
             <Dependency>libgee-devel</Dependency>
+            <Dependency>cheese-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>telepathy-glib-devel</Dependency>
         </BuildDependencies>
@@ -30,13 +31,20 @@
             <Dependency>cairo</Dependency>
             <Dependency>folks</Dependency>
             <Dependency>libgee</Dependency>
+            <Dependency>cheese</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>telepathy-glib</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="data">/usr/share/gnome-shell</Path>
+            <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="doc">/usr/share/gnome-contacts</Path>
+            <Path fileType="localedata">/usr/share/locale/</Path>
+            <Path fileType="library">/usr/lib/gnome-contacts</Path>
         </Files>
     </Package>
 

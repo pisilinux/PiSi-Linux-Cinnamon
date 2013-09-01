@@ -7,4 +7,7 @@
 7. colord-gtk                   yeni paket              desktop/toolkit/gtk
 8. libgee                       güncellendi             programming/misc/libgee/
 9. evolution-data-server        güncellendi             programming/misc/
-10. 
+10. clutter-gst2                yeni paket              desktop/toolkit/clutter
+11. gstreamer-next series       yeni paket              multimedia/video
+12. cheese                      güncellendi             multimedia/video
+13. 
