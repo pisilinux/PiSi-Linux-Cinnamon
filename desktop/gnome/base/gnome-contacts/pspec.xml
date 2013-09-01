@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>gnome-contacts</Name>
+        <Homepage>http://www.gnome.org</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>A GNOME-wide contacts framework</Summary>
+        <Description>gnome-contacts includes both a GNOME-wide contacts framework that can be used by different applications as well as a dedicated contacts application.</Description>
+        <Archive sha1sum="54d451c3a537c91012f4e1c605a3af8b18767025" type="tarxz">mirrors://gnome/gnome-contacts/3.9/gnome-contacts-3.9.5.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>folks-devel</Dependency>
+            <Dependency>libgee-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>telepathy-glib-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>gnome-contacts</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>folks</Dependency>
+            <Dependency>libgee</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gnome-contacts</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-08-30</Date>
+            <Version>3.9.5</Version>
+            <Comment>First release.</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
