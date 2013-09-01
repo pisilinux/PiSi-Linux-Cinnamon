@@ -7,19 +7,10 @@
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
-from pisi.actionsapi import shelltools
-
-shelltools.export("HOME", get.workDIR())
 
 def setup():
-
-#    shelltools.export("LDFLAGS", "%s -rpath=/usr/lib" % get.LDFLAGS())
-
-    autotools.autoreconf("-vfi")
-    autotools.configure("--disable-static \
-                         --disable-schemas-install \
-                         --enable-introspection=yes \
-                         --enable-compile-warnings=no")
+    autotools.configure("--disable-static")
+                       
     pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared  -Wl,-rpath /usr/lib/gnome-bluetooth/")
 
 def build():
@@ -27,5 +18,5 @@ def build():
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
     pisitools.dodoc("AUTHORS", "COPYING*", "NEWS", "README")
-

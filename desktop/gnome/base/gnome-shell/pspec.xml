@@ -35,6 +35,9 @@
             <Dependency>telepathy-logger-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -62,7 +65,7 @@
             <Dependency>libXfixes</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>gnome-desktop</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>gobject-introspection</Dependency>
             <Dependency>gnome-bluetooth</Dependency>
@@ -78,6 +81,9 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/GConf/</Path>
+            <Path fileType="data">/usr/share/gnome-control-center/</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/gnome-about</Path>
             <Path fileType="data">/usr/share/gnome</Path>
