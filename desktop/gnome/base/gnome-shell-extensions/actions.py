@@ -6,18 +6,15 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import get
 
 def setup():
-    autotools.configure('--enable-extensions="alternate-tab \
-                                              alternative-status-menu \
-                                              dock \
-                                              gajim \
-                                              windowsNavigator"')
+    autotools.configure('--enable-extensions=all')
 
 def build():
     autotools.make()
 
 def install():
-    autotools.install()
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
+    
     pisitools.dodoc("COPYING", "NEWS", "README")
-
