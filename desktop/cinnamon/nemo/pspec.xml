@@ -15,49 +15,71 @@
         <Description>Nemo is the file manager and graphical shell for the Cinnamon desktop that makes it easy to manage your files and the rest of your system.</Description>
         <Archive sha1sum="f1a49557dabc6fb6514517d83dc9a5fd0de62366" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo/source/nemo-1.8.6.gitfccc703.tar.gz</Archive>
         <BuildDependencies>
-            <!--<Dependency>gnome-common</Dependency>
-            <Dependency>glib2-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
-            <Dependency>gnome3-desktop-devel</Dependency>
-            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>
-            <Dependency>polkit-devel</Dependency>
-            <Dependency>libsoup-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>dbus-glib-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency>libcroco-devel</Dependency>
-            <Dependency>librsvg-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>clutter-devel</Dependency>
-            <Dependency>gjs-devel</Dependency>
-            <Dependency>muffin-devel</Dependency>
-            <Dependency>gnome-menus-devel</Dependency>-->
+            <Dependency>exempi-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>libexif-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>cinnamon-desktop-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="0">nemo-configurefixed.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
         <Name>nemo</Name>
         <RuntimeDependencies>
-            <!--<Dependency>gnome-common</Dependency>-->
+            <Dependency>atk</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>exempi</Dependency>
+            <Dependency>libexif</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>cinnamon-desktop</Dependency>
         </RuntimeDependencies>
-        <!--<Files>
+        <Files>
             <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="config">/etc/xdg/menus</Path>
-        </Files>-->
+            <Path fileType="library">/usr/lib</Path>            
+            <Path fileType="library">/usr/lib/nemo</Path>
+            <Path fileType="library">/usr/share/gtksourceview-3.0</Path>
+            <Path fileType="library">/usr/share/man</Path>
+            <Path fileType="library">/usr/share/GConf</Path>
+            <Path fileType="library">/usr/share/gtksourceview-2.0/</Path>
+            <Path fileType="library">/usr/share/mime/packages</Path>
+            <Path fileType="library">/usr/share/glib-2.0/</Path>
+            <Path fileType="library">/usr/share/nemo</Path>
+            <Path fileType="library">/usr/share/icons</Path>
+            <Path fileType="library">/usr/share/applications</Path>
+            <Path fileType="library">/usr/share/doc</Path>
+            <Path fileType="library">/usr/share/dbus-1</Path>
+            <Path fileType="config">/etc/xdg/autostart</Path>
+        </Files>
     </Package>
 
+    <Package>
+        <Name>nemo-devel</Name>
+        <Summary>nemo için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">nemo</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/nemo</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/lib/girepository-1.0</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+        </Files>
+    </Package>
+    
     <History>
         <Update release="1">
             <Date>2013-09-02</Date>
-            <Version>1.8.2</Version>
+            <Version>1.8.6</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

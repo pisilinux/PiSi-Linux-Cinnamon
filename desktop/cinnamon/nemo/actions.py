@@ -10,11 +10,10 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    #shelltools.touch("gtk-doc.make")
-    #shelltools.touch("configure.ac")
-    #autotools.autoreconf("-fi")
-    shelltools.system("NOCONFIGURE=0 ./autogen.sh")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-more-warnings \
+                         --prefix=/usr \
+                         --libexecdir=/usr/lib/nemo \
                          --disable-update-mimedb \
                          --disable-gtk-doc-html \
                          --disable-schemas-compile")
