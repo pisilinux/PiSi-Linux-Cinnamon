@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>cinnamon-screensaver</Name>
+        <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>Cinnamon Screensaver</Summary>
+        <Description>cinnamon-screensaver is a screen saver and locker.</Description>
+        <Archive sha1sum="4687792177c8c0c252fe905e9e1bef44ac9ee7e6" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-screensaver/source/cinnamon-screensaver-1.8.1.git94ca899.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXxf86vm-devel</Dependency>
+            <Dependency>libgnomekbd-devel</Dependency>
+            <Dependency>libxklavier-devel</Dependency>
+            <Dependency>libXxf86misc-devel</Dependency>
+            <Dependency>cinnamon-desktop-devel</Dependency>
+        </BuildDependencies>
+        <Patches>
+            <Patch level="1">cinnamon-screensaver-2.20.0-selinux-permit.patch</Patch>
+        </Patches>
+    </Source>
+
+    <Package>
+        <Name>cinnamon-screensaver</Name>
+        <RuntimeDependencies>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXxf86vm</Dependency>
+            <Dependency>libgnomekbd</Dependency>
+            <Dependency>libxklavier</Dependency>
+            <Dependency>libXxf86misc</Dependency>
+            <Dependency>cinnamon-desktop</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/</Path>
+            <Path fileType="config">/etc/pam.d/cinnamon-screensaver</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-08-30</Date>
+            <Version>1.8.1</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
