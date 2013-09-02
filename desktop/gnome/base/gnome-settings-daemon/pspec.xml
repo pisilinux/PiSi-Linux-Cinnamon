@@ -35,7 +35,6 @@
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
-            <Patch level="1">gnome-settings-daemon-3.7.90-short-touchpad-timeout.patch</Patch>
             <Patch level="1">gnome-settings-daemon-3.5.4-ppc-no-wacom.patch</Patch>
         </Patches>
     </Source>

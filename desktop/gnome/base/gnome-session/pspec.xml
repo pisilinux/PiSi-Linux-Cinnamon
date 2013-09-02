@@ -29,11 +29,6 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch level="1">0001-main-Set-XDG_MENU_PREFIX.patch</Patch>
-            <Patch level="1">gnome-session-3.3.92-nv30.patch</Patch>
-            <Patch level="1">gnome-session-3.6.2-swrast.patch</Patch>-->
-        </Patches>
     </Source>
 
     <Package>

@@ -12,7 +12,7 @@
         <Isa>data</Isa>
         <Summary>Collection of GSettings schemas for GNOME desktop</Summary>
         <Description>Gsettings-desktop-schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.</Description>
-        <Archive sha1sum="ed17ca3292174f7371f428899dc56b52bb09db6d" type="tarxz">mirrors://gnome/gsettings-desktop-schemas/3.9/gsettings-desktop-schemas-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="6fb3e8e0bcd28a30fb8192502149b4c1a03b4c8e" type="tarxz">mirrors://gnome/gsettings-desktop-schemas/3.8/gsettings-desktop-schemas-3.8.2.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -39,7 +39,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.8.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

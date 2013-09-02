@@ -9,11 +9,11 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fi")
-    autotools.configure("--disable-static \
-                         --libexecdir=/usr/lib/gnome-settings-daemon \
-                         --enable-profiling \
-                         --enable-packagekit")
+    autotools.autoreconf("-fiv")
+    autotools.configure("--disable-static\
+                         --disable-scrollkeeper\
+                         --disable-schemas-install\
+                         --enable-nautilus-actions")
 
 def build():
     autotools.make()
