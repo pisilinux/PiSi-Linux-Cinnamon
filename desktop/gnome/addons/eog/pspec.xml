@@ -11,55 +11,47 @@
         <IsA>app:gui</IsA>
         <Summary>Eye of GNOME image viewer</Summary>
         <Description>Eog (Eye of GNOME) is the offical image viewer for the GNOME desktop.</Description>
-        <Archive sha1sum="dea90949f8ccf6036ca2f07fd9f82925135d365e" type="tarxz">mirrors://gnome/eog/3.1/eog-3.1.2.tar.xz</Archive>
+        <Archive sha1sum="3ae69dce27cde0bf2b5ba1185ec2f20a5c66d3e0" type="tarxz">mirrors://gnome/eog/3.9/eog-3.9.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gconf-devel</Dependency>
-            <Dependency>libart_lgpl-devel</Dependency>
-            <Dependency>gnome-desktop-devel</Dependency>
-            <Dependency>icon-theme-gnome</Dependency>
-            <Dependency>lcms-devel</Dependency>
-            <Dependency>libexif-devel</Dependency>
-            <Dependency>libjpeg-turbo-devel</Dependency>
-            <Dependency>python-gtk-devel</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
-            <Dependency>libpeas-devel</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>exempi-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libpeas-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libjpeg-turbo-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>eog</Name>
         <RuntimeDependencies>
-            <Dependency>gconf</Dependency>
-            <Dependency>libart_lgpl</Dependency>
-            <Dependency>gnome-desktop</Dependency>
-            <Dependency>icon-theme-gnome</Dependency>
-            <Dependency>lcms</Dependency>
-            <Dependency>libexif</Dependency>
-            <Dependency>python-gtk</Dependency>
-            <Dependency>libjpeg-turbo</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
+            <Dependency>lcms2</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>exempi</Dependency>
             <Dependency>librsvg</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libpeas</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libjpeg-turbo</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
             <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/gconf</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/eog</Path>
-            <Path fileType="data">/usr/share/gnome</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/omf</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
@@ -72,6 +64,7 @@
         <Summary>eog reference documents</Summary>
         <Files>
             <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/help</Path>
         </Files>
     </Package>
 
@@ -80,8 +73,6 @@
         <Summary>Development files for eog</Summary>
         <RuntimeDependencies>
             <Dependency release="current">eog</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -92,7 +83,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.1.2</Version>
+            <Version>3.9.5</Version>
             <Comment>Version bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

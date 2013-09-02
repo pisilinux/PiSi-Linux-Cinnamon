@@ -9,11 +9,9 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-fiv")
     autotools.configure("--disable-static\
-                         --disable-scrollkeeper\
-                         --disable-schemas-install\
-                         --enable-nautilus-actions")
+                         --enable-nautilus-actions \
+                         --libexecdir=/usr/lib/file-roller")
 
 def build():
     autotools.make()

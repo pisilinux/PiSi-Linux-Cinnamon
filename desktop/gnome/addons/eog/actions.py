@@ -9,10 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
-    autotools.autoreconf("-fiv")
     autotools.configure("--with-pic \
                          --disable-static \
                          --disable-scrollkeeper")
