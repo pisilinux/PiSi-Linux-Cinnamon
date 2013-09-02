@@ -23,6 +23,9 @@
             <Path fileType="data">/usr/share/gnome-common</Path>
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/bin/gnome-autogen.sh">gnome-autogen.sh</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
