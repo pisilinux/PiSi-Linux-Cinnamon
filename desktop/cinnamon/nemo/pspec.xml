@@ -1,0 +1,66 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>nemo</Name>
+        <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+        <Packager>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <License>LGPLv2</License>
+        <IsA>app:gui</IsA>
+        <Summary>File manager for Cinnamon</Summary>
+        <Description>Nemo is the file manager and graphical shell for the Cinnamon desktop that makes it easy to manage your files and the rest of your system.</Description>
+        <Archive sha1sum="f1a49557dabc6fb6514517d83dc9a5fd0de62366" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo/source/nemo-1.8.6.gitfccc703.tar.gz</Archive>
+        <BuildDependencies>
+            <!--<Dependency>gnome-common</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
+            <Dependency>gst-plugins-base-devel</Dependency>
+            <Dependency>polkit-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libxml2-devel</Dependency>
+            <Dependency>dbus-glib-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libcroco-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
+            <Dependency>gjs-devel</Dependency>
+            <Dependency>muffin-devel</Dependency>
+            <Dependency>gnome-menus-devel</Dependency>-->
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>nemo</Name>
+        <RuntimeDependencies>
+            <!--<Dependency>gnome-common</Dependency>-->
+        </RuntimeDependencies>
+        <!--<Files>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
+        </Files>-->
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2013-09-02</Date>
+            <Version>1.8.2</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
