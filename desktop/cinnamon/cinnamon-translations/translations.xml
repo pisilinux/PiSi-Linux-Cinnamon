@@ -2,7 +2,7 @@
 <PISI>
     <Source>
         <Name>cinnamon-translations</Name>
-        <Summary xml:lang="tr">Cinnamon ve Nemoiçin çeviriler</Summary>
-        <Description xml:lang="tr">Cinnamon ve Nemo için çeviri dosyalarını bulundurur.</Description>
+        <Summary xml:lang="tr">Cinnamon yerelleştirme paketi</Summary>
+        <Description xml:lang="tr">Cinnamon yerelleştirme paketi.</Description>
     </Source>
 </PISI>

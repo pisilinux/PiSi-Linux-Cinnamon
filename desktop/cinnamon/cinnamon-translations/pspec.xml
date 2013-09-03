@@ -11,8 +11,8 @@
         <License>GPLv2</License>
         <License>LGPLv2</License>
         <IsA>app:gui</IsA>
-        <Summary>Cinnamon ve Nemoiçin çeviriler</Summary>
-        <Description>Cinnamon ve Nemo için çeviri dosyalarını bulundurur.</Description>
+        <Summary>Cinnamon localization package</Summary>
+        <Description>Cinnamon localization package.</Description>
         <Archive sha1sum="249b97c626470cb972722e8f01e7cc5d011cb8d2" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-translations/source/cinnamon-translations-1.9.2.git444eac5.tar.gz</Archive>
     </Source>
 
@@ -26,123 +26,6 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-es</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/es</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-de</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/de</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-en_GB</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/en_GB</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-fr</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/fr</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-pl</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/pl</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-pt</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/pt</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-ru</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/ru</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-tr</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/tr</Path>
-        </Files>
-    </Package>
-
-    <Package>
-        <Name>cinnamon-translations-zh_CN</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-translations</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
-        <Files>
-            <Path fileType="localedata">/usr/share/locale/zh_CN</Path>
         </Files>
     </Package>
 
