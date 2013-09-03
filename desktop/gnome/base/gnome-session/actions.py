@@ -9,7 +9,10 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static")
+    autotools.configure ("--disable-static \
+                          --libexecdir=/usr/lib/gnome-session \
+                          --disable-systemd \
+                          --disable-docbook-docs")
 
 def build():
     autotools.make()
