@@ -18,17 +18,14 @@
     <Package>
         <Name>accountsservice</Name>
         <Files>
-            <Path fileType="config">/etc/dbus-1</Path>
-            <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/polkit-1</Path>
-	    <Path fileType="data">/usr/share/gtk-doc</Path>
-	    <Path fileType="data">/usr/share/vala</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="data">/var/lib/</Path>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="config">/etc/dbus-1/system.d</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/var/lib/AccountsService/</Path>
         </Files>
     </Package>
 
@@ -37,6 +34,7 @@
         <Summary>accountsservice için geliştirme dosyaları</Summary>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
