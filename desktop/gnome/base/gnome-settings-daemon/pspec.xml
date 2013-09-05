@@ -5,74 +5,84 @@
         <Name>gnome-settings-daemon</Name>
         <Homepage>http://www.gnome.org/</Homepage>
         <Packager>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="55c7235eefb6ee54a3fa95b5e5a2d411bfd7627d" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.9/gnome-settings-daemon-3.9.3.tar.xz</Archive>
+        <Archive sha1sum="9f0b836949e371ce473ba37b702b6a4b773c022c" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.8/gnome-settings-daemon-3.8.4.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>nss-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
-            <Dependency>nspr-devel</Dependency>
             <Dependency>cups-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
-            <Dependency>libnotify-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>colord-devel</Dependency>
+            <Dependency>upower-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libwacom-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libxklavier-devel</Dependency>
-            <Dependency>libgnomekbd-devel</Dependency>
+            <Dependency>libxkbfile-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
-            <Dependency>gnome-common</Dependency>
-            <Dependency>libwacom-devel</Dependency>
-            <Dependency>xorg-input-wacom-devel</Dependency>
-            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
             <Patch level="1">gnome-settings-daemon-3.5.4-ppc-no-wacom.patch</Patch>
+            <Patch level="1">font_fixes.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>gnome-settings-daemon</Name>
         <RuntimeDependencies>
-            <Dependency>nss</Dependency>
+            <Dependency>atk</Dependency>
             <Dependency>ibus</Dependency>
-            <Dependency>nspr</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>gtk3</Dependency>
+            <Dependency>lcms2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libXi</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>colord</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>libXtst</Dependency>
+            <Dependency>libXext</Dependency>
             <Dependency>libwacom</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>libnotify</Dependency>
+            <Dependency>libXfixes</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libxklavier</Dependency>
-            <Dependency>libgnomekbd</Dependency>
+            <Dependency>libxkbfile</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>mit-kerberos</Dependency>
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>libcanberra-gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="man">/usr/share/man</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/gnome-settings-daemon</Path>
             <Path fileType="data">/usr/share/gnome-settings-daemon-3.0</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/polkit-1</Path>
         </Files>
     </Package>
 
@@ -91,10 +101,10 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.3</Version>
+            <Version>3.8.4</Version>
             <Comment>First release</Comment>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

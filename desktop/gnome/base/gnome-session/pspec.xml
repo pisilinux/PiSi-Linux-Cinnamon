@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME session manager</Summary>
         <Description>gnome-session manages X11-compliant sessions with ConsoleKit daemon and starts GNOME core services</Description>
-        <Archive sha1sum="87081137201bcfbc97747a3d413d3eab99c7b865" type="tarxz">mirrors://gnome/gnome-session/3.9/gnome-session-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="a838fb530a226dc909d18df92f32ade92d5384f1" type="tarxz">mirrors://gnome/gnome-session/3.8/gnome-session-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome3-desktop-devel</Dependency>  
             <Dependency>gtk3-devel</Dependency>
@@ -29,6 +29,11 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnome-session-3.3.92-nv30.patch</Patch>
+            <Patch level="1">gnome-session-3.6.2-swrast.patch</Patch>
+            <Patch level="1">0001-main-Set-XDG_MENU_PREFIX.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -70,7 +75,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.8.4</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

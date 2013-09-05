@@ -23,6 +23,7 @@
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/gtk-doc</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/vala/vapi</Path>
             <Path fileType="config">/etc/dbus-1/system.d</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/var/lib/AccountsService/</Path>

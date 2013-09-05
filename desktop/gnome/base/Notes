@@ -10,4 +10,48 @@
 10. clutter-gst2                yeni paket              desktop/toolkit/clutter
 11. gstreamer-next series       yeni paket              multimedia/video
 12. cheese                      güncellendi             multimedia/video
-13. 
+13. libgnomekeyring             güncellendi             desktop/gnome/base
+
+
+
+
+pisilinux1 gnome3-desktop # revdep-rebuild
+
+Checking reverse dependencies...
+
+Collecting system binaries and libraries... done.
+  (/root/.revdep-rebuild.1_files)
+
+Collecting complete LD_LIBRARY_PATH... done.
+  (/root/.revdep-rebuild.2_ldpath)
+
+Checking dynamic linking consistency...
+  broken /usr/lib/folks/41/backends/eds/eds.so (requires libedata-book-1.2.so.19 libcamel-1.2.so.44 libedata-book-1.2.so.19 libcamel-1.2.so.44)
+  broken /usr/lib/folks/41/backends/ofono/ofono.so (requires libedata-book-1.2.so.19 libcamel-1.2.so.44)
+  broken /usr/lib/libfolks-eds.so.25.16.0 (requires libedata-book-1.2.so.19 libcamel-1.2.so.44)
+  broken /usr/lib/gnome-contacts/gnome-contacts-search-provider (requires libedata-book-1.2.so.19 libcamel-1.2.so.44)
+  broken /usr/bin/mono (requires libmono-2.0.so.1)
+  broken /usr/bin/gnome-contacts (requires libedata-book-1.2.so.19 libcamel-1.2.so.44)
+  broken /usr/libexec/gnome-shell-calendar-server (requires libecal-1.2.so.16)
+  broken /opt/sun-jre/lib/amd64/fxavcodecplugin-52.so (requires libgstreamer-lite.so libavcodec.so.52 libavformat.so.52)
+  broken /opt/sun-jre/lib/amd64/fxavcodecplugin-53.so (requires libgstreamer-lite.so libavcodec.so.53 libavformat.so.53)
+  broken /opt/sun-jdk/jre/lib/amd64/fxavcodecplugin-52.so (requires libgstreamer-lite.so libavcodec.so.52 libavformat.so.52)
+  broken /opt/sun-jdk/jre/lib/amd64/fxavcodecplugin-53.so (requires libgstreamer-lite.so libavcodec.so.53 libavformat.so.53)
+ done.
+  (/root/.revdep-rebuild.3_rebuild)
+
+Determining package names consistency...
+ done.
+  (/root/.revdep-rebuild.4_names)
+folks paketi içinde usr/lib/folks/41/backends/eds/eds.so dosyası var.
+folks paketi içinde usr/lib/folks/41/backends/ofono/ofono.so dosyası var.
+folks paketi içinde usr/lib/libfolks-eds.so.25.16.0 dosyası var.
+gnome-contacts paketi içinde usr/bin/gnome-contacts dosyası var.
+gnome-contacts paketi içinde usr/lib/gnome-contacts/gnome-contacts-search-provider dosyası var.
+gnome-shell paketi içinde usr/libexec/gnome-shell-calendar-server dosyası var.
+mono-runtime paketi içinde usr/bin/mono dosyası var.
+sun-jre paketi içinde opt/sun-jdk/jre/lib/amd64/fxavcodecplugin-52.so dosyası var.
+sun-jre paketi içinde opt/sun-jdk/jre/lib/amd64/fxavcodecplugin-53.so dosyası var.
+sun-jre paketi içinde opt/sun-jre/lib/amd64/fxavcodecplugin-52.so dosyası var.
+sun-jre paketi içinde opt/sun-jre/lib/amd64/fxavcodecplugin-53.so dosyası var.
+pisilinux1 gnome3-desktop # 

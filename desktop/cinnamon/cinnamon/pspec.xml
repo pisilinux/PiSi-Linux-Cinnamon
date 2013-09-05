@@ -9,12 +9,10 @@
             <Email>osman.erkan@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>desktop.cinnamon</PartOf>
-        <Icon>cinnamon</Icon>
         <IsA>app:gui</IsA>
         <Summary>Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü</Summary>
         <Description>Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
-        <Archive sha1sum="b63c0bae6975502d22a0bfc583db86c5c1cc4f56" type="targz">https://github.com/linuxmint/Cinnamon/archive/1.8.8.1.tar.gz</Archive>
+        <Archive sha1sum="092bacc649c96af08f938e8a3a9c2023465f7582" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/cinnamon-1.9.2.gitd4305ab.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gnome-common</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -63,7 +61,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>1.8.8.1</Version>
+            <Version>1.9.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
