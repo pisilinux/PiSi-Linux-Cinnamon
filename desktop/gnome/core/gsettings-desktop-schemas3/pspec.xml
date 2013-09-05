@@ -18,10 +18,11 @@
     <Package>
         <Name>gsettings-desktop-schemas3</Name>
         <Files>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/GConf/</Path>
             <Path fileType="library">/usr/lib/girepository-1.0</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="localedata">/usr/share/glib-2.0/schemas</Path>
         </Files>
     </Package>
 
@@ -32,6 +33,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/share/pkgconfig/</Path>
         </Files>
     </Package>

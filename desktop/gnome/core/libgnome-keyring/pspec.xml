@@ -12,25 +12,16 @@
         <IsA>library</IsA>
         <Summary>Compatibility library for accessing gnome-keyring3</Summary>
         <Description>libgnome-keyring is a library that used by applications to integrate with the gnome-keyring system.</Description>
-        <Archive sha1sum="3a4716023efb1d2b815d2ef9c184f3a1ee5c7db8" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/libgnome-keyring/3.9/libgnome-keyring-3.9.1.tar.xz</Archive>
-        <BuildDependencies>
-            <Dependency>libgcrypt-devel</Dependency>
-            <Dependency>gtk-doc</Dependency>
-        </BuildDependencies>
-
+        <Archive sha1sum="5540ac37ef38768d6df9f15ab340132e6653df93" type="tarxz">http://ftp.gnome.org/pub/GNOME/sources/libgnome-keyring/3.8/libgnome-keyring-3.8.0.tar.xz</Archive>
     </Source>
 
     <Package>
         <Name>libgnome-keyring</Name>
-        <RuntimeDependencies>
-            <Dependency>libgcrypt</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/vala/vapi/</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
 
@@ -42,6 +33,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
@@ -56,12 +48,26 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="3">
             <Date>2013-08-30</Date>
-            <Version>3.9.1</Version>
+            <Version>3.8.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-08-26</Date>
+            <Version>2.32.0</Version>
+            <Comment>Release bump.</Comment>
+            <Name>Serdar Soytetir</Name>
+            <Email>kaptan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2010-10-18</Date>
+            <Version>2.32.0</Version>
+            <Comment>First release</Comment>
+            <Name>Burak Çalışkan</Name>
+            <Email>admins@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
