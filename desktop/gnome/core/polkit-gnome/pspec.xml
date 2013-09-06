@@ -22,11 +22,11 @@
         <Patches>
             <!--<Patch level="1">disable-docs.diff</Patch>-->
             <!-- tr dil dosyası eklenmiş.-->
-            <!--<Patch level="1">turkish-translations.diff</Patch>-->
+            <!--<Patch level="1">turkish-translations.diff</Patch>
             <Patch>no-gnome-authentication-manager-anymore.diff</Patch>
             <Patch level="1">fix-user-faces.diff</Patch>
             <Patch level="1">choose-current-user.patch</Patch>
-            <Patch level="1">unify-password-label.patch</Patch>
+            <Patch level="1">unify-password-label.patch</Patch>-->
         </Patches>
     </Source>
 

@@ -15,6 +15,7 @@
         <Archive sha1sum="18b55b460303be6d20df85bbf3e2d4d4613fae5b" type="tarxz">mirrors://gnome/gnome-themes-standard/3.8/gnome-themes-standard-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
         </BuildDependencies>

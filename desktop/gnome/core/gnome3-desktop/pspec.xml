@@ -14,6 +14,7 @@
         <Description>gnome-desktop contains basic GNOME libraries and information applications.</Description>
         <Archive sha1sum="7c93d6083593a0620ed41d0c81e4657eadf95da0" type="tarxz">mirrors://gnome/gnome-desktop/3.8/gnome-desktop-3.8.3.tar.xz</Archive>
         <BuildDependencies>
+            <Dependency>itstool</Dependency>
             <Dependency>iso-codes</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>

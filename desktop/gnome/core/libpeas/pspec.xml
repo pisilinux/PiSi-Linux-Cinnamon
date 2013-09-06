@@ -25,6 +25,9 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">js17.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>

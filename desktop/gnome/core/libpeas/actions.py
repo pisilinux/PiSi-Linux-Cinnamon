@@ -9,13 +9,8 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
-    autotools.autoreconf("-fiv")
-    shelltools.system("intltoolize --force --copy --automake")
     autotools.configure("--disable-static \
-                         --enable-python \
                          --enable-gtk")
 
 def build():
@@ -25,4 +20,3 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "COPYING", "README")
-
