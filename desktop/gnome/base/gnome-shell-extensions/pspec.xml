@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>A collection of extensions providing additional and optional functionality to GNOME Shell</Summary>
         <Description>gnome-shell-extensions is a collection of extensions providing additional and optional functionality to GNOME Shell.</Description>
-        <Archive sha1sum="35bf9caf38f16160a4f970c622c916eba72f42f4" type="tarxz">mirrors://gnome/gnome-shell-extensions/3.9/gnome-shell-extensions-3.9.5.tar.xz</Archive>
+        <Archive sha1sum="99fe219ed257c0caf302a5e248ae031ceabe1e23" type="tarxz">mirrors://gnome/gnome-shell-extensions/3.8/gnome-shell-extensions-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
         </BuildDependencies>
@@ -171,7 +171,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.3</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>

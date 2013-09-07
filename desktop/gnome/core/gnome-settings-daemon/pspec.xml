@@ -36,6 +36,7 @@
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>xorg-input-wacom-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
@@ -69,6 +70,7 @@
             <Dependency>mit-kerberos</Dependency>
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>xorg-input-wacom</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

@@ -17,6 +17,7 @@
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mutter-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
+            <Dependency>caribou-devel</Dependency>
             <Dependency>libcroco-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>

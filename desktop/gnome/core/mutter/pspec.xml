@@ -22,7 +22,8 @@
             <Dependency>gconf-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
-            <Dependency>clutter</Dependency>
+            <Dependency>cogl-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
             <Dependency>zenity</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>

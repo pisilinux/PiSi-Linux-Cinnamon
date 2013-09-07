@@ -12,29 +12,40 @@
         <IsA>library</IsA>
         <Summary>A library that aggregates people from multiple sources</Summary>
         <Description>folks is a library that aggregates people from multiple sources.</Description>
-        <Archive sha1sum="040f00ec411df8865db9be2a09310dcf87cfd968" type="tarxz">mirrors://gnome/folks/0.9/folks-0.9.5.tar.xz</Archive>
+        <Archive sha1sum="0c9dcd4db046e7b7a35cf35679d6107653b750d9" type="tarxz">mirrors://gnome/folks/0.8/folks-0.8.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>telepathy-glib-devel</Dependency>
-            <Dependency>vala-devel</Dependency>
+            <Dependency>nss-devel</Dependency>
             <Dependency>libgee-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libsecret-devel</Dependency>
             <Dependency>zeitgeist-devel</Dependency>
+            <Dependency>libzeitgeist-devel</Dependency>
+            <Dependency>telepathy-glib-devel</Dependency>
+            <Dependency>evolution-data-server-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>folks</Name>
         <RuntimeDependencies>
-            <Dependency>telepathy-glib</Dependency>
+            <Dependency>nss</Dependency>
             <Dependency>libgee</Dependency>
-            <Dependency>gconf</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>zeitgeist</Dependency>
+            <Dependency>libzeitgeist</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+            <Dependency>evolution-data-server</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/vala/vapi/</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
 
@@ -42,7 +53,10 @@
         <Name>folks-devel</Name>
         <Summary>Development files for folks</Summary>
         <RuntimeDependencies>
+            <Dependency>libgee-devel</Dependency>
+            <Dependency>telepathy-glib-devel</Dependency>
             <Dependency release="current">folks</Dependency>
+            <Dependency>evolution-data-server-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -53,7 +67,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>0.9.5</Version>
+            <Version>0.8.0</Version>
             <Comment>First release.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

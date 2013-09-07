@@ -12,7 +12,6 @@ from pisi.actionsapi import get
 shelltools.export("LC_ALL", "C")
 
 def setup():
-    autotools.autoreconf("-vif")
     autotools.configure("--disable-static \
                          --disable-fatal-warnings \
                          --enable-eds-backend \
@@ -22,7 +21,7 @@ def setup():
                          --disable-libsocialweb-backend")
 
 def build():
-    autotools.make("V=1")
+    autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
