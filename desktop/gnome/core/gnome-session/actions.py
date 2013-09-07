@@ -13,6 +13,8 @@ def setup():
                           --libexecdir=/usr/lib/gnome-session \
                           --disable-systemd \
                           --disable-docbook-docs")
+                        
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()
