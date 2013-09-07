@@ -12,7 +12,6 @@ from pisi.actionsapi import shelltools
 def setup():
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static \
-                         --disable-schemas-compile \
                          --disable-compile-warnings \
                         ")
 

@@ -11,8 +11,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--libexecdir=/usr/lib/caribou \
                          --disable-static \
-                         --enable-gtk2-module \
-                         --disable-schemas-compile")
+                         --enable-gtk2-module")
 
 def build():
     autotools.make()

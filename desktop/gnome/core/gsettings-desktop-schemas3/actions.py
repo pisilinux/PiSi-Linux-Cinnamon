@@ -10,7 +10,7 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-schemas-compile --enable-introspection=yes")
+    autotools.configure("--enable-introspection=yes")
 
 def build():
     autotools.make()
@@ -19,4 +19,3 @@ def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING", "README", "NEWS", "MAINTAINERS")
-

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="be67e479ff00f47d09c5278937d995ae13f968af" type="tarxz">mirrors://gnome/gnome-shell/3.9/gnome-shell-3.9.5.tar.xz</Archive>
+        <Archive sha1sum="dd8b882ba12caee411205df5a9a42bccefad958a" type="tarxz">mirrors://gnome/gnome-shell/3.8/gnome-shell-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs-devel</Dependency>
             <Dependency>gcr-devel</Dependency>
@@ -49,6 +49,9 @@
             <Dependency>network-manager-applet-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">nm-libexecdir.patch</Patch>
+            <Patch level="1">gnome-shell-3.6.3.1-fix-gdm-background.patch</Patch>
+            <Patch level="1">gnome-shell-3.6.3.1-fix-evolution-calendar.patch</Patch>
             <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
         </Patches>
     </Source>
@@ -117,7 +120,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.3</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>

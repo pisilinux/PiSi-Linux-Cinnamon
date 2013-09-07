@@ -9,6 +9,7 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import get
 
 def setup():
+    pisitools.dosed("modules/gettext.js", "dgetext", "dgettext")
     autotools.configure("--disable-static")
 
 def build():

@@ -11,13 +11,11 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--enable-introspection \
-                        --disable-scrollkeeper \
-                        --disable-desktop-update \
-                        --disable-schemas-install \
-                        --disable-icon-update \
-                        --disable-moblin \
-                        --disable-schemas-compile \
-                        --disable-rpath")
+                         --disable-scrollkeeper \
+                         --disable-desktop-update \
+                         --disable-icon-update \
+                         --disable-moblin \
+                         --disable-rpath")
 def build():
     autotools.make()
 

@@ -10,7 +10,9 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.configure("--disable-static \
-                         --with-pam-dir=/lib/security ")
+                         --with-pam-dir=/lib/security \
+                         --without-libcap-ng \
+                       ")
                         
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
