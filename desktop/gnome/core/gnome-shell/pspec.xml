@@ -14,27 +14,39 @@
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
         <Archive sha1sum="be67e479ff00f47d09c5278937d995ae13f968af" type="tarxz">mirrors://gnome/gnome-shell/3.9/gnome-shell-3.9.5.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>mutter-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>caribou-devel</Dependency>
-            <Dependency>libcroco-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
-            <Dependency>gconf-devel</Dependency>
             <Dependency>gjs-devel</Dependency>
-            <Dependency>docbook-xml</Dependency>
-            <Dependency>telepathy-glib-devel</Dependency>
-            <Dependency>telepathy-logger-devel</Dependency>
-            <Dependency>clutter-devel</Dependency>
-            <Dependency>gnome-bluetooth-devel</Dependency>
-            <Dependency>libical-devel</Dependency>
-            <Dependency>network-manager-applet-devel</Dependency>
-            <Dependency>evolution-data-server-devel</Dependency>
-            <Dependency>telepathy-glib-devel</Dependency>
-            <Dependency>telepathy-logger-devel</Dependency>
+            <Dependency>gcr-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>mutter-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>p11-kit-devel</Dependency>
+            <Dependency>libical-devel</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libsecret-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libXdamage-devel</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>gnome-menus-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>at-spi2-atk-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
+            <Dependency>telepathy-glib-devel</Dependency>
+            <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>gnome-bluetooth-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>evolution-data-server-devel</Dependency>
+            <Dependency>network-manager-applet-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
@@ -44,34 +56,39 @@
     <Package>
         <Name>gnome-shell</Name>
         <RuntimeDependencies>
-            <Dependency>gtk3</Dependency>
-            <Dependency>mutter</Dependency>
             <Dependency>gjs</Dependency>
-            <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libcroco</Dependency>
-            <Dependency>gconf</Dependency>
-            <Dependency>startup-notification</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>telepathy-glib</Dependency>
-            <Dependency>network-manager-applet</Dependency>
-            <Dependency>telepathy-logger</Dependency>
+            <Dependency>gcr</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>mutter</Dependency>
             <Dependency>clutter</Dependency>
-            <Dependency>libcroco</Dependency>
-            <Dependency>gstreamer</Dependency>
-            <Dependency>xulrunner</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>p11-kit</Dependency>
+            <Dependency>libical</Dependency>
+            <Dependency>json-glib</Dependency>
             <Dependency>libXfixes</Dependency>
+            <Dependency>libsecret</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>at-spi2-atk</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>telepathy-glib</Dependency>
+            <Dependency>NetworkManager</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>gobject-introspection</Dependency>
             <Dependency>gnome-bluetooth</Dependency>
-            <Dependency>libical</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
             <Dependency>evolution-data-server</Dependency>
+            <Dependency>network-manager-applet</Dependency>
             <Dependency>mesa</Dependency>
         </RuntimeDependencies>
         <Files>

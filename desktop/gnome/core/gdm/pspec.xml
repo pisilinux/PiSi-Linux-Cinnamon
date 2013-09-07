@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME display manager</Summary>
         <Description>GDM provides log into different sessions on local or remote machines.</Description>
-        <Archive sha1sum="384386cf2fac8714c673e5347b8404f0b38fbf00" type="tarxz">mirrors://gnome/gdm/3.9/gdm-3.9.5.tar.xz</Archive>
+        <Archive sha1sum="2addb5583ee3cd68c6da95c25cfb6f22a76c9f22" type="tarxz">mirrors://gnome/gdm/3.8/gdm-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -95,7 +95,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.3</Version>
             <Comment>Version bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
