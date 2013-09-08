@@ -12,6 +12,8 @@ def setup():
     autotools.configure("--disable-static \
                          --libexecdir=/usr/lib/accountsservice")
 
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+
 def build():
     autotools.make()
 

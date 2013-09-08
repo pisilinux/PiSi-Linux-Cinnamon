@@ -16,6 +16,9 @@ def setup():
                          --disable-icon-update \
                          --disable-moblin \
                          --disable-rpath")
+
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    
 def build():
     autotools.make()
 

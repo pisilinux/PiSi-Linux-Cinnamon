@@ -6,6 +6,7 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
@@ -18,6 +19,8 @@ def setup():
                          --with-xauth-dir=/var/lib/gdm \
                          --with-screenshot-dir=/var/lib/gdm \
                          --with-xevie")
+
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()

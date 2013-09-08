@@ -11,8 +11,9 @@ from pisi.actionsapi import shelltools
 
 def setup():
     autotools.configure("--disable-static \
-                         --disable-schemas-compile \
                          --libexecdir=/usr/lib/gnome-panel")
+
+    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 
 def build():
     autotools.make()
