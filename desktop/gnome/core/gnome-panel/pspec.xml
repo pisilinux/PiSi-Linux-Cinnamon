@@ -22,7 +22,6 @@
             <Dependency>libgweather-devel</Dependency>
             <Dependency>libwnck3-devel</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>libbonoboui-devel</Dependency>
             <Dependency>docbook-xml</Dependency>
             <Dependency>gnome-common</Dependency>
             <Dependency>gnome-doc-utils</Dependency>
@@ -61,14 +60,13 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/girepository-1.0</Path>
             <Path fileType="library">/usr/lib/gnome-panel</Path>
-            <Path fileType="library">/usr/lib/libplanel-applet*</Path>
+            <Path fileType="library">/usr/lib/libpanel-applet*</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/share/glib-2.0/</Path>
             <Path fileType="data">/usr/share/gnome-panel</Path>
-            <Path fileType="data">/usr/share/gtk-doc</Path>
             <Path fileType="data">/usr/share/help/</Path>
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="localedata">/usr/share/locale</Path>

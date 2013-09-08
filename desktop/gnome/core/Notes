@@ -10,4 +10,9 @@
 11. gstreamer-next series       yeni paket              multimedia/video
 12. cheese                      güncellendi             multimedia/video
 13. libgnomekeyring             güncellendi             desktop/gnome/base
-14. gnome-doc-utils             eklenecek
+14. gnome-doc-utils             eklenecek               desktop/gnome/base
+15. libgnomecanvass             delete                  desktop/gnome/base  
+16. libgnomecanvassmm           delete                  desktop/gnome/base
+17. libbonobo                   delete
+18. libgnome                    delete
+19. gnome-python                delete
