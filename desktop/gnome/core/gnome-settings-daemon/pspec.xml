@@ -30,6 +30,7 @@
             <Dependency>libXext-devel</Dependency>
             <Dependency>libwacom-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libnotify-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libxkbfile-devel</Dependency>
