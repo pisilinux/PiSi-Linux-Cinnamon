@@ -36,7 +36,7 @@
         <Files>
             <Path fileType="library">/usr/lib</Path> 
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path> 
+            <Path fileType="data">/usr/share/vala/vapi/</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
@@ -49,8 +49,9 @@
             <Dependency>colord-devel</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/colord-1/</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="library">/usr/lib/pkgconfig/</Path>
+            <Path fileType="header">/usr/include/colord-1/</Path>
         </Files>
     </Package>
 

@@ -9,7 +9,11 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure()
+    autotools.configure("--disable-gtk-doc \
+                         --enable-vala \
+                         --disable-static \
+                         --disable-rpath \
+                         --disable-dependency-tracking")
 
 def build():
     autotools.make()

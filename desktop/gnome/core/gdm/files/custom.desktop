@@ -1,9 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Encoding=UTF-8
-Name=Custom
-Name[tr]=Özel
-Comment=Custom Desktop Session
-Comment[tr]=Özel Masaüstü Ortamı
-Exec=custom
-Type=Application
