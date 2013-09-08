@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="bb47d88b959c01eb4a44070de064a4b115ccb2d3" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.4.tar.xz</Archive>
+        <Archive sha1sum="e8f688f85c40fc8a96359633cced321e829b4a31" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.4.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
@@ -48,12 +48,6 @@
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">gnome-control-center-3.8.0-optional-r1.patch</Patch>
-            <Patch level="1">gnome-control-center-3.8.0-paths.patch</Patch>
-            <Patch level="1">gnome-control-center-3.8.1.5-optional-modemmanager.patch</Patch>
-            <Patch level="1">gnome-control-center-3.8.4-optional-kerberos.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -141,7 +135,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.4</Version>
+            <Version>3.8.4.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>
