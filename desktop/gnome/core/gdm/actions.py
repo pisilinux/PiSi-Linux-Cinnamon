@@ -6,21 +6,19 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static \
-                         --enable-authentication-scheme=pam \
-                         --with-sysconfsubdir=X11/gdm \
+    autotools.configure("--enable-split-authentication \
+                         --enable-profiling \
+                         --libexecdir=/usr/lib/gdm \
+                         --enable-console-helper \
+                         --with-plymouth \
                          --disable-scrollkeeper \
-                         --with-user=gdm \
-                         --with-group=gdm \
-                         --with-xauth-dir=/var/lib/gdm \
-                         --with-screenshot-dir=/var/lib/gdm \
-                         --with-xevie")
+                         --with-run-dir=/run/gdm ")
 
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")
+    pisitools.dosed("libtool", '(    if test "\$export_dynamic" = yes && test -n "\$export_dynamic_flag_spec"; then)', '      func_append compile_command " -Wl,-O1,--as-needed"\n      func_append finalize_command " -Wl,-O1,--as-needed"\n\\1')
 
 def build():
     autotools.make()
