@@ -36,6 +36,7 @@
             <Dependency>pango-devel</Dependency>
             <Dependency>upower-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>accountsservice-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>gnome-menus-devel</Dependency>
@@ -47,6 +48,12 @@
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">gnome-control-center-3.8.0-optional-r1.patch</Patch>
+            <Patch level="1">gnome-control-center-3.8.0-paths.patch</Patch>
+            <Patch level="1">gnome-control-center-3.8.1.5-optional-modemmanager.patch</Patch>
+            <Patch level="1">gnome-control-center-3.8.4-optional-kerberos.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
