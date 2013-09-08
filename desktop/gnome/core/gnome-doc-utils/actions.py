@@ -6,19 +6,17 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import get
 from pisi.actionsapi import shelltools
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
-    autotools.configure("--disable-static")
-    pisitools.dosed("libtool", " -shared ", " -Wl,--as-needed -shared ")
+    shelltools.copy("tools/gnome-doc-utils.m4", "m4/")
+    autotools.autoreconf("-fiv")
+    autotools.configure()
 
 def build():
-    autotools.make()
+    autotools.make("-j1")
 
 def install():
     autotools.install()
 
-    pisitools.dodoc("AUTHORS", "ChangeLog", "HACKING", "MAINTAINERS", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "README", "NEWS")

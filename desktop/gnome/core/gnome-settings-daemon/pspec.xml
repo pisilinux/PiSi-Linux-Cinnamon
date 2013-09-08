@@ -38,11 +38,11 @@
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>xorg-input-wacom-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <!--<Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
+        <!--<Patches>
+            <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
             <Patch level="1">gnome-settings-daemon-3.5.4-ppc-no-wacom.patch</Patch>
-            <Patch level="1">font_fixes.patch</Patch>-->
-        </Patches>
+            <Patch level="1">font_fixes.patch</Patch>
+        </Patches>-->
     </Source>
 
     <Package>
@@ -101,9 +101,23 @@
     </Package>
 
     <History>
-        <Update release="1">
+        <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.8.4</Version>
+            <Comment>First release</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-07-31</Date>
+            <Version>2.32.1</Version>
+            <Comment>Rebuild</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2013-01-14</Date>
+            <Version>2.32.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

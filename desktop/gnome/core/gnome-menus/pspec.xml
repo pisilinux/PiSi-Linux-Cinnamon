@@ -5,8 +5,8 @@
         <Name>gnome-menus</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Necdet Yücel</Name>
-            <Email>necdetyucel@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
@@ -47,12 +47,26 @@
 
 
     <History>
-        <Update release="1">
+        <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.8.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2013-07-27</Date>
+            <Version>2.30.5</Version>
+            <Comment>Move pc files to devel pack, rebuild</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
+        <Update release="1">
+            <Date>2011-02-10</Date>
+            <Version>2.30.5</Version>
+            <Comment>First release</Comment>
+            <Name>Erdinç Gültekin</Name>
+            <Email>admins@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
