@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="ba5eafe1a92a69312ae7bf1d34ec9cc772a365aa" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="bb47d88b959c01eb4a44070de064a4b115ccb2d3" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
@@ -45,7 +45,7 @@
             <Dependency>NetworkManager-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>gnome-online-accounts-devel</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -83,7 +83,7 @@
             <Dependency>NetworkManager</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>gnome-online-accounts</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -134,7 +134,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.3</Version>
+            <Version>3.8.4</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>
