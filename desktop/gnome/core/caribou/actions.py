@@ -11,7 +11,7 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--libexecdir=/usr/lib/caribou \
                          --disable-static \
-                         --enable-gtk2-module")
+                         --enable-gtk3-module")
 
     pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
 

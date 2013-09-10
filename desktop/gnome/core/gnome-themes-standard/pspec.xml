@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>GNOME Standart Themes</Summary>
         <Description>gnome-themes-standard provides GNOME Standart Themes.</Description>
-        <Archive sha1sum="18b55b460303be6d20df85bbf3e2d4d4613fae5b" type="tarxz">mirrors://gnome/gnome-themes-standard/3.8/gnome-themes-standard-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="e5f54432db3487780121153ca61a7fbc7c74cda3" type="tarxz">mirrors://gnome/gnome-themes-standard/3.8/gnome-themes-standard-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>librsvg-devel</Dependency>
@@ -39,7 +39,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.3</Version>
+            <Version>3.8.4</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

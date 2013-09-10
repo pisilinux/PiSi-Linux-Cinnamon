@@ -6,7 +6,7 @@
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
             <Name>Osman Erkan</Name>
-	    <Email>osman.erkan@yandex.com</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv3.0</License>
         <Icon>mate-image-viewer</Icon>
@@ -14,9 +14,9 @@
         <IsA>app:gui</IsA>
         <Summary>Mate için resim görüntüleyicisi</Summary>
         <Description>mate-image-viewer, resim görüntüleyicisidir.</Description>
-        <Archive sha1sum="3c47ddcb0bf623878ae025286ab4597c266a1b2d" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-image-viewer-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
-	    <Dependency>gtk2-devel</Dependency>
+        <Archive sha1sum="b1f41a2c18d62e4573f6e6c9e4383c5030947808" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-image-viewer-1.6.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>libjpeg-turbo-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -25,17 +25,17 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
-	    <Dependency>libexif-devel</Dependency>
+            <Dependency>libexif-devel</Dependency>
             <Dependency>libart_lgpl-devel</Dependency>
-	    <Dependency>librsvg-devel</Dependency>
-	    <Dependency>lcms2-devel</Dependency>
-	</BuildDependencies>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>lcms2-devel</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-image-viewer</Name>
-	<RuntimeDependencies>
-	    <Dependency>gtk2</Dependency>
+        <RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>libjpeg-turbo</Dependency>
             <Dependency>cairo</Dependency>
@@ -44,35 +44,42 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-desktop</Dependency>
-	    <Dependency>libglade</Dependency>
-	    <Dependency>libexif</Dependency>
+            <Dependency>libglade</Dependency>
+            <Dependency>libexif</Dependency>
             <Dependency>libart_lgpl</Dependency>
-	    <Dependency>librsvg</Dependency>
-	    <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>lcms2</Dependency>
-	    <Dependency>gsettings-desktop-schemas</Dependency>
-	</RuntimeDependencies>
+            <Dependency>librsvg</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>lcms2</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="library">/usr/lib/eom/</Path>
-	    <Path fileType="config">/etc/mateconf/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="library">/usr/lib/eom/</Path>
+            <Path fileType="config">/etc/mateconf/</Path>
         </Files>
     </Package>
     
     <Package>
         <Name>mate-image-viewer-devel</Name>
-	<Summary>mate-image-viewer için geliştirme dosyaları</Summary>
-	<RuntimeDependencies>
-	    <Dependency release="current">mate-image-viewer</Dependency>
-	</RuntimeDependencies>
+        <Summary>mate-image-viewer için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-image-viewer</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include/</Path>
-	    <Path fileType="library">/usr/lib/pkgconfig/</Path>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/pkgconfig/</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-09-10</Date>
+            <Version>1.6.1</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="3">
             <Date>2013-04-04</Date>
             <Version>1.6.0</Version>
@@ -92,7 +99,7 @@
             <Version>1.4.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-	    <Email>osman.erkan@yandex.com</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

@@ -14,8 +14,8 @@
         <Summary>Python binding for Mate CAJA</Summary>
         <Description>These are unstable bindings for the caja extension library.</Description>
         <Archive sha1sum="a7dbcff03b9dbdf2f33dbea96946426097eb9e56" type="tarxz">http://pub.mate-desktop.org/releases/1.6/python-caja-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
-	    <Dependency>python-pygobject-devel</Dependency>
+        <BuildDependencies>
+            <Dependency>python-pygobject-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -24,12 +24,12 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>python-caja</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>python-pygobject</Dependency>
             <Dependency>mate-desktop</Dependency>
             <Dependency>atk</Dependency>
@@ -39,12 +39,12 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-file-manager</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="config">/etc/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/</Path>
         </Files>
     </Package>
     

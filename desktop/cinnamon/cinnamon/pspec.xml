@@ -12,43 +12,77 @@
         <IsA>app:gui</IsA>
         <Summary>Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü</Summary>
         <Description>Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
-        <Archive sha1sum="092bacc649c96af08f938e8a3a9c2023465f7582" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/cinnamon-1.9.2.gitd4305ab.tar.gz</Archive>
+        <Archive sha1sum="b63c0bae6975502d22a0bfc583db86c5c1cc4f56" type="targz">https://github.com/linuxmint/Cinnamon/archive/1.8.8.1.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>gnome-common</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>gstreamer-devel</Dependency>
-            <Dependency>gnome3-desktop-devel</Dependency>
-            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>
-            <Dependency>polkit-devel</Dependency>
-            <Dependency>libsoup-devel</Dependency>
-            <Dependency>libxml2-devel</Dependency>
-            <Dependency>dbus-glib-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>libcroco-devel</Dependency>
-            <Dependency>librsvg-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>clutter-devel</Dependency>
             <Dependency>gjs-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>cogl-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
             <Dependency>muffin-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libcroco-devel</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>gstreamer-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXdamage-devel</Dependency>
             <Dependency>gnome-menus-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
+            <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gnome-bluetooth-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>libgnome-keyring-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">cinnamon-1.6.1-automagic-gnome-bluetooth.patch</Patch>
-            <Patch level="1">gnome-3.8-compat.patch</Patch>
-            <Patch level="1">gjs.patch</Patch>
+          <Patch level="1">background.patch</Patch>
         </Patches>
     </Source>
 
     <Package>
         <Name>cinnamon</Name>
         <RuntimeDependencies>
-            <Dependency>gnome-common</Dependency>
+            <Dependency>gjs</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
+            <Dependency>gconf</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>muffin</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libcroco</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gstreamer</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>NetworkManager</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
+            <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>libgnome-keyring</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>gobject-introspection</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin/</Path>
@@ -61,7 +95,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>1.9.2</Version>
+            <Version>1.8.8.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

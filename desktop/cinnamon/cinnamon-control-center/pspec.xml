@@ -12,30 +12,46 @@
         <IsA>app:gui</IsA>
         <Summary>Utilities to configure the Cinnamon desktop</Summary>
         <Description>This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
-        <Archive sha1sum="1cc9544f6ac97a04d32b3c002468ee27df1fa6bb" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center/source/cinnamon-control-center-1.9.0.git39bd295.tar.gz</Archive>
+        <Archive sha1sum="909a40601b9d43d114971363fa48e21a519fcabf" type="targz">https://github.com/linuxmint/cinnamon-control-center/archive/1.8.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
+            <Dependency>cogl-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
             <Dependency>pango-devel</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>cheese-devel</Dependency>
             <Dependency>colord-devel</Dependency>
             <Dependency>upower-devel</Dependency>
+            <Dependency>cheese-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>json-glib-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libXdamage-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>gnome-menus-devel</Dependency>
+            <Dependency>clutter-gtk-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>
             <Dependency>libgnomekbd-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gnome-bluetooth-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
-            <Dependency>cinnamon-desktop-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
-            <Dependency>cinnamon-settings-daemon-devel</Dependency>
         </BuildDependencies>
         <Patches>
+            <Patch level="1">idle-delay.patch</Patch>
             <Patch level="1">remove_obex.patch</Patch>
+            <Patch level="1">gnomerrlabeler.patch</Patch>
         </Patches>
     </Source>
 
@@ -44,23 +60,37 @@
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
+            <Dependency>mesa</Dependency>
+            <Dependency>cogl</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>cheese</Dependency>
             <Dependency>colord</Dependency>
             <Dependency>upower</Dependency>
+            <Dependency>cheese</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>json-glib</Dependency>
             <Dependency>libnotify</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXdamage</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>gnome-menus</Dependency>
+            <Dependency>clutter-gtk</Dependency>
             <Dependency>libxklavier</Dependency>
             <Dependency>libgnomekbd</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>libXcomposite</Dependency>
             <Dependency>NetworkManager</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
-            <Dependency>cinnamon-desktop</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>network-manager-applet</Dependency>
-            <Dependency>cinnamon-settings-daemon</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/xdg/autostart/</Path>
@@ -75,9 +105,11 @@
         <Name>cinnamon-control-center-devel</Name>
         <Summary>cinnamon-control-center için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
+            <Dependency>gtk3-devel</Dependency>
             <Dependency release="current">cinnamon-control-center</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include/cinnamon-control-center-1/</Path>
         </Files>
@@ -86,7 +118,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>1.9.0</Version>
+            <Version>1.8.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Basic GNOME libraries and dialogs</Summary>
         <Description>gnome-desktop contains basic GNOME libraries and information applications.</Description>
-        <Archive sha1sum="7c93d6083593a0620ed41d0c81e4657eadf95da0" type="tarxz">mirrors://gnome/gnome-desktop/3.8/gnome-desktop-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="1cca03ccc13fd62d0884e84193d3bfda5331ac81" type="tarxz">mirrors://gnome/gnome-desktop/3.8/gnome-desktop-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>itstool</Dependency>
             <Dependency>iso-codes</Dependency>
@@ -84,7 +84,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.3</Version>
+            <Version>3.8.4</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

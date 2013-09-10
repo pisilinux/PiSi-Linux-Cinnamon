@@ -12,16 +12,16 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME display manager</Summary>
         <Description>GDM provides log into different sessions on local or remote machines.</Description>
-        <Archive sha1sum="2addb5583ee3cd68c6da95c25cfb6f22a76c9f22" type="tarxz">mirrors://gnome/gdm/3.8/gdm-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="de5c32e42d10462606fc6f90e02acc58ddbee511" type="tarxz">mirrors://gnome/gdm/3.8/gdm-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>gnome-shell</Dependency>
+            <Dependency>gnome-session</Dependency>
             <Dependency>plymouth-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency>gnome-shell-devel</Dependency>
-            <Dependency>gnome-session-devel</Dependency>
             <Dependency>icon-theme-gnome-symbolic</Dependency>
             <Dependency>gnome-settings-daemon-devel</Dependency>
             <Dependency versionFrom="0.6.12">accountsservice-devel</Dependency>
@@ -77,7 +77,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.3</Version>
+            <Version>3.8.4</Version>
             <Comment>First Release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

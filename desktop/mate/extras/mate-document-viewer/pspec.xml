@@ -13,11 +13,11 @@
         <IsA>app:gui</IsA>
         <Summary>Mate için döküman görüntüleyicisi</Summary>
         <Description>mate-document-viewer, mate masaüstü için döküman görüntüleyicidir.</Description>
-        <Archive sha1sum="f2ad2d369468682b9b3da82627ad97ad94bdce1c" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-document-viewer-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
-	    <Dependency>mate-icon-theme</Dependency>
+        <Archive sha1sum="5b3d1643b7945d56214ec13dc38cb641dfb688e1" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-document-viewer-1.6.1.tar.xz</Archive>
+        <BuildDependencies>
+            <Dependency>mate-icon-theme</Dependency>
             <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -26,26 +26,26 @@
             <Dependency>libICE-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-	    <Dependency>libmatekeyring-devel</Dependency>
+            <Dependency>libmatekeyring-devel</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
             <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>desktop-file-utils</Dependency>
-	    <Dependency>gobject-introspection-devel</Dependency>
-	    <Dependency>t1lib-devel</Dependency>
-	    <Dependency>libspectre-devel</Dependency>
-	    <Dependency>poppler-glib-devel</Dependency>
-	    <Dependency>libXt-devel</Dependency>
-	    <Dependency>libglade-devel</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>t1lib-devel</Dependency>
+            <Dependency>libspectre-devel</Dependency>
+            <Dependency>poppler-glib-devel</Dependency>
+            <Dependency>libXt-devel</Dependency>
+            <Dependency>libglade-devel</Dependency>
             <Dependency>texlive-bin-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-document-viewer</Name>
-	<RuntimeDependencies>
-	    <Dependency>mate-icon-theme</Dependency>
+        <RuntimeDependencies>
+            <Dependency>mate-icon-theme</Dependency>
             <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
             <Dependency>cairo</Dependency>
@@ -56,29 +56,36 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libmatekeyring</Dependency>
             <Dependency>mate-file-manager</Dependency>
-	    <Dependency>libmatekeyring</Dependency>
+            <Dependency>libmatekeyring</Dependency>
             <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>desktop-file-utils</Dependency>
-	    <Dependency>gobject-introspection</Dependency>
-	    <Dependency>t1lib</Dependency>
-	    <Dependency>libspectre</Dependency>
-	    <Dependency>poppler-glib</Dependency>
-	    <Dependency>libXt</Dependency>
-	    <Dependency>libglade</Dependency>
-	</RuntimeDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>t1lib</Dependency>
+            <Dependency>libspectre</Dependency>
+            <Dependency>poppler-glib</Dependency>
+            <Dependency>libXt</Dependency>
+            <Dependency>libglade</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="doc">/usr/share/doc</Path>
-	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-09-10</Date>
+            <Version>1.6.1</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="3">
-            <Date>20136-09</Date>
+            <Date>2013-06-09</Date>
             <Version>1.6.0</Version>
             <Comment>V.bump</Comment>
             <Name>Osman Erkan</Name>

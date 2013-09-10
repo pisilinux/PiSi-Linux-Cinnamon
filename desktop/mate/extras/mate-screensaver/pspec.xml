@@ -13,24 +13,24 @@
         <IsA>app:gui</IsA>
         <Summary>Replaces xscreensaver, integrating with the MATE desktop.</Summary>
         <Description>mate-screensaver, Mate masaüstü için ekrankoruyucu uygulamasıdır.</Description>
-        <Archive sha1sum="3a923a11ad9c37a8d7f5c55dcc07a9a9b4d75cce" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-screensaver-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
+        <Archive sha1sum="3b4c0c1554fdf96def14efa8f9e100d29dc05984" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-screensaver-1.6.1.tar.xz</Archive>
+        <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-	    <Dependency>mate-desktop-devel</Dependency>
-	    <Dependency>libmatekbd-devel</Dependency>
-	    <Dependency>libX11-devel</Dependency>
-	    <Dependency>libXext-devel</Dependency>
-	    <Dependency>libXrandr-devel</Dependency>
-	    <Dependency>libXxf86misc-devel</Dependency>
+            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>libmatekbd-devel</Dependency>
+            <Dependency>libX11-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libXxf86misc-devel</Dependency>
             <Dependency>libXxf86miscproto-devel</Dependency>
-	    <Dependency>libXxf86vm-devel</Dependency>
+            <Dependency>libXxf86vm-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mate-menus-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libxklavier-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
         <Patches>
             <!--<Patch level="1">mate-screensaver-1.5.1-only_allow_one_instance.patch</Patch>-->
         </Patches>
@@ -38,32 +38,39 @@
 
     <Package>
         <Name>mate-screensaver</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-	    <Dependency>mate-desktop</Dependency>
-	    <Dependency>libmatekbd</Dependency>
-	    <Dependency>libX11</Dependency>
-	    <Dependency>libXext</Dependency>
-	    <Dependency>libXrandr</Dependency>
-	    <Dependency>libXxf86misc</Dependency>
-	    <Dependency>libXxf86vm</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>libmatekbd</Dependency>
+            <Dependency>libX11</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXxf86misc</Dependency>
+            <Dependency>libXxf86vm</Dependency>
             <Dependency>mesa</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>mate-menus</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libxklavier</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="executable">/usr/libexec</Path>
-	    <Path fileType="library">/usr/lib/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib/</Path>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="config">/etc/</Path>
         </Files>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-09-10</Date>
+            <Version>1.6.1</Version>
+            <Comment>V.bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@yandex.com</Email>
+        </Update>
         <Update release="3">
             <Date>2013-04-04</Date>
             <Version>1.6.0</Version>

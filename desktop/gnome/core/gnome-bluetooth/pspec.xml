@@ -16,7 +16,6 @@
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
-            <Dependency>gnome-control-center-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -25,7 +24,6 @@
         <RuntimeDependencies>
             <Dependency>gtk3</Dependency>
             <Dependency>libnotify</Dependency>
-            <Dependency>gnome-control-center</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>

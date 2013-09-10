@@ -10,12 +10,16 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.autoreconf("-vif")
+    autotools.autoreconf("-fi")
     autotools.configure("--disable-static \
                          --disable-update-mimedb \
                          --with-libsocialweb=no \
                          --disable-systemd \
                          --enable-ibus")
+    
+    pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")
+    pisitools.dosed("libtool", '(    if test "\$export_dynamic" = yes && test -n "\$export_dynamic_flag_spec"; then)', '      func_append compile_command " -Wl,-O1,--as-needed"\n      func_append finalize_command " -Wl,-O1,--as-needed"\n\\1')
+
 
 def build():
     autotools.make()

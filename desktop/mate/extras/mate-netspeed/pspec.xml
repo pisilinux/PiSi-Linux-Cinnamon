@@ -14,35 +14,35 @@
         <Summary>Traffic monitor applet for MATE</Summary>
         <Description>This is a fork of GNOME netspeed applet.</Description>
         <Archive sha1sum="892a69d3ac89abdedf29aceae98365986a539767" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-netspeed-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
-	    <Dependency>mate-doc-utils</Dependency>
+        <BuildDependencies>
+            <Dependency>mate-doc-utils</Dependency>
             <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-	    <Dependency>mate-panel-devel</Dependency>
-	    <Dependency>libgtop-devel</Dependency>
-	</BuildDependencies>
+            <Dependency>mate-panel-devel</Dependency>
+            <Dependency>libgtop-devel</Dependency>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-netspeed</Name>
-	<RuntimeDependencies>
-	    <Dependency>mate-doc-utils</Dependency>
+        <RuntimeDependencies>
+            <Dependency>mate-doc-utils</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>mate-panel</Dependency>
-	    <Dependency>libgtop</Dependency>
-	</RuntimeDependencies>
+            <Dependency>gtk2</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libgtop</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="config">/etc/</Path>
-	    <Path fileType="executable">/usr/libexec/</Path>
-	    <Path fileType="library">/usr/lib/matecomponent/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="config">/etc/</Path>
+            <Path fileType="executable">/usr/libexec/</Path>
+            <Path fileType="library">/usr/lib/matecomponent/</Path>
         </Files>
     </Package>
 

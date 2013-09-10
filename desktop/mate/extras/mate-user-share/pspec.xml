@@ -14,9 +14,9 @@
         <Summary>User level public file sharing via WebDAV or ObexFTP</Summary>
         <Description>mate-user-share is a small package that binds together various free software projects to bring easy to use user-level file sharing to the masses.</Description>
         <Archive sha1sum="03f5731a29bc53a9ff6882d33b2a45d0270e48e1" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-user-share-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
+        <BuildDependencies>
             <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>mate-doc-utils</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -28,14 +28,14 @@
             <Dependency>libcanberra-gtk</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
             <Dependency>mate-bluetooth-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-user-share</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>mate-common</Dependency>
-	    <Dependency>gtk2</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>mate-doc-utils</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
@@ -46,13 +46,13 @@
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
             <Dependency>mate-file-manager</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="executable">/usr/bin</Path>
-	    <Path fileType="executable">/usr/libexec</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="config">/etc/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/</Path>
         </Files>
     </Package>
 

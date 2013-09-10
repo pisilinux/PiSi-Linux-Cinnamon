@@ -14,7 +14,7 @@
         <Summary>Allows to quickly share a folder from the MATE Caja file manager</Summary>
         <Description>Allows to quickly share a folder from the MATE Caja file manager.</Description>
         <Archive sha1sum="28e8ec54330e41aa44866107c23f48b47ea198e4" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-file-manager-share-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
+        <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -22,12 +22,12 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-file-manager-share</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
@@ -35,10 +35,10 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-file-manager</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>

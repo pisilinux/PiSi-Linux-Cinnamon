@@ -17,8 +17,7 @@ def setup():
                          --localstatedir=/var \
                          --disable-static \
                          --disable-schemas-compile \
-                         --enable-compile-warnings=yes \
-                         --with-session-tracking=systemd")
+                         --enable-compile-warnings=yes ")
 
 def build():
     autotools.make()

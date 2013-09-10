@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>GNOME icon theme</Summary>
         <Description>gnome-icon-theme package contains the default icon theme used by the GNOME desktop.</Description>
-        <Archive sha1sum="9448caeb86282f51cb022ef5351dd0b653c4f6b7" type="tarxz">mirrors://gnome/gnome-icon-theme/3.8/gnome-icon-theme-3.8.2.tar.xz</Archive>
+        <Archive sha1sum="7bc5c5cc623cc41156d7ab43caedf4c292de132c" type="tarxz">mirrors://gnome/gnome-icon-theme/3.8/gnome-icon-theme-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -38,7 +38,7 @@
     <History>
         <Update release="4">
             <Date>2013-08-30</Date>
-            <Version>3.8.2</Version>
+            <Version>3.8.3</Version>
             <Comment>Release bump.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

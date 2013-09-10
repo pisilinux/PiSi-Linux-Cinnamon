@@ -12,5 +12,17 @@
       <LocalName xml:lang="it">Mate</LocalName>
       <Icon>preferences-desktop</Icon> <!-- FIXME: Mate Desktop Icon -->
     </Group>
+    <Group>
+      <Name>all</Name>
+      <LocalName xml:lang="en">All</LocalName>
+      <LocalName xml:lang="nl">Alles</LocalName>
+      <LocalName xml:lang="sv">Samtliga</LocalName>
+      <LocalName xml:lang="tr">Tümü</LocalName>
+      <LocalName xml:lang="fr">Tout</LocalName>
+      <LocalName xml:lang="es">Todos</LocalName>
+      <LocalName xml:lang="de">Alle</LocalName>
+      <LocalName xml:lang="it">Tutti</LocalName>
+      <Icon>media-optical</Icon>
+    </Group>
   </Groups>
 </PISI>

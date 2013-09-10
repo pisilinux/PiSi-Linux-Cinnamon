@@ -14,7 +14,7 @@
         <Summary>caja-sendto is a fork of nautilus-sendto</Summary>
         <Description>mate-file-manager-sendto, Caja extension for sending files to locations.</Description>
         <Archive sha1sum="cf81a12d6d5d90f431d96fd67eed893f472b36f0" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-file-manager-sendto-1.6.0.tar.xz</Archive>
-	<BuildDependencies>
+        <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -22,12 +22,12 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-file-manager-sendto</Name>
-	<RuntimeDependencies>
+        <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>cairo</Dependency>
@@ -35,24 +35,24 @@
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-file-manager</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share/</Path>
-	    <Path fileType="bin">/usr/bin</Path>
-	    <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="bin">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
         </Files>
     </Package>
     
     <Package>
         <Name>mate-file-manager-sendto-devel</Name>
-	<Summary>mate-file-manager-sendto için geliştirme dosyaları</Summary>
-	<RuntimeDependencies>
-	    <Dependency>mate-file-manager</Dependency>
-	    <Dependency>mate-file-manager-sendto</Dependency>
-	</RuntimeDependencies>
+        <Summary>mate-file-manager-sendto için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency>mate-file-manager</Dependency>
+            <Dependency>mate-file-manager-sendto</Dependency>
+        </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include</Path>
-	    <Path fileType="library">/usr/lib/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Network Manager
 Name[tr]=Ağ Programcığı

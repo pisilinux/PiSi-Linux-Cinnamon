@@ -25,21 +25,21 @@
             <Dependency>gtk2</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="data">/usr/share</Path>
-	    <Path fileType="library">/usr/lib</Path>
-	    <Path fileType="config">/etc/X11/Xsession.d/80indicator-debugging</Path>
-	    <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/X11/Xsession.d/80indicator-debugging</Path>
+            <Path fileType="executable">/usr/libexec</Path>
         </Files>
     </Package>
     
     <Package>
         <Name>libindicator-devel</Name>
-	<Summary>libindicator için geliştirme dosyalrı</Summary>
+        <Summary>libindicator için geliştirme dosyalrı</Summary>
         <RuntimeDependencies>
             <Dependency release="current">libindicator</Dependency>
         </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include/</Path>
+            <Path fileType="header">/usr/include/</Path>
         </Files>
     </Package>
     

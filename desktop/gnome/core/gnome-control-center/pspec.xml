@@ -14,38 +14,31 @@
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
         <Archive sha1sum="e8f688f85c40fc8a96359633cced321e829b4a31" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.4.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>gnome3-desktop-devel</Dependency>
-            <Dependency>gnome-settings-daemon</Dependency>
-            <Dependency>libglade</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>docbook-xml</Dependency>
-            <Dependency>libunique</Dependency>
-            <Dependency>colord-gtk-devel</Dependency>
-            <Dependency>libXScrnSaver-devel</Dependency>
-            <Dependency>libXft-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>ibus-devel</Dependency>
             <Dependency>cups-devel</Dependency>
-            <Dependency>libgtop-devel</Dependency>
-            <Dependency>libpwquality-devel</Dependency>
-            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
-            <Dependency>gnome-settings-daemon-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>libXi-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>upower-devel</Dependency>
+            <Dependency>mesa-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>accountsservice-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>samba-devel</Dependency>
+            <Dependency>libXi-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>colord-devel</Dependency>
+            <Dependency>mit-kerberos</Dependency>
+            <Dependency>upower-devel</Dependency>
+            <Dependency>libgtop-devel</Dependency>
+            <Dependency>libwacom-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>gnome-menus-devel</Dependency>
-            <Dependency>libxklavier-devel</Dependency>
-            <Dependency>libgnomekbd-devel</Dependency>
-            <Dependency>glib2-devel</Dependency>
-            <Dependency>NetworkManager-devel</Dependency>
-            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>colord-gtk-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libpwquality-devel</Dependency>
+            <Dependency>NetworkManager-devel</Dependency>
+            <Dependency>gnome3-desktop-devel</Dependency>
+            <Dependency>gnome-bluetooth-devel</Dependency>
+            <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>network-manager-applet-devel</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -53,37 +46,31 @@
     <Package>
         <Name>gnome-control-center</Name>
         <RuntimeDependencies>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>gnome3-desktop</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>gnome-settings-daemon</Dependency>
-            <Dependency>libglade</Dependency>
-            <Dependency>gnome-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>docbook-xml</Dependency>
-            <Dependency>colord-gtk</Dependency>
-            <Dependency>libpwquality</Dependency>
-            <Dependency>libunique</Dependency>
-            <Dependency>libXft</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>ibus</Dependency>
             <Dependency>cups</Dependency>
-            <Dependency>libgtop</Dependency>
-            <Dependency>gsettings-desktop-schemas3</Dependency>
-            <Dependency>gnome-settings-daemon</Dependency>
+            <Dependency>mesa</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>samba</Dependency>
             <Dependency>libXi</Dependency>
-            <Dependency>gconf</Dependency>
             <Dependency>pango</Dependency>
+            <Dependency>colord</Dependency>
             <Dependency>upower</Dependency>
+            <Dependency>libgtop</Dependency>
+            <Dependency>libwacom</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>gnome-menus</Dependency>
-            <Dependency>libxklavier</Dependency>
-            <Dependency>libgnomekbd</Dependency>
-            <Dependency>glib2-devel</Dependency>
+            <Dependency>colord-gtk</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libpwquality</Dependency>
+            <Dependency>mit-kerberos</Dependency>
             <Dependency>NetworkManager</Dependency>
+            <Dependency>gnome3-desktop</Dependency>
+            <Dependency>gnome-bluetooth</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>network-manager-applet</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
         </RuntimeDependencies>
         <Files>

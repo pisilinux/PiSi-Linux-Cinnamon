@@ -12,7 +12,7 @@
         <Icon>cheese</Icon>
         <Summary>Webcam application</Summary>
         <Description>Cheese is a webcam application that uses your webcam to take photos and videos, apply fancy special effects and share fun with others.</Description>
-        <Archive sha1sum="ff7c350417b09adfadb11e9f6ee65b63695ddad9" type="tarxz">mirrors://gnome/cheese/3.9/cheese-3.9.5.tar.xz</Archive>
+        <Archive sha1sum="853392c7ef0cadc41eb1c29f18a3bbe57f69b9cf" type="tarxz">mirrors://gnome/cheese/3.8/cheese-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -100,7 +100,7 @@
     <History>
         <Update release="4">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.3</Version>
             <Comment>V.Bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

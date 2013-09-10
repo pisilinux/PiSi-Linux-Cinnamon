@@ -13,67 +13,67 @@
         <IsA>app:gui</IsA>
         <Summary>GTK+ based window manager</Summary>
         <Description>Marco is a small window manager, using GTK+ to do everything.</Description>
-	<Archive sha1sum="dce0fd1953d75b4aad88d4818228eac677fb1d7b" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-window-manager-1.6.2.tar.xz</Archive>
+        <Archive sha1sum="dce0fd1953d75b4aad88d4818228eac677fb1d7b" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-window-manager-1.6.2.tar.xz</Archive>
         <BuildDependencies>
-	    <Dependency>desktop-file-utils</Dependency>
-	    <Dependency>gtk2-devel</Dependency>
-	    <Dependency>libcanberra-devel</Dependency>
-	    <Dependency>libsoup-devel</Dependency>
-	    <Dependency>mate-common</Dependency>
-	    <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>mate-dialogs</Dependency>
-	    <Dependency>libSM-devel</Dependency>
-	    <Dependency>libICE-devel</Dependency>
-	    <Dependency>libXcomposite-devel</Dependency>
-	    <Dependency>startup-notification-devel</Dependency>
-	    <Dependency>atk-devel</Dependency>
-	    <Dependency>cairo-devel</Dependency>
-	    <Dependency>pango-devel</Dependency>
-	    <Dependency>libXext-devel</Dependency>
-	    <Dependency>freetype-devel</Dependency>
-	    <Dependency>libXrandr-devel</Dependency>
-	    <Dependency>libXfixes-devel</Dependency>
-	    <Dependency>libXcursor-devel</Dependency>
-	    <Dependency>libXrender-devel</Dependency>
-	    <Dependency>gdk-pixbuf-devel</Dependency>
-	    <Dependency>libXdamage-devel</Dependency>
-	    <Dependency>fontconfig-devel</Dependency>
-	    <Dependency>libXinerama-devel</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>mate-dialogs</Dependency>
+            <Dependency>libSM-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>libXcomposite-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>atk-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>libXext-devel</Dependency>
+            <Dependency>freetype-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>libXfixes-devel</Dependency>
+            <Dependency>libXcursor-devel</Dependency>
+            <Dependency>libXrender-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>libXdamage-devel</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>libXinerama-devel</Dependency>
             <Dependency>libgtop-devel</Dependency>
             <Dependency>libXft-devel</Dependency>
-	</BuildDependencies>
+        </BuildDependencies>
     </Source>
     
     <Package>
         <Name>mate-window-manager</Name>
-	<RuntimeDependencies>
-	    <Dependency>desktop-file-utils</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>libcanberra</Dependency>
-	    <Dependency>libsoup</Dependency>
-	    <Dependency>mate-common</Dependency>
-	    <Dependency>mate-doc-utils</Dependency>
-	    <Dependency>mate-dialogs</Dependency>
-	    <Dependency>libSM</Dependency>
-	    <Dependency>libICE</Dependency>
-	    <Dependency>libXcomposite</Dependency>
-	    <Dependency>startup-notification</Dependency>
-	    <Dependency>libcanberra-gtk</Dependency>
-	    <Dependency>atk</Dependency>
-	    <Dependency>cairo</Dependency>
-	    <Dependency>pango</Dependency>
-	    <Dependency>libXext</Dependency>
-	    <Dependency>freetype</Dependency>
-	    <Dependency>libXrandr</Dependency>
-	    <Dependency>libXfixes</Dependency>
-	    <Dependency>libXcursor</Dependency>
-	    <Dependency>libXrender</Dependency>
-	    <Dependency>gtk2</Dependency>
-	    <Dependency>libXdamage</Dependency>
-	    <Dependency>fontconfig</Dependency>
-	    <Dependency>libXinerama</Dependency>
+        <RuntimeDependencies>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>mate-dialogs</Dependency>
+            <Dependency>libSM</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>libXcomposite</Dependency>
+            <Dependency>startup-notification</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>atk</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libXext</Dependency>
+            <Dependency>freetype</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>libXfixes</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXrender</Dependency>
+            <Dependency>gtk2</Dependency>
+            <Dependency>libXdamage</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>libXinerama</Dependency>
             <Dependency>libgtop</Dependency>
-	</RuntimeDependencies>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -87,11 +87,11 @@
     <Package>
         <Name>mate-window-manager-devel</Name>
         <Summary>mate-window-manager için geliştirme dosyaları</Summary>
-	<RuntimeDependencies>
-	    <Dependency release="current">mate-window-manager</Dependency>
-	 </RuntimeDependencies>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-window-manager</Dependency>
+         </RuntimeDependencies>
         <Files>
-	    <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/include</Path>
         </Files>
     </Package>
 
