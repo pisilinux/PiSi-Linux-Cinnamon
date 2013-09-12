@@ -12,16 +12,16 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-if")
-    autotools.configure('--disable-scrollkeeper                                \
+    autotools.configure("--disable-scrollkeeper                                \
                          --disable-schemas-compile                             \
                          --with-gtk=2.0                                        \
                          --with-x                                              \
                          --disable-static                                      \
                          --enable-unique                                       \
                          --enable-gtk-doc                                      \
-                         --with-pnp-ids-path="/usr/share/hwdata/pnp.ids"      \
-                         --with-omf-dir=/usr/share/omf/mate-desktop           \
-                         --enable-gnucat')
+                         --with-pnp-ids-path=/usr/share/hwdata/pnp.ids         \
+                         --with-omf-dir=/usr/share/omf/mate-desktop            \
+                         --enable-gnucat")
 
 def build():
     autotools.make()

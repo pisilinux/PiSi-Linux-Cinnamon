@@ -51,6 +51,9 @@
             <Path fileType="bin">/usr/bin</Path>
             <Path fileType="config">/etc/</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/glib-2.0/schemas/org.mate.terminal.gschema.xml">org.mate.terminal.gschema.xml</AdditionalFile>
+        </AdditionalFiles>
     </Package>
     
     <History>

@@ -41,7 +41,7 @@
             <Dependency>dconf-devel</Dependency>
          </BuildDependencies>
          <Patches>
-            <!--<Patch level="1">no-xdg-menu-prefix.patch</Patch>-->
+            <Patch level="1">mate-panel_reset_fix.patch</Patch>
          </Patches>
     </Source>
 
@@ -82,11 +82,8 @@
            <Path fileType="config">/etc/mateconf/schemas/</Path>
         </Files>        
         <AdditionalFiles>
-            <!--<AdditionalFile target="/usr/share/mate-panel/panel-default-layout.dist">panel-default-layout.dist</AdditionalFile>-->
+            <AdditionalFile target="/usr/share/mate-panel/panel-default-layout.dist">panel-default-layout.dist</AdditionalFile>
         </AdditionalFiles>
-        <!--<Provides>
-            <COMAR script="package.py">System.Package</COMAR>
-        </Provides>-->
     </Package>
 
     <Package>

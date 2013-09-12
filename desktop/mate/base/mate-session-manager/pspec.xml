@@ -32,7 +32,7 @@
             <Dependency>libXtst-devel</Dependency>
         </BuildDependencies>
          <Patches>
-            <!--<Patch level="1">x-caja.patch</Patch>-->
+            <Patch level="1">mate-session-manager-1.6.1-login1.patch</Patch>
          </Patches>
     </Source>
 

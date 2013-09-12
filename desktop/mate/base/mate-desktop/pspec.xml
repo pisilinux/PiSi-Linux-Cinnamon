@@ -13,6 +13,10 @@
         <Summary>Basic Mate libraries and dialogs</Summary>
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
         <Archive sha1sum="f259a432d4f5847ad98e00ecb4cc593153f61df9" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-desktop-1.6.1.tar.xz</Archive>
+        <AdditionalFiles>
+            <AdditionalFile target="mate-about/gnu-cat.gif">gnu-cat.gif</AdditionalFile>
+            <AdditionalFile target="mate-about/gnu-cat_navideno_v3.png">gnu-cat_navideno_v3.png</AdditionalFile>
+        </AdditionalFiles>
         <BuildDependencies>
             <Dependency>mate-common</Dependency>
             <Dependency>libmateweather-devel</Dependency>
@@ -34,6 +38,9 @@
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">mate-desktop_enable_gnucat.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -69,7 +76,8 @@
             <Path fileType="config">/etc</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile target="/usr/share/backgrounds/mate/nature/pisilinux-rengarenk.png">pisilinux-rengarenk.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/backgrounds/mate/desktop/pisi.png">pisi.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/backgrounds/mate/desktop/pisilinux-rengarenk.png">pisilinux-rengarenk.png</AdditionalFile>
             <AdditionalFile target="/usr/share/glib-2.0/schemas/org.mate.background.gschema.xml">org.mate.background.gschema.xml</AdditionalFile>
         </AdditionalFiles>
     </Package>

@@ -35,7 +35,7 @@
       <description>Determines how the image set by wallpaper_filename is rendered. Possible values are "wallpaper", "centered", "scaled", "stretched", "zoom", "spanned".</description>
     </key>
     <key type="s" name="picture-filename">
-      <default>'/usr/share/backgrounds/mate/nature/pisilinux-rengarenk.png'</default>
+      <default>'/usr/share/backgrounds/mate/desktop/pisi.png'</default>
       <summary>Picture Filename</summary>
       <description>File to use for the background image.</description>
     </key>

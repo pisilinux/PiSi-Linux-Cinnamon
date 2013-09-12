@@ -1,14 +1,7 @@
-From 1cfee5fd5836c47761b874c351c1c90f3114c15d Mon Sep 17 00:00:00 2001
-From: Stefano Karapetsas <stefano@karapetsas.com>
-Date: Sun, 14 Jul 2013 20:15:56 +0000
-Subject: Fix mate-panel --reset
-
----
-diff --git a/mate-panel/libpanel-util/panel-dconf.c b/mate-panel/libpanel-util/panel-dconf.c
-index a103bcf..26ca092 100644
---- a/mate-panel/libpanel-util/panel-dconf.c
-+++ b/mate-panel/libpanel-util/panel-dconf.c
-@@ -111,3 +111,12 @@ panel_dconf_list_subdirs (const gchar *dir,
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/libpanel-util/panel-dconf.c mate-panel-1.6.1/mate-panel/libpanel-util/panel-dconf.c
+--- mate-panel-1.6.1.OSmanOS/mate-panel/libpanel-util/panel-dconf.c	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/libpanel-util/panel-dconf.c	2013-09-12 11:36:33.863813771 +0300
+@@ -111,3 +111,12 @@
  
          return (gchar **) g_array_free (array, FALSE);
  }
@@ -21,11 +14,11 @@ index a103bcf..26ca092 100644
 +        g_object_unref (client);
 +#endif
 +}
-diff --git a/mate-panel/libpanel-util/panel-dconf.h b/mate-panel/libpanel-util/panel-dconf.h
-index 1683ec0..ba1abfd 100644
---- a/mate-panel/libpanel-util/panel-dconf.h
-+++ b/mate-panel/libpanel-util/panel-dconf.h
-@@ -39,6 +39,8 @@ gboolean panel_dconf_recursive_reset (const gchar  *dir,
+\ Dosya sonunda yenisatır yok.
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/libpanel-util/panel-dconf.h mate-panel-1.6.1/mate-panel/libpanel-util/panel-dconf.h
+--- mate-panel-1.6.1.OSmanOS/mate-panel/libpanel-util/panel-dconf.h	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/libpanel-util/panel-dconf.h	2013-09-12 11:37:41.746811765 +0300
+@@ -39,6 +39,8 @@
  gchar **panel_dconf_list_subdirs (const gchar *dir,
                                    gboolean     remove_trailing_slash);
  
@@ -34,11 +27,10 @@ index 1683ec0..ba1abfd 100644
  G_END_DECLS
  
  #endif /* __PANEL_DCONF_H__ */
-diff --git a/mate-panel/panel-layout.c b/mate-panel/panel-layout.c
-index 4732420..9ad4026 100644
---- a/mate-panel/panel-layout.c
-+++ b/mate-panel/panel-layout.c
-@@ -122,6 +122,7 @@ panel_layout_append_group_helper (GKeyFile                  *keyfile,
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/panel-layout.c mate-panel-1.6.1/mate-panel/panel-layout.c
+--- mate-panel-1.6.1.OSmanOS/mate-panel/panel-layout.c	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/panel-layout.c	2013-09-12 11:39:38.313808321 +0300
+@@ -122,6 +122,7 @@
      char       *unique_id = NULL;
      char       *path = NULL;
      GSettings  *settings = NULL;
@@ -46,7 +38,7 @@ index 4732420..9ad4026 100644
      char      **keyfile_keys = NULL;
      char       *value_str;
      int         value_int;
-@@ -184,6 +185,8 @@ panel_layout_append_group_helper (GKeyFile                  *keyfile,
+@@ -184,6 +185,8 @@
      g_free (path);
  
      keyfile_keys = g_key_file_get_keys (keyfile, group, NULL, NULL);
@@ -55,7 +47,7 @@ index 4732420..9ad4026 100644
  
      if (keyfile_keys) {
  
-@@ -247,12 +250,9 @@ panel_layout_append_group_helper (GKeyFile                  *keyfile,
+@@ -247,12 +250,9 @@
                                  PANEL_TOPLEVEL_SCREEN_KEY,
                                  set_screen_to);
  
@@ -68,23 +60,22 @@ index 4732420..9ad4026 100644
  
          retval = TRUE;
      }
-@@ -263,6 +263,11 @@ panel_layout_append_group_helper (GKeyFile                  *keyfile,
+@@ -262,6 +262,11 @@
+ 
      if (settings)
          g_object_unref (settings);
- 
++    
 +    if (panel_settings) {
 +        g_settings_apply (panel_settings);
 +        g_object_unref (panel_settings);
 +    }
-+
+ 
      if (unique_id)
          g_free (unique_id);
- 
-diff --git a/mate-panel/panel-profile.c b/mate-panel/panel-profile.c
-index 57e11d0..37a2433 100644
---- a/mate-panel/panel-profile.c
-+++ b/mate-panel/panel-profile.c
-@@ -1601,7 +1601,7 @@ panel_profile_load_list (GSettings              *settings,
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/panel-profile.c mate-panel-1.6.1/mate-panel/panel-profile.c
+--- mate-panel-1.6.1.OSmanOS/mate-panel/panel-profile.c	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/panel-profile.c	2013-09-12 11:40:44.058806378 +0300
+@@ -1601,7 +1601,7 @@
  	g_free (key);
  }
  
@@ -93,11 +84,10 @@ index 57e11d0..37a2433 100644
  panel_profile_ensure_toplevel_per_screen ()
  {
  	GSList     *toplevels;
-diff --git a/mate-panel/panel-profile.h b/mate-panel/panel-profile.h
-index 665e237..162d84c 100644
---- a/mate-panel/panel-profile.h
-+++ b/mate-panel/panel-profile.h
-@@ -154,6 +154,8 @@ gboolean    panel_profile_can_be_moved_freely         (PanelToplevel *toplevel);
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/panel-profile.h mate-panel-1.6.1/mate-panel/panel-profile.h
+--- mate-panel-1.6.1.OSmanOS/mate-panel/panel-profile.h	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/panel-profile.h	2013-09-12 11:41:13.502805508 +0300
+@@ -154,6 +154,8 @@
  
  GSettings*  panel_profile_get_attached_object_settings (PanelToplevel *toplevel);
  
@@ -106,10 +96,9 @@ index 665e237..162d84c 100644
  G_END_DECLS
  
  #endif /* __PANEL_PROFILE_H__ */
-diff --git a/mate-panel/panel-reset.c b/mate-panel/panel-reset.c
-index e441f55..6307ba2 100644
---- a/mate-panel/panel-reset.c
-+++ b/mate-panel/panel-reset.c
+diff -Nuar mate-panel-1.6.1.OSmanOS/mate-panel/panel-reset.c mate-panel-1.6.1/mate-panel/panel-reset.c
+--- mate-panel-1.6.1.OSmanOS/mate-panel/panel-reset.c	2013-07-12 21:52:29.000000000 +0300
++++ mate-panel-1.6.1/mate-panel/panel-reset.c	2013-09-12 11:42:43.250802857 +0300
 @@ -28,19 +28,24 @@
  
  #include <stdlib.h>
@@ -122,21 +111,20 @@ index e441f55..6307ba2 100644
  
  void
  panel_reset()
- {
-+	/* reset configuration */
+-{
++{       
++        /* reset configuration */
  	panel_dconf_recursive_reset (PANEL_GENERAL_PATH, NULL);
  	panel_dconf_recursive_reset (PANEL_TOPLEVEL_PATH, NULL);
  	panel_dconf_recursive_reset (PANEL_OBJECT_PATH, NULL);
-+	panel_dconf_sync ();
- 
+-
 -	/* TODO: send a dbus message to mate-panel, if active, to reload the panel
 -	 * configuration */
-+	/* create default panels */
-+	panel_profile_ensure_toplevel_per_screen ();
-+	g_settings_sync ();
++        panel_dconf_sync ();
++        
++        /* create default panels */
++       panel_profile_ensure_toplevel_per_screen ();
++       g_settings_sync ();
  }
  
  #endif /* !__PANEL_RESET_C__ */
---
-cgit 
-
