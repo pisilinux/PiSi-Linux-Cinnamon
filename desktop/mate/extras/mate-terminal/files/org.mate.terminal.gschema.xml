@@ -134,17 +134,17 @@
       <description>When selecting text by word, sequences of these characters are considered single words. Ranges can be given as  "A-Z". Literal hyphen (not expressing a range) should be the first character given.</description>
     </key>
     <key type="b" name="use-custom-default-size">
-      <default>false</default>
+      <default>true</default>
       <summary>Whether to use custom terminal size for new windows</summary>
       <description>If true, newly created terminal windows will have custom size specified by default_size_columns and default_size_rows.</description>
     </key>
     <key type="i" name="default-size-columns">
-      <default>80</default>
+      <default>120</default>
       <summary>Default number of columns</summary>
       <description>Number of columns in newly created terminal windows. Has no effect if use_custom_default_size is not enabled.</description>
     </key>
     <key type="i" name="default-size-rows">
-      <default>24</default>
+      <default>32</default>
       <summary>Default number of rows</summary>
       <description>Number of rows in newly created terminal windows. Has no effect if use_custom_default_size is not enabled.</description>
     </key>
