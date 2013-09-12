@@ -9,70 +9,80 @@
             <Email>namso-01@hotmail.it</Email>
         </Packager>
         <License>GPLv2</License>
-        <Icon>mate-conf-editor</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mate metin editörü</Summary>
         <Description>mate masaüstü için metin editörü.</Description>
         <Archive sha1sum="47d6ff5655c92baac70719247d22e7aabce56f4f" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-text-editor-1.6.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>pango-devel</Dependency>
             <Dependency>atk-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>iso-codes</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>enchant-devel</Dependency>
-            <Dependency>iso-codes</Dependency>
-            <Dependency>attr-devel</Dependency>
-            <Dependency>gtksourceview-devel</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
             <Dependency>rarian-devel</Dependency>
-            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>enchant-devel</Dependency>
             <Dependency>mate-doc-utils</Dependency>
+            <Dependency>fontconfig-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>python-gtk-devel</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>gtksourceview-devel</Dependency>
+            <Dependency>python-gtksourceview</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-text-editor</Name>
         <RuntimeDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>libICE</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>rarian</Dependency>
+            <Dependency>libICE</Dependency>
             <Dependency>enchant</Dependency>
             <Dependency>iso-codes</Dependency>
-            <Dependency>attr</Dependency>
-            <Dependency>gtksourceview</Dependency>
-            <Dependency>rarian</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>python-gtk</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>gtksourceview</Dependency>
             <Dependency>mate-doc-utils</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>python-gtksourceview</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="config">/etc/</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/mate</Path>
+            <Path fileType="data">/usr/share/pluma</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/MateConf</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/glib-2.0/schemas/org.mate.pluma.gschema.xml">org.mate.pluma.gschema.xml</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <Package>
         <Name>mate-text-editor-devel</Name>
         <Summary>mate-text-editor için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <Dependency>mate-text-editor</Dependency>
+            <Dependency>gtksourceview-devel</Dependency>
+            <Dependency release="current">mate-text-editor</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include</Path>
+            <Path fileType="header">/usr/include/pluma</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
     

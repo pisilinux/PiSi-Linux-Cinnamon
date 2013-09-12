@@ -1,4 +1,4 @@
-#!/usr/bin/python
+﻿#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 
@@ -10,12 +10,13 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
     shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
-                        --disable-scrollkeeper")
+                         --disable-scrollkeeper \
+				         --enable-gvfs-metadata \
+                         --enable-python \
+                         --libexecdir=/usr/lib/mate-text-editor")
 
 def build():
     autotools.make()
