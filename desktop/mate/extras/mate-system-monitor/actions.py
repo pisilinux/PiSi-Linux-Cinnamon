@@ -7,14 +7,10 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
 
 def setup():
-    #shelltools.export("LDFLAGS", "%s -lm -lgmodule-2.0"  % get.LDFLAGS())
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static \
                          --disable-scrollkeeper")
 

@@ -7,21 +7,18 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
-    shelltools.system("./autogen.sh --enable-locking \
-                                    --with-xf86gamma-ext \
-                                    --with-kbd-layout-indicator \
-                                    --with-systemd=no \
-                                    --prefix=/usr \
-                                    --sysconfdir=/etc \
-                                    --without-console-kit \
-                                    --with-xscreensaverdir=/usr/share/xscreensaver/config \
-                                    --with-xscreensaverhackdir=/usr/lib/misc/xscreensaver")
+    autotools.configure(" --enable-locking \
+                          --with-xf86gamma-ext \
+                          --with-kbd-layout-indicator \
+                          --with-systemd=no \
+                          --prefix=/usr \
+                          --sysconfdir=/etc \
+                          --without-console-kit \
+                          --with-xscreensaverdir=/usr/share/xscreensaver/config \
+                          --with-xscreensaverhackdir=/usr/lib/misc/xscreensaver")
 
 def build():
     autotools.make()

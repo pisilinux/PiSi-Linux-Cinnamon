@@ -69,8 +69,8 @@
             <Path fileType="config">/etc</Path>
         </Files>
         <AdditionalFiles>
-            <!--<AdditionalFile target="/usr/share/backgrounds/mate/nature/pisilinux-rengarenk.png">pisilinux-rengarenk.png</AdditionalFile>
-            <AdditionalFile target="/usr/share/glib-2.0/schemas/org.mate.background.gschema.xml">org.mate.background.gschema.xml</AdditionalFile>-->
+            <AdditionalFile target="/usr/share/backgrounds/mate/nature/pisilinux-rengarenk.png">pisilinux-rengarenk.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/glib-2.0/schemas/org.mate.background.gschema.xml">org.mate.background.gschema.xml</AdditionalFile>
         </AdditionalFiles>
     </Package>
 
