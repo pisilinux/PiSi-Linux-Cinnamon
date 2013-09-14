@@ -1,5 +1,5 @@
 <PISI>
-    <SourceName>PisiLinux-Mate</SourceName>
+    <SourceName>PisiLinux</SourceName>
     <Version>1.0</Version>
     <Description xml:lang="tr">PisiLinux 1.0 Deposu</Description>
     <Description xml:lang="en">PisiLinux 1.0 Repository</Description>
