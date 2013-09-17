@@ -49,6 +49,7 @@
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/gnome-system-monitor/</Path>
             <Path fileType="data">/usr/share/gnome</Path>
             <Path fileType="data">/usr/share/omf</Path>
             <Path fileType="data">/usr/share/help</Path>
