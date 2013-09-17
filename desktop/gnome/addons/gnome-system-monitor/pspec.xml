@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME system monitor</Summary>
         <Description>gnome-system-monitor is a process viewer and system monitor for the GNOME desktop.</Description>
-        <Archive sha1sum="f1ab8e3f0428c9f3776b1413976656db3e725bb9" type="tarxz">mirrors://gnome/gnome-system-monitor/3.9/gnome-system-monitor-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="65f276b765adb6fe6d51ba62358cbfb4419e1fb7" type="tarxz">mirrors://gnome/gnome-system-monitor/3.8/gnome-system-monitor-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gconf-devel</Dependency>
             <Dependency>icon-theme-gnome</Dependency>
@@ -62,7 +62,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.90</Version>
+            <Version>3.8.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
