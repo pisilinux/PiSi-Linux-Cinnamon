@@ -23,12 +23,11 @@
     <Package>
         <Name>gnome-menus</Name>
         <Files>
-            <Path fileType="config">/etc/xdg/menus</Path>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/desktop-directories</Path>
         </Files>
         <RuntimeDependencies>
             <Dependency>glib2-devel</Dependency>
@@ -37,20 +36,22 @@
 
     <Package>
         <Name>gnome-menus-devel</Name>
+        <Summary>gnome-menus için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">gnome-menus</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
-
 
     <History>
         <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.8.0</Version>
-            <Comment>First release</Comment>
+            <Comment>V.Bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
         </Update>
