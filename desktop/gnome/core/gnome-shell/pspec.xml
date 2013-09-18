@@ -23,12 +23,14 @@
             <Dependency>libXi-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>mutter-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
             <Dependency>clutter-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>p11-kit-devel</Dependency>
             <Dependency>libical-devel</Dependency>
             <Dependency>caribou-devel</Dependency>
+            <Dependency>libcroco-devel</Dependency>
             <Dependency>json-glib-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>libsecret-devel</Dependency>
@@ -44,15 +46,17 @@
             <Dependency>NetworkManager-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>gnome-bluetooth-devel</Dependency>
+            <Dependency>telepathy-logger-devel</Dependency>
+            <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>startup-notification-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>evolution-data-server-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">nm-libexecdir.patch</Patch>
+            <!--<Patch level="1">nm-libexecdir.patch</Patch>
             <Patch level="1">gnome-shell-3.6.3.1-fix-gdm-background.patch</Patch>
-            <Patch level="1">gnome-shell-3.6.3.1-fix-evolution-calendar.patch</Patch>
+            <Patch level="1">gnome-shell-3.6.3.1-fix-evolution-calendar.patch</Patch>-->
             <Patch level="1">gnome-shell-favourite-apps-firefox.patch</Patch>
         </Patches>
     </Source>
