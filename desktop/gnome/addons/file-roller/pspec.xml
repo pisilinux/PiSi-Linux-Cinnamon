@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME archive manager</Summary>
         <Description>File-manager is a archive manager that create, modify and extract various archive formats with compression support</Description>
-        <Archive sha1sum="28d9e642d64dd7b13d7a84f6334a5ca14b3efef8" type="tarxz">mirrors://gnome/file-roller/3.9/file-roller-3.9.3.tar.xz</Archive>
+        <Archive sha1sum="b18fefda33f3b53f7151fcacf2e0094bbfe95161" type="tarxz">mirrors://gnome/file-roller/3.8/file-roller-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gconf-devel</Dependency>
             <Dependency>nautilus-devel</Dependency>
@@ -44,16 +44,16 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-        </Files>
+        </Files><!--
         <Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+        </Provides>-->
     </Package>
 
     <History>
         <Update release="1">
             <Date>2013-09-02</Date>
-            <Version>3.9.3</Version>
+            <Version>3.8.4</Version>
             <Comment>Version bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

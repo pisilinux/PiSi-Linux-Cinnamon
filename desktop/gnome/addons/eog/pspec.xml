@@ -10,8 +10,8 @@
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>Eye of GNOME image viewer</Summary>
-        <Description>Eog (Eye of GNOME) is the offical image viewer for the GNOME desktop.</Description>
-        <Archive sha1sum="3ae69dce27cde0bf2b5ba1185ec2f20a5c66d3e0" type="tarxz">mirrors://gnome/eog/3.9/eog-3.9.5.tar.xz</Archive>
+        <Description>Eog (Eye of GNOME) is the offical image viewer for the GNOME desktop.</Description>.
+        <Archive sha1sum="8f42e58886f70e39f86b4e3bf1e6ad3197cad2bc" type="tarxz">mirrors://gnome/eog/3.8/eog-3.8.2.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -53,9 +53,9 @@
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
-        <Provides>
+        <!--<Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+        </Provides>-->
     </Package>
 
     <Package>
@@ -83,7 +83,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.2</Version>
             <Comment>Version bump</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

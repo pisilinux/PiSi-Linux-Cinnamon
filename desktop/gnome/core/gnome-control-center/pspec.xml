@@ -39,6 +39,7 @@
             <Dependency>gnome-bluetooth-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
+            <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -71,6 +72,7 @@
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>network-manager-applet</Dependency>
+            <Dependency versionFrom="3.7.3">gnome-settings-daemon</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
         </RuntimeDependencies>
         <Files>
