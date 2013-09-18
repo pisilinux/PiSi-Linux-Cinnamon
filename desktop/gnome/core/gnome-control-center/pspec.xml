@@ -5,8 +5,8 @@
         <Name>gnome-control-center</Name>
         <Homepage>https://live.gnome.org/ControlCenter</Homepage>
         <Packager>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
@@ -132,8 +132,8 @@
             <Date>2013-08-30</Date>
             <Version>3.8.5</Version>
             <Comment>First release</Comment>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>
