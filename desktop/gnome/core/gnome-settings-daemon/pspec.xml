@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="9f0b836949e371ce473ba37b702b6a4b773c022c" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.8/gnome-settings-daemon-3.8.4.tar.xz</Archive>
+        <Archive sha1sum="a21bbfd1aa38cfd9222624506576f4ade308cc29" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.8/gnome-settings-daemon-3.8.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
@@ -38,12 +38,8 @@
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>xorg-input-wacom-devel</Dependency>
+            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
         </BuildDependencies>
-        <!--<Patches>
-            <Patch level="1">0001-power-Use-logind-to-discover-critical-action-availab.patch</Patch>
-            <Patch level="1">gnome-settings-daemon-3.5.4-ppc-no-wacom.patch</Patch>
-            <Patch level="1">font_fixes.patch</Patch>
-        </Patches>-->
     </Source>
 
     <Package>
@@ -72,6 +68,7 @@
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>xorg-input-wacom</Dependency>
+            <Dependency>gsettings-desktop-schemas3</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>
@@ -104,7 +101,7 @@
     <History>
         <Update release="3">
             <Date>2013-08-30</Date>
-            <Version>3.8.4</Version>
+            <Version>3.8.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
