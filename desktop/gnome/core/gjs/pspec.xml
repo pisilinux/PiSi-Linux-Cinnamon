@@ -15,6 +15,8 @@
         <Archive sha1sum="2ce83c97f37bf6e0dbf582194c7c28fc2a6595e4" type="tarbz2">https://people.gnome.org/~walters/gjs-js17-1.36.1.tar.bz2</Archive>
         <!--<Archive sha1sum="8bc9cd71da8de1eaac92217d48b787b660f0e0fe" type="tarxz">mirrors://gnome/gjs/1.37/gjs-1.37.6.tar.xz</Archive>-->
         <BuildDependencies>
+            <Dependency>gtk-doc</Dependency>
+            <Dependency>gnome-common</Dependency>
             <Dependency>xulrunner-devel</Dependency>
             <Dependency>spidermonkey-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
@@ -24,7 +26,6 @@
     <Package>
         <Name>gjs</Name>
         <RuntimeDependencies>
-            <Dependency>nspr</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>xulrunner</Dependency>
             <Dependency>gobject-introspection</Dependency>

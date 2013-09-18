@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Caribou is a text entry and UI navigation application being developed as an alternative to the Gnome On-screen Keyboard.</Summary>
         <Description>Caribou is a text entry and UI navigation application being developed as an alternative to the Gnome On-screen Keyboard. The overarching goal for Caribou is to create a usable solution for people whose primary way of accessing a computer is a switch device. </Description>
-        <Archive sha1sum="a9c9834ab4366f53ba1e2ee7cadeb3f620af6957" type="tarxz">mirrors://gnome/caribou/0.4/caribou-0.4.8.tar.xz</Archive>
+        <Archive sha1sum="0c1e0797fd809a9b9c9983cecfacd301b1e1c4db" type="tarxz">mirrors://gnome/caribou/0.4/caribou-0.4.12.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
@@ -27,6 +27,10 @@
             <Dependency>at-spi2-core-devel</Dependency>
             <Dependency>python-pygobject3-devel</Dependency>
         </BuildDependencies>
+        <Patches>
+            <Patch level="1">caribou-0.4.8-multilib.patch</Patch>
+            <Patch level="1">caribou-0.4.8-fix-python-exec.patch</Patch>
+        </Patches>
     </Source>
 
     <Package>
@@ -77,7 +81,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>0.4.8</Version>
+            <Version>0.4.12</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="e8f688f85c40fc8a96359633cced321e829b4a31" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.4.1.tar.xz</Archive>
+        <Archive sha1sum="9f6d2932cee33ebc32c8270dd1dab843e06129f2" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.5.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
@@ -23,22 +23,29 @@
             <Dependency>samba-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>pango-devel</Dependency>
+            <Dependency>clutter-gtk</Dependency>
             <Dependency>colord-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>upower-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>cheese-devel</Dependency>
             <Dependency>libgtop-devel</Dependency>
             <Dependency>libwacom-devel</Dependency>
+            <Dependency>gnome-doc-utils</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>colord-gtk-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>gnome-menus-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>libpwquality-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>gnome-bluetooth-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
+            <Dependency>accountsservice-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
+            <Dependency>gsettings-desktop-schemas3-devel</Dependency>
             <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
@@ -57,46 +64,45 @@
             <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>colord</Dependency>
+            <Dependency>cheese</Dependency>
             <Dependency>upower</Dependency>
             <Dependency>libgtop</Dependency>
             <Dependency>libwacom</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>colord-gtk</Dependency>
+            <Dependency>clutter-gtk</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>gnome-menus</Dependency>
             <Dependency>libpwquality</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>NetworkManager</Dependency>
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>gnome-bluetooth</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
+            <Dependency>accountsservice</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>network-manager-applet</Dependency>
+            <Dependency>gsettings-desktop-schemas3</Dependency>
             <Dependency versionFrom="3.7.3">gnome-settings-daemon</Dependency>
             <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/sbin</Path>
-            <Path fileType="executable">/usr/libexec/</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/gnome-shell/</Path>
-            <Path fileType="data">/usr/share/bash-completion/</Path>
-            <Path fileType="data">/usr/share/dbus-1/</Path>
             <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/desktop-directories</Path>
-            <Path fileType="data">/usr/share/gnome-control-center</Path>
-            <Path fileType="data">/usr/share/gnome</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/mime</Path>
-            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/dbus-1/</Path>
             <Path fileType="data">/usr/share/pixmaps</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
-            <Path fileType="data">/usr/share/sounds</Path>
+            <Path fileType="data">/usr/share/gnome-shell/</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/bash-completion/</Path>
+            <Path fileType="data">/usr/share/gnome-control-center</Path>
+            <Path fileType="data">/usr/share/desktop-directories</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/package-manager.desktop">package-manager.desktop</AdditionalFile>
@@ -111,8 +117,8 @@
         <Name>gnome-control-center-devel</Name>
         <Summary>Development files for gnome-control-center</Summary>
         <RuntimeDependencies>
-            <Dependency release="current">gnome-control-center</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency release="current">gnome-control-center</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
@@ -124,7 +130,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.8.4.1</Version>
+            <Version>3.8.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Karagöz</Name>
             <Email>osmank3@gmail.com</Email>

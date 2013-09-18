@@ -15,6 +15,7 @@
         <Archive sha1sum="0c9dcd4db046e7b7a35cf35679d6107653b750d9" type="tarxz">mirrors://gnome/folks/0.8/folks-0.8.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>nss-devel</Dependency>
+            <Dependency>vala-devel</Dependency>
             <Dependency>libgee-devel</Dependency>
             <Dependency>libsoup-devel</Dependency>
             <Dependency>libsecret-devel</Dependency>
@@ -29,6 +30,7 @@
         <Name>folks</Name>
         <RuntimeDependencies>
             <Dependency>nss</Dependency>
+            <Dependency>vala</Dependency>
             <Dependency>libgee</Dependency>
             <Dependency>libsoup</Dependency>
             <Dependency>libsecret</Dependency>
@@ -42,7 +44,6 @@
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/GConf</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/vala/vapi/</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -60,6 +61,7 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>

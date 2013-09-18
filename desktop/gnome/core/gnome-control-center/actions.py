@@ -10,10 +10,9 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    #autotools.autoreconf("-fiv")
-    #shelltools.system("intltoolize --force --copy --automake")
     autotools.configure("--disable-static \
                          --disable-update-mimedb \
+                         --libexecdir=/usr/lib/gnome-control-center \
                          --with-libsocialweb=no")
 
     pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")

@@ -15,16 +15,16 @@
         <Archive sha1sum="de5c32e42d10462606fc6f90e02acc58ddbee511" type="tarxz">mirrors://gnome/gdm/3.8/gdm-3.8.4.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>gnome-shell</Dependency>
-            <Dependency>gnome-session</Dependency>
             <Dependency>plymouth-devel</Dependency>
             <Dependency>libXrandr-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>icon-theme-gnome-symbolic</Dependency>
-            <Dependency>gnome-settings-daemon-devel</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-shell</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-session</Dependency>
             <Dependency versionFrom="0.6.12">accountsservice-devel</Dependency>
+            <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -36,12 +36,13 @@
             <Dependency>libXrandr</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>gnome-shell</Dependency>
-            <Dependency>gnome-session</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>gnome-settings-daemon</Dependency>
             <Dependency>icon-theme-gnome-symbolic</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-shell</Dependency>
+            <Dependency versionFrom="3.8.1">gnome-session</Dependency>
             <Dependency versionFrom="0.6.12">accountsservice</Dependency>
+            <Dependency versionFrom="3.7.3">gnome-settings-daemon</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/var</Path>
