@@ -82,7 +82,7 @@
            <Path fileType="config">/etc/mateconf/schemas/</Path>
         </Files>        
         <AdditionalFiles>
-            <AdditionalFile target="/usr/share/mate-panel/panel-default-layout.dist">panel-default-layout.dist</AdditionalFile>
+            <!--<AdditionalFile target="/usr/share/mate-panel/panel-default-layout.dist">panel-default-layout.dist</AdditionalFile>-->
         </AdditionalFiles>
     </Package>
 

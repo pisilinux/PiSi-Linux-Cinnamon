@@ -28,6 +28,7 @@
             <Dependency>libXext-devel</Dependency>
             <Dependency>p11-kit-devel</Dependency>
             <Dependency>libical-devel</Dependency>
+            <Dependency>caribou-devel</Dependency>
             <Dependency>json-glib-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>libsecret-devel</Dependency>
@@ -73,6 +74,7 @@
             <Dependency>libXext</Dependency>
             <Dependency>p11-kit</Dependency>
             <Dependency>libical</Dependency>
+            <Dependency>caribou</Dependency>
             <Dependency>json-glib</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>libsecret</Dependency>

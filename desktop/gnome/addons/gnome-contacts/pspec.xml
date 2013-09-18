@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A GNOME-wide contacts framework</Summary>
         <Description>gnome-contacts includes both a GNOME-wide contacts framework that can be used by different applications as well as a dedicated contacts application.</Description>
-        <Archive sha1sum="54d451c3a537c91012f4e1c605a3af8b18767025" type="tarxz">mirrors://gnome/gnome-contacts/3.9/gnome-contacts-3.9.5.tar.xz</Archive>
+        <Archive sha1sum="1b106bdbb24731add71c8e342457b60583161b24" type="tarxz">mirrors://gnome/gnome-contacts/3.8/gnome-contacts-3.8.3.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -51,7 +51,7 @@
     <History>
         <Update release="1">
             <Date>2013-08-30</Date>
-            <Version>3.9.5</Version>
+            <Version>3.8.3</Version>
             <Comment>First release.</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
