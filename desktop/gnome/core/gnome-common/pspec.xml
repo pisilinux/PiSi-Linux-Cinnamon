@@ -12,7 +12,7 @@
         <IsA>library</IsA>
         <Summary>Common files for development of GNOME packages</Summary>
         <Description>gnome-common package contains aclocal macros, makefile headers and documents tools in order to build GNOME sources.</Description>
-        <Archive sha1sum="b02cd66b73d3ded795f187f725be150ee08f13ac" type="tarxz">mirrors://gnome/gnome-common/3.7/gnome-common-3.7.4.tar.xz</Archive>
+        <Archive sha1sum="e44fffbe5ba9926e43b716cf57263d9294d3080d" type="tarxz">mirrors://gnome/gnome-common/3.10/gnome-common-3.10.0.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -24,11 +24,18 @@
             <Path fileType="doc">/usr/share/doc</Path>
         </Files>
         <AdditionalFiles>
-            <AdditionalFile target="/usr/bin/gnome-autogen.sh">gnome-autogen.sh</AdditionalFile>
+            <!--<AdditionalFile target="/usr/bin/gnome-autogen.sh">gnome-autogen.sh</AdditionalFile>-->
         </AdditionalFiles>
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.7.4</Version>

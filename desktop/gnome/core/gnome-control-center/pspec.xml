@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME configuration tools</Summary>
         <Description>gnome-control-center is GNOME's main interface for configuration of various aspects of your GNOME desktop.</Description>
-        <Archive sha1sum="9f6d2932cee33ebc32c8270dd1dab843e06129f2" type="tarxz">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.5.tar.xz</Archive>
+        <Archive sha1sum="344d41a20baf09887efe79a0d95d07b16fb6d29e" type="tarxz">mirrors://gnome/gnome-control-center/3.10/gnome-control-center-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
@@ -27,7 +27,6 @@
             <Dependency>colord-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>upower-devel</Dependency>
-            <Dependency>gnome-common</Dependency>
             <Dependency>cheese-devel</Dependency>
             <Dependency>libgtop-devel</Dependency>
             <Dependency>libwacom-devel</Dependency>
@@ -36,18 +35,19 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>colord-gtk-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>gnome-menus-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
-            <Dependency>libpwquality-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
-            <Dependency>gnome3-desktop-devel</Dependency>
-            <Dependency>gnome-bluetooth-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>accountsservice-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
             <Dependency>gsettings-desktop-schemas3-devel</Dependency>
-            <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
-            <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-common</Dependency>
+            <Dependency versionFrom="1.2.2">libpwquality-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-menus-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome3-desktop-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-bluetooth-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-settings-daemon-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-online-accounts-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -73,19 +73,19 @@
             <Dependency>colord-gtk</Dependency>
             <Dependency>clutter-gtk</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>gnome-menus</Dependency>
-            <Dependency>libpwquality</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>NetworkManager</Dependency>
-            <Dependency>gnome3-desktop</Dependency>
-            <Dependency>gnome-bluetooth</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>accountsservice</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>network-manager-applet</Dependency>
             <Dependency>gsettings-desktop-schemas3</Dependency>
-            <Dependency versionFrom="3.7.3">gnome-settings-daemon</Dependency>
-            <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
+            <Dependency versionFrom="1.2.2">libpwquality</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-menus</Dependency>
+            <Dependency versionFrom="3.10.0">gnome3-desktop</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-bluetooth</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-settings-daemon</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-online-accounts</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -128,6 +128,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.5</Version>

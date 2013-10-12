@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Fork of bluez-gnome</Summary>
         <Description>gnome-bluetooth is a fork of bluez-gnome focused on integration with GNOME.</Description>
-        <Archive sha1sum="c3c5521ba4e5428ee6d30fa3c049bcf7a7c0f345" type="tarxz">mirrors://gnome/gnome-bluetooth/3.8/gnome-bluetooth-3.8.1.tar.xz</Archive>
+        <Archive sha1sum="9e9bb79d4a0380e7d974168d92e3ae682c4c5f02" type="tarxz">mirrors://gnome/gnome-bluetooth/3.10/gnome-bluetooth-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -64,6 +64,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.1</Version>

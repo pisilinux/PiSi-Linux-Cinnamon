@@ -12,8 +12,8 @@
         <IsA>library</IsA>
         <Summary>JavaScript bindings based on gobject-introspection and Mozilla</Summary>
         <Description>Gjs contains JavaScript bindings based on gobject-introspection and the Mozilla SpiderMonkey JavaScript engine.</Description>
-        <Archive sha1sum="2ce83c97f37bf6e0dbf582194c7c28fc2a6595e4" type="tarbz2">https://people.gnome.org/~walters/gjs-js17-1.36.1.tar.bz2</Archive>
-        <!--<Archive sha1sum="8bc9cd71da8de1eaac92217d48b787b660f0e0fe" type="tarxz">mirrors://gnome/gjs/1.37/gjs-1.37.6.tar.xz</Archive>-->
+        <!--<Archive sha1sum="2ce83c97f37bf6e0dbf582194c7c28fc2a6595e4" type="tarbz2">https://people.gnome.org/~walters/gjs-js17-1.36.1.tar.bz2</Archive>-->
+        <Archive sha1sum="c5530fbe6dde7d02e1f461829385075c5487e2bb" type="tarxz">mirrors://gnome/gjs/1.38/gjs-1.38.1.tar.xz</Archive>-->
         <BuildDependencies>
             <Dependency>gtk-doc</Dependency>
             <Dependency>gnome-common</Dependency>
@@ -53,6 +53,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>1.38.1</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>1.36.1</Version>

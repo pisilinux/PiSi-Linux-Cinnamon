@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME display manager</Summary>
         <Description>GDM provides log into different sessions on local or remote machines.</Description>
-        <Archive sha1sum="de5c32e42d10462606fc6f90e02acc58ddbee511" type="tarxz">mirrors://gnome/gdm/3.8/gdm-3.8.4.tar.xz</Archive>
+        <Archive sha1sum="8178169c0609f335bb5411ad030cc07d8b55e278" type="tarxz">mirrors://gnome/gdm/3.10/gdm-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>plymouth-devel</Dependency>
@@ -21,10 +21,10 @@
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>icon-theme-gnome-symbolic</Dependency>
-            <Dependency versionFrom="3.8.1">gnome-shell</Dependency>
-            <Dependency versionFrom="3.8.1">gnome-session</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-shell</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-session</Dependency>
             <Dependency versionFrom="0.6.12">accountsservice-devel</Dependency>
-            <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
+            <Dependency versionFrom="3.10.0">gnome-settings-daemon-devel</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -76,6 +76,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.4</Version>

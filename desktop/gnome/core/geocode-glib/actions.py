@@ -6,12 +6,11 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    autotools.configure("--disable-static")    
-
-    pisitools.dosed("libtool", " -shared ", " -Wl,-O1,--as-needed -shared ")
+    autotools.configure()
 
 def build():
     autotools.make()
@@ -19,4 +18,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-    pisitools.dodoc("COPYING", "NEWS", "README")
+    pisitools.dodoc("AUTHORS", "ChangeLog", "COPYING*", "README", "NEWS", "TODO")

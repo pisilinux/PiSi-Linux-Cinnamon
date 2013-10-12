@@ -5,14 +5,14 @@
         <Name>mutter</Name>
         <Homepage>http://www.gnome.org</Homepage>
         <Packager>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Packager>
         <License>GPLv2</License>
         <IsA>app:gui</IsA>
         <Summary>A window manager which is replacing Metacity</Summary>
         <Description>Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
-        <Archive sha1sum="16d1caf5361c1e18407ea973b6635d1df4cab24c" type="tarxz">mirrors://gnome/mutter/3.8/mutter-3.8.4.tar.xz</Archive>
+        <Archive sha1sum="67cce8398919bcd5a4d11d1518853236b3e978b8" type="tarxz">mirrors://gnome/mutter/3.10/mutter-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -93,12 +93,19 @@
 
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.4</Version>
             <Comment>First release</Comment>
-            <Name>Osman Karagöz</Name>
-            <Email>osmank3@gmail.com</Email>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
         </Update>
     </History>
 </PISI>

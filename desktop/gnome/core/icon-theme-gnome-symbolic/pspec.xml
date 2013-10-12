@@ -12,7 +12,7 @@
         <IsA>data</IsA>
         <Summary>GNOME 3 icon theme, symbolic icons</Summary>
         <Description>icon-theme-gnome-symbolic contains icons for status icons.</Description>
-        <Archive sha1sum="39c5149f18c1fc24f96e1338bfad01519a5110a5" type="tarxz">mirrors://gnome/gnome-icon-theme-symbolic/3.8/gnome-icon-theme-symbolic-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="1f5cc286be5366310506409839b04057870c9fca" type="tarxz">mirrors://gnome/gnome-icon-theme-symbolic/3.10/gnome-icon-theme-symbolic-3.10.0.tar.xz</Archive>
     </Source>
 
     <Package>
@@ -25,6 +25,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.3</Version>

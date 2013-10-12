@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME Shell is the defining technology of the GNOME 3 user experience</Summary>
         <Description>GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
-        <Archive sha1sum="2674fb6d75f5a9726bd8be2b9f675f391c7712cb" type="tarxz">mirrors://gnome/gnome-shell/3.8/gnome-shell-3.8.4.tar.xz</Archive>
+        <Archive sha1sum="c48449ee2dafba35be79ab05461aa9ef2371451d" type="tarxz">mirrors://gnome/gnome-shell/3.10/gnome-shell-3.10.0.1.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gjs-devel</Dependency>
             <Dependency>gcr-devel</Dependency>
@@ -124,6 +124,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0.1</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.4</Version>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
-        <Archive sha1sum="9e7a94dedba0e6514c8dd634f08bc7c1c3d3b338" type="tarxz">mirrors://gnome/gnome-panel/3.6/gnome-panel-3.6.2.tar.xz</Archive>
+        <Archive sha1sum="1d701832358b0c29964669cdd3bbe90035a794f5" type="tarxz">mirrors://gnome/gnome-panel/3.8/gnome-panel-3.8.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -34,10 +34,8 @@
             <Dependency>evolution-data-server-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">gnome-panel-3.6.2-resurrect-function.patch</Patch>
-            <Patch level="1">gnome-panel-3.6.2-rename-function.patch</Patch>
-            <Patch level="1">gnome-panel-3.6.2-gweather-include.patch</Patch>
-            <Patch level="1">gnome-panel-3.6.2-drop-commandline.patch</Patch>
+            <Patch level="1">libgweather-3.10.patch</Patch>
+            <Patch level="1">session.patch</Patch>
         </Patches>
     </Source>
 
@@ -72,13 +70,12 @@
             <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="data">/usr/share/xsessions/</Path>
             <Path fileType="data">/usr/share/gnome-panel</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-        </Files><!--
-        <Provides>
-            <COMAR script="package.py">System.Package</COMAR>
-        </Provides>-->
+            <Path fileType="data">/usr/share/gnome-session/</Path>
+        </Files>
     </Package>
 
     <Package>
@@ -98,6 +95,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.8.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.6.2</Version>

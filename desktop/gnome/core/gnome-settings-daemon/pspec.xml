@@ -12,7 +12,7 @@
         <IsA>service</IsA>
         <Summary>System settings daemon for GNOME desktop</Summary>
         <Description>gnome-settings-daemon shares GNOME specific settings with other applications via DBus connection.</Description>
-        <Archive sha1sum="a21bbfd1aa38cfd9222624506576f4ade308cc29" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.8/gnome-settings-daemon-3.8.5.tar.xz</Archive>
+        <Archive sha1sum="55c6a9d3a33468852ab108f7fb0df9b3cd824a31" type="tarxz">mirrors://gnome/gnome-settings-daemon/3.10/gnome-settings-daemon-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>ibus-devel</Dependency>
@@ -28,6 +28,7 @@
             <Dependency>librsvg-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
+            <Dependency>geoclue2-devel</Dependency>
             <Dependency>libwacom-devel</Dependency>
             <Dependency>libXfixes-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
@@ -35,6 +36,7 @@
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libxkbfile-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
+            <Dependency>geocode-glib-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>xorg-input-wacom-devel</Dependency>
@@ -58,6 +60,7 @@
             <Dependency>librsvg</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
+            <Dependency>geoclue2</Dependency>
             <Dependency>libwacom</Dependency>
             <Dependency>libXfixes</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -65,6 +68,7 @@
             <Dependency>libxkbfile</Dependency>
             <Dependency>libcanberra</Dependency>
             <Dependency>mit-kerberos</Dependency>
+            <Dependency>geocode-glib</Dependency>
             <Dependency>gnome3-desktop</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>xorg-input-wacom</Dependency>
@@ -99,6 +103,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.8.5</Version>

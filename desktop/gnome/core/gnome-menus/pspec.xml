@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Gnome Menus</Summary>
         <Description>gnome-menus has got desktop-directories, GNOME menus library and its python bindings.</Description>
-        <Archive sha1sum="33f700b6fc9caff64f1056ea085a28e1aaaed0bd" type="tarxz">mirrors://gnome/gnome-menus/3.8/gnome-menus-3.8.0.tar.xz</Archive>
+        <Archive sha1sum="f8a5b00af5a880e114ecac128ac84b0bfafe58ad" type="tarxz">mirrors://gnome/gnome-menus/3.10/gnome-menus-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome-common</Dependency>
             <Dependency>glib2-devel</Dependency>
@@ -48,6 +48,13 @@
     </Package>
 
     <History>
+        <Update release="4">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>V.Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="3">
             <Date>2013-08-30</Date>
             <Version>3.8.0</Version>
