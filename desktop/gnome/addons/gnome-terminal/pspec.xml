@@ -12,17 +12,17 @@
         <IsA>app:gui</IsA>
         <Summary>Terminal emulation application for the GNOME desktop.</Summary>
         <Description>GNOME terminal is a emulation application that designed to run xterm, VT102 and VT220</Description>
-        <Archive sha1sum="79dfff19e8a7bf754d0b52d6f6de467c2c9e29f9" type="tarxz">mirrors://gnome/gnome-terminal/3.9/gnome-terminal-3.9.90.tar.xz</Archive>
+        <Archive sha1sum="57838a0946728734b71f87785475a9c62c6ac183" type="tarxz">mirrors://gnome/gnome-terminal/3.10/gnome-terminal-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
-            <Dependency>vte3-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>dconf-devel</Dependency>
-            <Dependency>nautilus-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency versionFrom="0.34.8">vte3-devel</Dependency>
+            <Dependency versionFrom="3.10.0">nautilus-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <!--<Patch>pardus-default-settings.patch</Patch>-->
@@ -33,14 +33,14 @@
         <Name>gnome-terminal</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
-            <Dependency>vte3</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>dconf</Dependency>
-            <Dependency>nautilus</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency versionFrom="0.34.8">vte3</Dependency>
+            <Dependency versionFrom="3.10.0">nautilus</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="executable">/usr/bin</Path>
@@ -57,6 +57,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.9.90</Version>

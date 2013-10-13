@@ -13,13 +13,12 @@
         <IsA>app:gui</IsA>
         <Summary>GNOME power manager</Summary>
         <Description>GNOME Power Manager is a session daemon that acts as a policy agent on top of UPower.</Description>
-        <Archive sha1sum="b23cd1f6d9f90510d56267d7de11d3625973635e" type="tarxz">mirrors://gnome/gnome-power-manager/3.8/gnome-power-manager-3.8.2.tar.xz</Archive>
+        <Archive sha1sum="c8cf6466b7130c833c88f6302d207b40457cc519" type="tarxz">mirrors://gnome/gnome-power-manager/3.10/gnome-power-manager-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>libgnome-keyring-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>libwnck3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
-            <Dependency>gnome-panel-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -37,7 +36,6 @@
             <Dependency>libnotify</Dependency>
             <Dependency>libwnck3</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>gnome-panel</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>libXext</Dependency>
@@ -53,18 +51,26 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="data">/usr/share/appdata/</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="man">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/icons</Path>
         </Files>
-        <Provides>
+        <!--<Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+        </Provides>-->
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
        <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.2</Version>

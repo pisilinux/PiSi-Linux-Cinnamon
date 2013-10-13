@@ -6316,6 +6316,114 @@
     </SpecFile>
     <SpecFile>
         <Source>
+            <Name>nautilus</Name>
+            <Homepage>http://projects.gnome.org/nautilus/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.gnome.core</PartOf>
+            <Summary xml:lang="en">Default file manager for the GNOME desktop</Summary>
+            <Summary xml:lang="tr">GNOME masasütü için öntanımlı dosya yöneticisi</Summary>
+            <Description xml:lang="en">Nautilus is a file manager that allows to browse directories, preview files and launch applications.</Description>
+            <Description xml:lang="tr">Nautilus; dizinlerde gezinmeyi, dosyaları gözatmayı ve uygulamalar başlatmayı sağlayan bir dosya yöneticisidir.</Description>
+            <Icon>nautilus</Icon>
+            <Archive type="tarxz" sha1sum="2d059385e1e68c642343032b6e093d1110a7e231">mirrors://gnome/nautilus/3.10/nautilus-3.10.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>gnome3-desktop-devel</Dependency>
+                <Dependency>librsvg-devel</Dependency>
+                <Dependency>gconf-devel</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>exempi-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/gnome/core/nautilus/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>nautilus</Name>
+            <RuntimeDependencies>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>librsvg</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>desktop-file-utils</Dependency>
+                <Dependency>gvfs</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="executable">/usr/libexec</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/gnome-shell/</Path>
+                <Path fileType="data">/usr/share/mime</Path>
+                <Path fileType="data">/usr/share/nautilus</Path>
+                <Path fileType="data">/usr/share/pixmaps</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>nautilus-docs</Name>
+            <Summary xml:lang="en">Reference files for nautilus</Summary>
+            <Summary xml:lang="tr">Nautilus için geliştirme dosyaları</Summary>
+            <IsA>data:doc</IsA>
+            <Files>
+                <Path fileType="doc">/usr/share/gtk-doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>nautilus-devel</Name>
+            <Summary xml:lang="en">Development files for nautilus</Summary>
+            <Summary xml:lang="tr">Nautilus için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="2">nautilus</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="man">/usr/share/gir-1.0</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-08-30</Date>
+                <Version>3.8.2</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
             <Name>totem-pl-parser</Name>
             <Homepage>http://www.gnome.org</Homepage>
             <Packager>
@@ -7818,7 +7926,7 @@
             <Summary xml:lang="tr">GNOME için standart temalar</Summary>
             <Description xml:lang="en">gnome-themes-standard provides GNOME Standart Themes.</Description>
             <Description xml:lang="tr">gnome-themes-standard, GNOME3&apos;ün standart temalarını içerir.</Description>
-            <Archive type="tarxz" sha1sum="e5f54432db3487780121153ca61a7fbc7c74cda3">mirrors://gnome/gnome-themes-standard/3.8/gnome-themes-standard-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="98fc640bff92a126b747b22137f6e343ee476382">mirrors://gnome/gnome-themes-standard/3.10/gnome-themes-standard-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk3-devel</Dependency>
                 <Dependency>librsvg-devel</Dependency>
@@ -7842,6 +7950,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.4</Version>
@@ -8819,110 +8934,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>nautilus</Name>
-            <Homepage>http://projects.gnome.org/nautilus/</Homepage>
-            <Packager>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <License>LGPLv2</License>
-            <IsA>app:gui</IsA>
-            <PartOf>desktop.gnome.addons</PartOf>
-            <Summary xml:lang="en">Default file manager for the GNOME desktop</Summary>
-            <Summary xml:lang="tr">GNOME masasütü için öntanımlı dosya yöneticisi</Summary>
-            <Description xml:lang="en">Nautilus is a file manager that allows to browse directories, preview files and launch applications.</Description>
-            <Description xml:lang="tr">Nautilus; dizinlerde gezinmeyi, dosyaları gözatmayı ve uygulamalar başlatmayı sağlayan bir dosya yöneticisidir.</Description>
-            <Icon>nautilus</Icon>
-            <Archive type="tarxz" sha1sum="79bdc3f40225fc0aca8774480289c65ebd8b861a">mirrors://gnome/nautilus/3.8/nautilus-3.8.2.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>gnome3-desktop-devel</Dependency>
-                <Dependency>librsvg-devel</Dependency>
-                <Dependency>gconf-devel</Dependency>
-                <Dependency>desktop-file-utils</Dependency>
-                <Dependency>gtk3-devel</Dependency>
-                <Dependency>cairo-devel</Dependency>
-                <Dependency>pango-devel</Dependency>
-                <Dependency>exempi-devel</Dependency>
-                <Dependency>libnotify-devel</Dependency>
-                <Dependency>gdk-pixbuf-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/gnome/addons/nautilus/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>nautilus</Name>
-            <RuntimeDependencies>
-                <Dependency>gnome3-desktop</Dependency>
-                <Dependency>librsvg</Dependency>
-                <Dependency>libexif</Dependency>
-                <Dependency>gconf</Dependency>
-                <Dependency>desktop-file-utils</Dependency>
-                <Dependency>gvfs</Dependency>
-                <Dependency>atk</Dependency>
-                <Dependency>exempi</Dependency>
-                <Dependency>gtk3</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>libnotify</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="config">/etc</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/libexec</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share/applications</Path>
-                <Path fileType="data">/usr/share/icons</Path>
-                <Path fileType="data">/usr/share/gnome-shell/</Path>
-                <Path fileType="data">/usr/share/mime</Path>
-                <Path fileType="data">/usr/share/nautilus</Path>
-                <Path fileType="data">/usr/share/pixmaps</Path>
-                <Path fileType="data">/usr/share/dbus-1</Path>
-                <Path fileType="data">/usr/share/glib-2.0</Path>
-                <Path fileType="data">/usr/share/GConf</Path>
-            </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
-        </Package>
-        <Package>
-            <Name>nautilus-docs</Name>
-            <Summary xml:lang="en">Reference files for nautilus</Summary>
-            <Summary xml:lang="tr">Nautilus için geliştirme dosyaları</Summary>
-            <IsA>data:doc</IsA>
-            <Files>
-                <Path fileType="doc">/usr/share/gtk-doc</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>nautilus-devel</Name>
-            <Summary xml:lang="en">Development files for nautilus</Summary>
-            <Summary xml:lang="tr">Nautilus için geliştirme dosyaları</Summary>
-            <RuntimeDependencies>
-                <Dependency release="1">nautilus</Dependency>
-                <Dependency>gtk3-devel</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="library">/usr/lib/pkgconfig</Path>
-                <Path fileType="man">/usr/share/gir-1.0</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2013-08-30</Date>
-                <Version>3.8.2</Version>
-                <Comment>First release</Comment>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>gnome-contacts</Name>
             <Homepage>http://www.gnome.org</Homepage>
             <Packager>
@@ -8936,15 +8947,15 @@
             <Summary xml:lang="tr">Gnome için haberleşme çatısı</Summary>
             <Description xml:lang="en">gnome-contacts includes both a GNOME-wide contacts framework that can be used by different applications as well as a dedicated contacts application.</Description>
             <Description xml:lang="tr">gnome-contacts, kendi başına iletişim bilgilerini organize etmek için kullanılabileceği gibi, başka uygulamalar tarafından da aynı amaç için kullanılabilen bir haberleşme çatısıdır.</Description>
-            <Archive type="tarxz" sha1sum="1b106bdbb24731add71c8e342457b60583161b24">mirrors://gnome/gnome-contacts/3.8/gnome-contacts-3.8.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a11e07253e5402b5218da38bead7d4920af798bc">mirrors://gnome/gnome-contacts/3.10/gnome-contacts-3.10.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk3-devel</Dependency>
                 <Dependency>cairo-devel</Dependency>
-                <Dependency>folks-devel</Dependency>
                 <Dependency>libgee-devel</Dependency>
-                <Dependency>cheese-devel</Dependency>
                 <Dependency>gdk-pixbuf-devel</Dependency>
                 <Dependency>telepathy-glib-devel</Dependency>
+                <Dependency versionFrom="0.9.5">folks-devel</Dependency>
+                <Dependency versionFrom="3.10.0">cheese-devel</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/gnome/addons/gnome-contacts/pspec.xml</SourceURI>
         </Source>
@@ -8953,16 +8964,17 @@
             <RuntimeDependencies>
                 <Dependency>gtk3</Dependency>
                 <Dependency>cairo</Dependency>
-                <Dependency>folks</Dependency>
                 <Dependency>libgee</Dependency>
-                <Dependency>cheese</Dependency>
                 <Dependency>gdk-pixbuf</Dependency>
                 <Dependency>telepathy-glib</Dependency>
+                <Dependency versionFrom="0.9.5">folks</Dependency>
+                <Dependency versionFrom="3.10.0">cheese</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="executable">/usr/bin</Path>
                 <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/appdata</Path>
                 <Path fileType="data">/usr/share/glib-2.0/</Path>
                 <Path fileType="data">/usr/share/gnome-shell</Path>
                 <Path fileType="data">/usr/share/applications</Path>
@@ -8972,6 +8984,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.3</Version>
@@ -8994,7 +9013,7 @@
             <PartOf>desktop.gnome.addons</PartOf>
             <Summary xml:lang="en">The GNOME Backgrounds package contains</Summary>
             <Description xml:lang="en">The GNOME Backgrounds package contains a collection of graphics files which can be used as backgrounds in the GNOME Desktop environment. Additionally, the package creates the proper framework and directory structure so that you can add your own files to the collection.</Description>
-            <Archive type="tarxz" sha1sum="3cb0f21156c537836b00a984150fdb5a3db1584e">mirrors://gnome/gnome-backgrounds/3.8/gnome-backgrounds-3.8.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="06c6237d0306450dc68e36ed277e9dbf70fb6b28">mirrors://gnome/gnome-backgrounds/3.10/gnome-backgrounds-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gnome-common</Dependency>
             </BuildDependencies>
@@ -9013,6 +9032,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.1</Version>
@@ -9038,13 +9064,12 @@
             <Description xml:lang="en">GNOME Power Manager is a session daemon that acts as a policy agent on top of UPower.</Description>
             <Description xml:lang="tr">GNOME güç yöneticisi, UPower kuralları üzerinden hareket eden bir ayar yöneticisidir.</Description>
             <Icon>gnome-power-manager</Icon>
-            <Archive type="tarxz" sha1sum="b23cd1f6d9f90510d56267d7de11d3625973635e">mirrors://gnome/gnome-power-manager/3.8/gnome-power-manager-3.8.2.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="b23cd1f6d9f90510d56267d7de11d3625973635e">mirrors://gnome/gnome-power-manager/3.10/gnome-power-manager-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>libgnome-keyring-devel</Dependency>
                 <Dependency>libnotify-devel</Dependency>
                 <Dependency>libwnck3-devel</Dependency>
                 <Dependency>cairo-devel</Dependency>
-                <Dependency>gnome-panel-devel</Dependency>
                 <Dependency>gconf-devel</Dependency>
                 <Dependency>gstreamer-devel</Dependency>
                 <Dependency>libXext-devel</Dependency>
@@ -9062,7 +9087,6 @@
                 <Dependency>libnotify</Dependency>
                 <Dependency>libwnck3</Dependency>
                 <Dependency>cairo</Dependency>
-                <Dependency>gnome-panel</Dependency>
                 <Dependency>gconf</Dependency>
                 <Dependency>gstreamer</Dependency>
                 <Dependency>libXext</Dependency>
@@ -9084,11 +9108,15 @@
                 <Path fileType="man">/usr/share/glib-2.0</Path>
                 <Path fileType="data">/usr/share/icons</Path>
             </Files>
-            <Provides>
-                <COMAR script="package.py">System.Package</COMAR>
-            </Provides>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.2</Version>
@@ -9113,7 +9141,7 @@
             <Summary xml:lang="tr">GNOME sistem izleyicisi</Summary>
             <Description xml:lang="en">gnome-system-monitor is a process viewer and system monitor for the GNOME desktop.</Description>
             <Description xml:lang="tr">GNOME masaüstü için sistem ve süreç izleticisidir.</Description>
-            <Archive type="tarxz" sha1sum="65f276b765adb6fe6d51ba62358cbfb4419e1fb7">mirrors://gnome/gnome-system-monitor/3.8/gnome-system-monitor-3.8.2.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="017be98020c87c615011b025001f3fc371bc0a01">mirrors://gnome/gnome-system-monitor/3.10/gnome-system-monitor-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gconf-devel</Dependency>
                 <Dependency>icon-theme-gnome</Dependency>
@@ -9151,6 +9179,7 @@
                 <Path fileType="localedata">/usr/share/locale</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/gnome-system-monitor/</Path>
+                <Path fileType="data">/usr/share/appdata/</Path>
                 <Path fileType="data">/usr/share/gnome</Path>
                 <Path fileType="data">/usr/share/omf</Path>
                 <Path fileType="data">/usr/share/help</Path>
@@ -9161,6 +9190,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.2</Version>
@@ -9185,7 +9221,7 @@
             <Summary xml:lang="tr">GNOME&apos;un gözü resim görütüleyici</Summary>
             <Description xml:lang="en">Eog (Eye of GNOME) is the offical image viewer for the GNOME desktop.</Description>
             <Description xml:lang="tr">Eog (GNOME&apos;un gözü), GNOME masaüstü için resmi resim görüntüleyicisidir.</Description>
-            <Archive type="tarxz" sha1sum="8f42e58886f70e39f86b4e3bf1e6ad3197cad2bc">mirrors://gnome/eog/3.8/eog-3.8.2.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="6b4177b5a7d309b2a771cc14eee3b824f9404eef">mirrors://gnome/eog/3.10/eog-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>gtk3-devel</Dependency>
@@ -9243,7 +9279,7 @@
             <Summary xml:lang="en">Development files for eog</Summary>
             <Summary xml:lang="tr">eog için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="1">eog</Dependency>
+                <Dependency release="2">eog</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -9251,6 +9287,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.2</Version>
@@ -9275,7 +9318,7 @@
             <Summary xml:lang="tr">GNOME arşiv yöneticisi</Summary>
             <Description xml:lang="en">File-manager is a archive manager that create, modify and extract various archive formats with compression support</Description>
             <Description xml:lang="tr">File-roller çeşitli arşiv dosyalarını sıkıştırma desteği ile oluşturan, açan, düzenleyen bir arşiv yönetim uygulamasıdır.</Description>
-            <Archive type="tarxz" sha1sum="b18fefda33f3b53f7151fcacf2e0094bbfe95161">mirrors://gnome/file-roller/3.8/file-roller-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="a891edb2d8550a70eb44f0c3c8d26ede1175a830">mirrors://gnome/file-roller/3.10/file-roller-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gconf-devel</Dependency>
                 <Dependency>nautilus-devel</Dependency>
@@ -9310,6 +9353,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-09-02</Date>
                 <Version>3.8.4</Version>

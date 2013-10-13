@@ -14,7 +14,7 @@
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the GNOME desktop</Summary>
         <Description>Nautilus is a file manager that allows to browse directories, preview files and launch applications.</Description>
-        <Archive sha1sum="79bdc3f40225fc0aca8774480289c65ebd8b861a" type="tarxz">mirrors://gnome/nautilus/3.8/nautilus-3.8.2.tar.xz</Archive>
+        <Archive sha1sum="2d059385e1e68c642343032b6e093d1110a7e231" type="tarxz">mirrors://gnome/nautilus/3.10/nautilus-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gnome3-desktop-devel</Dependency>
             <Dependency>librsvg-devel</Dependency>
@@ -64,9 +64,9 @@
             <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/GConf</Path>
         </Files>
-        <Provides>
+        <!--<Provides>
             <COMAR script="package.py">System.Package</COMAR>
-        </Provides>
+        </Provides>-->
     </Package>
 
     <Package>
@@ -93,6 +93,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.2</Version>

@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>A screenshot utility for GNOME</Summary>
         <Description>gnome-screenshot lets you take pictures of your screen.</Description>
-        <Archive sha1sum="7a982f3dee9b544dd2774904a3e19b06dc0806d3" type="tarxz">mirrors://gnome/gnome-screenshot/3.8/gnome-screenshot-3.8.3.tar.xz</Archive>
+        <Archive sha1sum="ef5716720ae54b28c815cef8dfc2c6ff1d1bffcc" type="tarxz">mirrors://gnome/gnome-screenshot/3.10/gnome-screenshot-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -45,6 +45,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.3</Version>

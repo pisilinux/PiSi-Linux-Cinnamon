@@ -11,7 +11,7 @@
         <IsA>app:gui</IsA>
         <Summary>Eye of GNOME image viewer</Summary>
         <Description>Eog (Eye of GNOME) is the offical image viewer for the GNOME desktop.</Description>.
-        <Archive sha1sum="8f42e58886f70e39f86b4e3bf1e6ad3197cad2bc" type="tarxz">mirrors://gnome/eog/3.8/eog-3.8.2.tar.xz</Archive>
+        <Archive sha1sum="6b4177b5a7d309b2a771cc14eee3b824f9404eef" type="tarxz">mirrors://gnome/eog/3.10/eog-3.10.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -81,6 +81,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.10</Date>
+            <Version>3.10.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>3.8.2</Version>
