@@ -247,7 +247,7 @@
             <Description xml:lang="en">Cheese is a webcam application that uses your webcam to take photos and videos, apply fancy special effects and share fun with others.</Description>
             <Description xml:lang="tr">Kameranızdan fotoğraf çekin, video kayıt edin ve efektler ekleyin.</Description>
             <Icon>cheese</Icon>
-            <Archive type="tarxz" sha1sum="853392c7ef0cadc41eb1c29f18a3bbe57f69b9cf">mirrors://gnome/cheese/3.8/cheese-3.8.3.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="2e0c2582fd44149e9c57d756c5fb02bd2094ed13">mirrors://gnome/cheese/3.10/cheese-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk-doc</Dependency>
                 <Dependency>atk-devel</Dependency>
@@ -264,6 +264,7 @@
                 <Dependency>libcanberra-devel</Dependency>
                 <Dependency>clutter-gtk-devel</Dependency>
                 <Dependency>clutter-gst2-devel</Dependency>
+                <Dependency>gnome-video-effects</Dependency>
                 <Dependency>gnome3-desktop-devel</Dependency>
                 <Dependency>gst-plugins-base-next-devel</Dependency>
                 <Dependency>startup-notification-devel</Dependency>
@@ -288,6 +289,7 @@
                 <Dependency>clutter-gtk</Dependency>
                 <Dependency>gnome3-desktop</Dependency>
                 <Dependency>libcanberra-gtk</Dependency>
+                <Dependency>gnome-video-effects</Dependency>
                 <Dependency>startup-notification</Dependency>
                 <Dependency>gst-plugins-base-next</Dependency>
             </RuntimeDependencies>
@@ -319,7 +321,7 @@
             <Summary xml:lang="en">Development files for cheese</Summary>
             <Summary xml:lang="tr">cheese için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="4">cheese</Dependency>
+                <Dependency release="5">cheese</Dependency>
                 <Dependency>gtk2-devel</Dependency>
                 <Dependency>gstreamer-next-devel</Dependency>
                 <Dependency>libcanberra-devel</Dependency>
@@ -332,6 +334,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="5">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="4">
                 <Date>2013-08-30</Date>
                 <Version>3.8.3</Version>
@@ -6176,68 +6185,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>gjs</Name>
-            <Homepage>http://live.gnome.org/Gjs</Homepage>
-            <Packager>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Packager>
-            <License>MIT</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.gnome.core</PartOf>
-            <Summary xml:lang="en">JavaScript bindings based on gobject-introspection and Mozilla</Summary>
-            <Summary xml:lang="tr">gobject-introspection ve Mozilla&apos;ya dayalı JavaScript bağlayıcıları</Summary>
-            <Description xml:lang="en">Gjs contains JavaScript bindings based on gobject-introspection and the Mozilla SpiderMonkey JavaScript engine.</Description>
-            <Description xml:lang="tr">Bu modül gobject-introspection ve Mozilla SpiderMonkey JavaScript motoruna dayalı JavaScript bağlayıcıları içermektedir.</Description>
-            <Archive type="tarbz2" sha1sum="2ce83c97f37bf6e0dbf582194c7c28fc2a6595e4">https://people.gnome.org/~walters/gjs-js17-1.36.1.tar.bz2</Archive>
-            <BuildDependencies>
-                <Dependency>gtk-doc</Dependency>
-                <Dependency>gnome-common</Dependency>
-                <Dependency>xulrunner-devel</Dependency>
-                <Dependency>spidermonkey-devel</Dependency>
-                <Dependency>gobject-introspection-devel</Dependency>
-            </BuildDependencies>
-            <SourceURI>desktop/gnome/core/gjs/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>gjs</Name>
-            <RuntimeDependencies>
-                <Dependency>cairo</Dependency>
-                <Dependency>xulrunner</Dependency>
-                <Dependency>gobject-introspection</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="data">/usr/share</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="executable">/usr/libexec/gjs</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>gjs-devel</Name>
-            <Summary xml:lang="en">Development files for gjs</Summary>
-            <RuntimeDependencies>
-                <Dependency>xulrunner-devel</Dependency>
-                <Dependency release="1">gjs</Dependency>
-                <Dependency>gobject-introspection-devel</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="library">/usr/lib/pkgconfig</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="1">
-                <Date>2013-08-30</Date>
-                <Version>1.36.1</Version>
-                <Comment>First release</Comment>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>icon-theme-gnome-symbolic</Name>
             <Homepage>http://www.gnome.org</Homepage>
             <Packager>
@@ -6809,93 +6756,6 @@
     </SpecFile>
     <SpecFile>
         <Source>
-            <Name>libpeas</Name>
-            <Homepage>https://live.gnome.org/Libpeas</Homepage>
-            <Packager>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Packager>
-            <License>GPLv2</License>
-            <IsA>library</IsA>
-            <PartOf>desktop.gnome.core</PartOf>
-            <Summary xml:lang="en">A gobject-based plugins engine</Summary>
-            <Summary xml:lang="tr">Gobject tabanlı eklenti motoru</Summary>
-            <Description xml:lang="en">libpeas is a gobject-based plugins engine, and is targetted at giving every application the chance to assume its own extensibility.</Description>
-            <Description xml:lang="tr">FIXME</Description>
-            <Archive type="tarxz" sha1sum="1ddec9c192b88e45621e22fed5a9c4ae9533315b">mirrors://gnome/libpeas/1.8/libpeas-1.8.1.tar.xz</Archive>
-            <BuildDependencies>
-                <Dependency>python-pygobject3-devel</Dependency>
-                <Dependency>gobject-introspection-devel</Dependency>
-                <Dependency>seed-devel</Dependency>
-                <Dependency>gjs-devel</Dependency>
-                <Dependency>gtk3-devel</Dependency>
-                <Dependency>cairo-devel</Dependency>
-                <Dependency>pango-devel</Dependency>
-                <Dependency>freetype-devel</Dependency>
-                <Dependency>gdk-pixbuf-devel</Dependency>
-                <Dependency>fontconfig-devel</Dependency>
-            </BuildDependencies>
-            <Patches>
-                <Patch level="1">js17.patch</Patch>
-            </Patches>
-            <SourceURI>desktop/gnome/core/libpeas/pspec.xml</SourceURI>
-        </Source>
-        <Package>
-            <Name>libpeas</Name>
-            <RuntimeDependencies>
-                <Dependency>gobject-introspection</Dependency>
-                <Dependency>python-pygobject3</Dependency>
-                <Dependency>seed</Dependency>
-                <Dependency>gjs</Dependency>
-                <Dependency>gtk3</Dependency>
-                <Dependency>cairo</Dependency>
-                <Dependency>pango</Dependency>
-                <Dependency>freetype</Dependency>
-                <Dependency>gdk-pixbuf</Dependency>
-                <Dependency>fontconfig</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="executable">/usr/bin</Path>
-                <Path fileType="library">/usr/lib</Path>
-                <Path fileType="localedata">/usr/share/locale</Path>
-                <Path fileType="man">/usr/share/man</Path>
-                <Path fileType="doc">/usr/share/doc</Path>
-                <Path fileType="data">/usr/share</Path>
-            </Files>
-        </Package>
-        <Package>
-            <Name>libpeas-devel</Name>
-            <RuntimeDependencies>
-                <Dependency release="2">libpeas</Dependency>
-                <Dependency>gtk3-devel</Dependency>
-                <Dependency>gobject-introspection-devel</Dependency>
-            </RuntimeDependencies>
-            <Files>
-                <Path fileType="header">/usr/include</Path>
-                <Path fileType="doc">/usr/share/gtk-doc</Path>
-                <Path fileType="data">/usr/lib/pkgconfig</Path>
-                <Path fileType="data">/usr/share/gir-1.0</Path>
-            </Files>
-        </Package>
-        <History>
-            <Update release="2">
-                <Date>2013-09-05</Date>
-                <Version>1.8.1</Version>
-                <Comment>ReBump</Comment>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Update>
-            <Update release="1">
-                <Date>2013-08-30</Date>
-                <Version>1.9.0</Version>
-                <Comment>First release</Comment>
-                <Name>Osman Erkan</Name>
-                <Email>osman.erkan@pisilinux.org</Email>
-            </Update>
-        </History>
-    </SpecFile>
-    <SpecFile>
-        <Source>
             <Name>gdm</Name>
             <Homepage>https://live.gnome.org/GDM</Homepage>
             <Packager>
@@ -6907,7 +6767,7 @@
             <PartOf>desktop.gnome.core</PartOf>
             <Summary xml:lang="en">GNOME display manager</Summary>
             <Description xml:lang="en">GDM provides log into different sessions on local or remote machines.</Description>
-            <Archive type="tarxz" sha1sum="de5c32e42d10462606fc6f90e02acc58ddbee511">mirrors://gnome/gdm/3.8/gdm-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="8178169c0609f335bb5411ad030cc07d8b55e278">mirrors://gnome/gdm/3.10/gdm-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk3-devel</Dependency>
                 <Dependency>plymouth-devel</Dependency>
@@ -6916,10 +6776,10 @@
                 <Dependency>libcanberra-gtk3</Dependency>
                 <Dependency>libcanberra-devel</Dependency>
                 <Dependency>icon-theme-gnome-symbolic</Dependency>
-                <Dependency versionFrom="3.8.1">gnome-shell</Dependency>
-                <Dependency versionFrom="3.8.1">gnome-session</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-shell</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-session</Dependency>
                 <Dependency versionFrom="0.6.12">accountsservice-devel</Dependency>
-                <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-settings-daemon-devel</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/gnome/core/gdm/pspec.xml</SourceURI>
         </Source>
@@ -6960,7 +6820,7 @@
             <Name>gdm-devel</Name>
             <Summary xml:lang="en">Development headers for gdm</Summary>
             <RuntimeDependencies>
-                <Dependency release="1">gdm</Dependency>
+                <Dependency release="2">gdm</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -6969,6 +6829,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.4</Version>
@@ -7307,7 +7174,7 @@
             <Summary xml:lang="tr">Bir bluez-gnome çatallaması</Summary>
             <Description xml:lang="en">gnome-bluetooth is a fork of bluez-gnome focused on integration with GNOME.</Description>
             <Description xml:lang="tr">gnome-bluetooth, bluez-gnome&apos;un Gnome masaüstüne entegre edilmesine odaklanmış bir çatallamasıdır.</Description>
-            <Archive type="tarxz" sha1sum="c3c5521ba4e5428ee6d30fa3c049bcf7a7c0f345">mirrors://gnome/gnome-bluetooth/3.8/gnome-bluetooth-3.8.1.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="9e9bb79d4a0380e7d974168d92e3ae682c4c5f02">mirrors://gnome/gnome-bluetooth/3.10/gnome-bluetooth-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>gtk3-devel</Dependency>
@@ -7347,7 +7214,7 @@
             <Summary xml:lang="en">Development files for gnome-bluetooth</Summary>
             <RuntimeDependencies>
                 <Dependency>gtk3-devel</Dependency>
-                <Dependency release="1">gnome-bluetooth</Dependency>
+                <Dependency release="2">gnome-bluetooth</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -7357,6 +7224,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.1</Version>
@@ -7371,8 +7245,8 @@
             <Name>mutter</Name>
             <Homepage>http://www.gnome.org</Homepage>
             <Packager>
-                <Name>Osman Karagöz</Name>
-                <Email>osmank3@gmail.com</Email>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
             </Packager>
             <License>GPLv2</License>
             <IsA>app:gui</IsA>
@@ -7381,7 +7255,7 @@
             <Summary xml:lang="tr">Metacity&apos;nin yerine geçen bir pencere yöneticisi</Summary>
             <Description xml:lang="en">Mutter is the window manager for which GNOME Shell is a plugin in GNOME 3, replacing Metacity.</Description>
             <Description xml:lang="tr">Mutter, Gnome 3&apos;de Metacity&apos;nin yerine geçen bir pencere yöneticisidir.</Description>
-            <Archive type="tarxz" sha1sum="16d1caf5361c1e18407ea973b6635d1df4cab24c">mirrors://gnome/mutter/3.8/mutter-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="67cce8398919bcd5a4d11d1518853236b3e978b8">mirrors://gnome/mutter/3.10/mutter-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>mesa-devel</Dependency>
@@ -7453,19 +7327,26 @@
             <Name>mutter-devel</Name>
             <Summary xml:lang="tr">mutter için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
-                <Dependency release="1">mutter</Dependency>
+                <Dependency release="2">mutter</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.4</Version>
                 <Comment>First release</Comment>
-                <Name>Osman Karagöz</Name>
-                <Email>osmank3@gmail.com</Email>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
             </Update>
         </History>
     </SpecFile>
@@ -7705,7 +7586,7 @@
             <Summary xml:lang="tr">GNOME oturum yöneticisi</Summary>
             <Description xml:lang="en">gnome-session manages X11-compliant sessions with ConsoleKit daemon and starts GNOME core services</Description>
             <Description xml:lang="tr">gnome-session, ConsoleKit ile birlikte X11-uyumlu oturumları yönetir ve temel GNOME servislerini başlatır.</Description>
-            <Archive type="tarxz" sha1sum="a838fb530a226dc909d18df92f32ade92d5384f1">mirrors://gnome/gnome-session/3.8/gnome-session-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="5443f9d3cc64c5f03c890959301f34ad45c8b7e9">mirrors://gnome/gnome-session/3.10/gnome-session-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gnome3-desktop-devel</Dependency>
                 <Dependency>gtk3-devel</Dependency>
@@ -7756,6 +7637,7 @@
                 <Path fileType="man">/usr/share/man</Path>
                 <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/wayland-sessions/</Path>
                 <Path fileType="data">/usr/share/icons</Path>
                 <Path fileType="data">/usr/share/pixmaps</Path>
                 <Path fileType="data">/usr/share/gnome</Path>
@@ -7766,6 +7648,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.4</Version>
@@ -7790,7 +7679,7 @@
             <Summary xml:lang="tr">Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisi</Summary>
             <Description xml:lang="en">GNOME Shell is the defining technology of the GNOME 3 user experience. It provides core interface functions like switching to windows and launching applications.</Description>
             <Description xml:lang="tr">gnome-shell, Gnome 3 kullanıcı tecrübesinin belirleyici teknolojisidir. Pencereler arası geçiş ve uygulama çalıştırma gibi temel işlevleri sağlar.</Description>
-            <Archive type="tarxz" sha1sum="2674fb6d75f5a9726bd8be2b9f675f391c7712cb">mirrors://gnome/gnome-shell/3.8/gnome-shell-3.8.4.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="c48449ee2dafba35be79ab05461aa9ef2371451d">mirrors://gnome/gnome-shell/3.10/gnome-shell-3.10.0.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gjs-devel</Dependency>
                 <Dependency>gcr-devel</Dependency>
@@ -7898,6 +7787,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0.1</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.4</Version>
@@ -7984,6 +7880,7 @@
                 <Dependency>librsvg-devel</Dependency>
                 <Dependency>libXtst-devel</Dependency>
                 <Dependency>libXext-devel</Dependency>
+                <Dependency>geoclue2-devel</Dependency>
                 <Dependency>libwacom-devel</Dependency>
                 <Dependency>libXfixes-devel</Dependency>
                 <Dependency>libnotify-devel</Dependency>
@@ -7991,6 +7888,7 @@
                 <Dependency>gdk-pixbuf-devel</Dependency>
                 <Dependency>libxkbfile-devel</Dependency>
                 <Dependency>libcanberra-devel</Dependency>
+                <Dependency>geocode-glib-devel</Dependency>
                 <Dependency>gnome3-desktop-devel</Dependency>
                 <Dependency>pulseaudio-libs-devel</Dependency>
                 <Dependency>xorg-input-wacom-devel</Dependency>
@@ -8014,6 +7912,7 @@
                 <Dependency>librsvg</Dependency>
                 <Dependency>libXtst</Dependency>
                 <Dependency>libXext</Dependency>
+                <Dependency>geoclue2</Dependency>
                 <Dependency>libwacom</Dependency>
                 <Dependency>libXfixes</Dependency>
                 <Dependency>fontconfig</Dependency>
@@ -8021,6 +7920,7 @@
                 <Dependency>libxkbfile</Dependency>
                 <Dependency>libcanberra</Dependency>
                 <Dependency>mit-kerberos</Dependency>
+                <Dependency>geocode-glib</Dependency>
                 <Dependency>gnome3-desktop</Dependency>
                 <Dependency>pulseaudio-libs</Dependency>
                 <Dependency>xorg-input-wacom</Dependency>
@@ -8199,7 +8099,7 @@
             <Summary xml:lang="tr">.</Summary>
             <Description xml:lang="en">folks is a library that aggregates people from multiple sources.</Description>
             <Description xml:lang="tr">.</Description>
-            <Archive type="tarxz" sha1sum="0c9dcd4db046e7b7a35cf35679d6107653b750d9">mirrors://gnome/folks/0.8/folks-0.8.0.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="040f00ec411df8865db9be2a09310dcf87cfd968">mirrors://gnome/folks/0.9/folks-0.9.5.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>nss-devel</Dependency>
                 <Dependency>vala-devel</Dependency>
@@ -8242,7 +8142,7 @@
             <RuntimeDependencies>
                 <Dependency>libgee-devel</Dependency>
                 <Dependency>telepathy-glib-devel</Dependency>
-                <Dependency release="1">folks</Dependency>
+                <Dependency release="2">folks</Dependency>
                 <Dependency>evolution-data-server-devel</Dependency>
             </RuntimeDependencies>
             <Files>
@@ -8252,6 +8152,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>0.9.5</Version>
+                <Comment>Version Bump.</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>0.8.0</Version>
@@ -8490,7 +8397,7 @@
             <Summary xml:lang="tr">GNOME yapılandırma araçları</Summary>
             <Description xml:lang="en">gnome-control-center is GNOME&apos;s main interface for configuration of various aspects of your GNOME desktop.</Description>
             <Description xml:lang="tr">gnome-control-center GNOME masaüstünüzün çeşitli ayarlarını değiştiren, GNOME&apos;un ana arayüzüdür.</Description>
-            <Archive type="tarxz" sha1sum="9f6d2932cee33ebc32c8270dd1dab843e06129f2">mirrors://gnome/gnome-control-center/3.8/gnome-control-center-3.8.5.tar.xz</Archive>
+            <Archive type="tarxz" sha1sum="344d41a20baf09887efe79a0d95d07b16fb6d29e">mirrors://gnome/gnome-control-center/3.10/gnome-control-center-3.10.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>ibus-devel</Dependency>
@@ -8505,7 +8412,6 @@
                 <Dependency>colord-devel</Dependency>
                 <Dependency>mit-kerberos</Dependency>
                 <Dependency>upower-devel</Dependency>
-                <Dependency>gnome-common</Dependency>
                 <Dependency>cheese-devel</Dependency>
                 <Dependency>libgtop-devel</Dependency>
                 <Dependency>libwacom-devel</Dependency>
@@ -8514,18 +8420,19 @@
                 <Dependency>gdk-pixbuf-devel</Dependency>
                 <Dependency>colord-gtk-devel</Dependency>
                 <Dependency>libcanberra-gtk3</Dependency>
-                <Dependency>gnome-menus-devel</Dependency>
                 <Dependency>libcanberra-devel</Dependency>
-                <Dependency>libpwquality-devel</Dependency>
                 <Dependency>NetworkManager-devel</Dependency>
-                <Dependency>gnome3-desktop-devel</Dependency>
-                <Dependency>gnome-bluetooth-devel</Dependency>
                 <Dependency>pulseaudio-libs-devel</Dependency>
                 <Dependency>accountsservice-devel</Dependency>
                 <Dependency>network-manager-applet-devel</Dependency>
                 <Dependency>gsettings-desktop-schemas3-devel</Dependency>
-                <Dependency versionFrom="3.7.3">gnome-settings-daemon-devel</Dependency>
-                <Dependency versionFrom="3.8.1">gnome-online-accounts-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-common</Dependency>
+                <Dependency versionFrom="1.2.2">libpwquality-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-menus-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome3-desktop-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-bluetooth-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-settings-daemon-devel</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-online-accounts-devel</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/gnome/core/gnome-control-center/pspec.xml</SourceURI>
         </Source>
@@ -8551,19 +8458,19 @@
                 <Dependency>colord-gtk</Dependency>
                 <Dependency>clutter-gtk</Dependency>
                 <Dependency>libcanberra</Dependency>
-                <Dependency>gnome-menus</Dependency>
-                <Dependency>libpwquality</Dependency>
                 <Dependency>mit-kerberos</Dependency>
                 <Dependency>NetworkManager</Dependency>
-                <Dependency>gnome3-desktop</Dependency>
-                <Dependency>gnome-bluetooth</Dependency>
                 <Dependency>pulseaudio-libs</Dependency>
                 <Dependency>accountsservice</Dependency>
                 <Dependency>libcanberra-gtk3</Dependency>
                 <Dependency>network-manager-applet</Dependency>
                 <Dependency>gsettings-desktop-schemas3</Dependency>
-                <Dependency versionFrom="3.7.3">gnome-settings-daemon</Dependency>
-                <Dependency versionFrom="3.8.1">gnome-online-accounts</Dependency>
+                <Dependency versionFrom="1.2.2">libpwquality</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-menus</Dependency>
+                <Dependency versionFrom="3.10.0">gnome3-desktop</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-bluetooth</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-settings-daemon</Dependency>
+                <Dependency versionFrom="3.10.0">gnome-online-accounts</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib</Path>
@@ -8596,7 +8503,7 @@
             <Summary xml:lang="tr">gnome-control-center için geliştirme dosyaları</Summary>
             <RuntimeDependencies>
                 <Dependency>gtk3-devel</Dependency>
-                <Dependency release="1">gnome-control-center</Dependency>
+                <Dependency release="2">gnome-control-center</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="header">/usr/include</Path>
@@ -8605,6 +8512,13 @@
             </Files>
         </Package>
         <History>
+            <Update release="2">
+                <Date>2013-10.10</Date>
+                <Version>3.10.0</Version>
+                <Comment>V.Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
             <Update release="1">
                 <Date>2013-08-30</Date>
                 <Version>3.8.5</Version>
@@ -8622,7 +8536,7 @@
                 <Name>Osman Erkan</Name>
                 <Email>osman.erkan@pisilinux.org</Email>
             </Packager>
-            <License>GPLv2</License>
+            <License>LGPLv2+</License>
             <PartOf>desktop.gnome.core</PartOf>
             <Summary xml:lang="en">GLib geocoding library that uses the Yahoo! Place Finder service</Summary>
             <Description xml:lang="en">geocode-glib is a convenience library for the geocoding (finding longitude, and latitude from an address) and reverse geocoding (finding an address from coordinates). It uses Nominatim service to achieve that.</Description>
