@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü</Summary>
         <Description>Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
-        <Archive sha1sum="b63c0bae6975502d22a0bfc583db86c5c1cc4f56" type="targz">https://github.com/linuxmint/Cinnamon/archive/1.8.8.1.tar.gz</Archive>
+        <Archive sha1sum="45c51563159c4f771e3196c7ea62d5bd257adbd7" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/Cinnamon-2.0.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gjs-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -36,6 +36,7 @@
             <Dependency>libXdamage-devel</Dependency>
             <Dependency>gnome-menus-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
+            <Dependency>cjs-internals-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>NetworkManager-devel</Dependency>
             <Dependency>gnome3-desktop-devel</Dependency>
@@ -75,6 +76,7 @@
             <Dependency>libXdamage</Dependency>
             <Dependency>gnome-menus</Dependency>
             <Dependency>libcanberra</Dependency>
+            <Dependency>cjs-internals</Dependency>
             <Dependency>libXcomposite</Dependency>
             <Dependency>NetworkManager</Dependency>
             <Dependency>gnome3-desktop</Dependency>
@@ -93,6 +95,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.14</Date>
+            <Version>2.0.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>1.8.8.1</Version>

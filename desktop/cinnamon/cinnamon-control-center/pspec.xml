@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Utilities to configure the Cinnamon desktop</Summary>
         <Description>This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
-        <Archive sha1sum="909a40601b9d43d114971363fa48e21a519fcabf" type="targz">https://github.com/linuxmint/cinnamon-control-center/archive/1.8.2.tar.gz</Archive>
+        <Archive sha1sum="4246f5e5035b751aab2ed1018a40c8f09cfc31a1" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center/source/cinnamon-control-center-2.0.2.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -47,11 +47,12 @@
             <Dependency>gnome-bluetooth-devel</Dependency>
             <Dependency>pulseaudio-libs-devel</Dependency>
             <Dependency>network-manager-applet-devel</Dependency>
+            <Dependency>cinnamon-settings-daemon-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <Patch level="1">idle-delay.patch</Patch>
+            <!--<Patch level="1">idle-delay.patch</Patch>
             <Patch level="1">remove_obex.patch</Patch>
-            <Patch level="1">gnomerrlabeler.patch</Patch>
+            <Patch level="1">gnomerrlabeler.patch</Patch>-->
         </Patches>
     </Source>
 
@@ -91,6 +92,7 @@
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>network-manager-applet</Dependency>
+            <Dependency>cinnamon-settings-daemon</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc/xdg/autostart/</Path>
@@ -116,6 +118,13 @@
     </Package>
     
     <History>
+        <Update release="2">
+            <Date>2013-10.14</Date>
+            <Version>2.0.2</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>1.8.2</Version>

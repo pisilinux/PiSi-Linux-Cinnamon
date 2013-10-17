@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-
 # Licensed under the GNU General Public License, version 3.
 # See the file http://www.gnu.org/licenses/gpl.txt
 
@@ -11,17 +10,16 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure("--disable-static      \
-                         --disable-scrollkeeper")
+    autotools.autoreconf("-vif")
+    autotools.configure("--disable-static \
+                         --enable-profiling \
+                         --libexecdir=/usr/lib/cinnamon-settings-daemon \
+                         --disable-systemd")
 
 def build():
     autotools.make()
 
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
-    
-    ## /usr/bin/gdialog could collide with older GNOME2 zenity[compat]
-    pisitools.remove("/usr/bin/gdialog")
-    
-    pisitools.dodoc("README", "TODO", "THANKS", "NEWS", "ChangeLog", "HACKING", "AUTHORS", "COPYING")
+
+    pisitools.dodoc("COPYING", "AUTHORS")

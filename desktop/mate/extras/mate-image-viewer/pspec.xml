@@ -50,7 +50,6 @@
             <Dependency>librsvg</Dependency>
             <Dependency>mate-doc-utils</Dependency>
             <Dependency>lcms2</Dependency>
-            <Dependency>gsettings-desktop-schemas</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/</Path>

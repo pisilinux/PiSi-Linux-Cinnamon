@@ -12,10 +12,11 @@
         <IsA>app:gui</IsA>
         <Summary>The Cinnamon Window Manager</Summary>
         <Description>Cinnamon masaüstünün pencere uygulamasıdır.</Description>
-        <Archive sha1sum="b02d4aee0855e29f35350946a2c0f5fd355be46b" type="targz">https://github.com/linuxmint/muffin/archive/1.8.2.tar.gz</Archive>
+        <Archive sha1sum="32cb895c5f7a5dfe43ccd786d8261e684fc1fcdf" type="targz">http://leigh123linux.fedorapeople.org/pub/muffin/source/muffin-2.0.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>clutter-devel</Dependency>
             <Dependency>gconf-devel</Dependency>
+            <Dependency>cinnamon-desktop-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>startup-notification-devel</Dependency>
@@ -36,6 +37,7 @@
             <Dependency>clutter</Dependency>
             <Dependency>gconf</Dependency>
             <Dependency>gobject-introspection</Dependency>
+            <Dependency>cinnamon-desktop</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>startup-notification</Dependency>
             <Dependency>libXxf86vm</Dependency>
@@ -67,6 +69,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.14</Date>
+            <Version>2.0.1</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>1.8.2</Version>

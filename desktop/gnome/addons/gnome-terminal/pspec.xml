@@ -25,7 +25,7 @@
             <Dependency versionFrom="3.10.0">nautilus-devel</Dependency>
         </BuildDependencies>
         <Patches>
-            <!--<Patch>pardus-default-settings.patch</Patch>-->
+            <Patch level="0">gnome-terminal-3.10.0-customize.patch</Patch>
         </Patches>
     </Source>
 

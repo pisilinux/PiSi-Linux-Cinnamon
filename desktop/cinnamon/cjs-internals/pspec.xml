@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Javascript Bindings for Cinnamon</Summary>
         <Description>Cjs allows using Cinnamon libraries from Javascript. It's based on the Spidermonkey Javascript engine from Mozilla and the GObject introspection framework.</Description>
-        <Archive sha1sum="130d092a5e80cdd3b77d1ae3791e474bd70c99e4" type="targz">http://leigh123linux.fedorapeople.org/pub/cjs/source/cjs-1.34.0.gitfb472ad.tar.gz</Archive>
+        <Archive sha1sum="67b965f8d22ba99fd2434f197d45272c73511d4f" type="targz">http://leigh123linux.fedorapeople.org/pub/cjs/source/cjs-2.0.0.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>js185-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -47,6 +47,13 @@
     </Package>
 
     <History>
+        <Update release="2">
+            <Date>2013-10.14</Date>
+            <Version>2.0.0</Version>
+            <Comment>Version Bump</Comment>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-08-30</Date>
             <Version>1.34</Version>
