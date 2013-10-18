@@ -8,28 +8,25 @@
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPLv2</License>
-        <Icon>mate-session-manager</Icon>
+        <License>GPLv2+</License>
         <IsA>app:gui</IsA>
         <Summary>MATE Session Manager</Summary>
         <Description>This package contains a session that can be started from a display manager such as MDM. It will load all necessary applications for a full-featured user session.</Description>
         <Archive sha1sum="46188f6c02cc5978688af9d5db4be09f1b9199a5" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-session-manager-1.6.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>desktop-file-utils</Dependency>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gst-plugins-base-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>upower-devel</Dependency>
-            <Dependency>mate-polkit-devel</Dependency>
-            <Dependency>mate-icon-theme</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>mate-common</Dependency>
             <Dependency>libICE-devel</Dependency>
+            <Dependency>upower-devel</Dependency>
+            <Dependency>libXtst-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libXrender-devel</Dependency>
-            <Dependency>libXtst-devel</Dependency>
+            <Dependency>mate-polkit-devel</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
+            <Dependency>mate-control-center-devel</Dependency>
+            <Dependency>mate-settings-daemon-devel</Dependency>            
         </BuildDependencies>
          <Patches>
             <Patch level="1">mate-session-manager-1.6.1-login1.patch</Patch>
@@ -39,62 +36,34 @@
     <Package>
       <Name>mate-session-manager</Name>
       <RuntimeDependencies>
-            <Dependency>desktop-file-utils</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gst-plugins-base</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>upower</Dependency>
-            <Dependency>mate-polkit</Dependency>
-            <Dependency>mate-icon-theme</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
             <Dependency>libICE</Dependency>
+            <Dependency>upower</Dependency>
+            <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libXtst</Dependency>
       </RuntimeDependencies>
       <Files>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="config">/etc</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="data">/usr/share/mate-session-manager/</Path>
             <Path fileType="man">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/glib-2.0/</Path>
-            <Path fileType="data">/usr/share/mate-session</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/icons</Path>
             <Path fileType="data">/usr/share/MateConf</Path>
             <Path fileType="data">/usr/share/xsessions</Path>
+            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="data">/usr/share/mate-session</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/mate-session-manager/</Path>
       </Files>
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2013-09-10</Date>
-            <Version>1.6.1</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-22</Date>
-            <Version>1.5.1</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-10-24</Date>
-            <Version>1.4.0</Version>
+            <Date>2013-10-18</Date>
+            <Version>1.6.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

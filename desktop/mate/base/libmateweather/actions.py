@@ -12,8 +12,11 @@ from pisi.actionsapi import get
 def setup():
     autotools.configure("--disable-static       \
                          --with-gnu-ld          \
-                         --enable-python        \
+                         --disable-schemas-compile \
                          --enable-gtk-doc-html")
+    
+    # fix unused-direct-shlib-dependency
+    pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")
 
 def build():
     autotools.make()

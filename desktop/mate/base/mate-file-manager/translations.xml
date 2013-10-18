@@ -8,7 +8,6 @@
     
     <Package>
         <Name>mate-file-manager-devel</Name>
-        <Summary>mate-file-manager için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">mate-file-manager için geliştirme dosyaları</Summary>
     </Package>
 </PISI>
-

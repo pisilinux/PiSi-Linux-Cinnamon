@@ -14,8 +14,7 @@ def setup():
     autotools.configure("--disable-static           \
                          --disable-scrollkeeper     \
                          --disable-schemas-compile  \
-                         --with-gtk=2.0             \
-                         --with-x--prefix=/usr ")
+                         --with-gtk=2.0")
 
 def build():
     autotools.make()

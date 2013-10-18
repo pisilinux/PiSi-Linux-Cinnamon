@@ -21,7 +21,4 @@ def build():
 def install():
     autotools.rawInstall("DESTDIR=%s" % get.installDIR())
     
-    ## /usr/bin/gdialog could collide with older GNOME2 zenity[compat]
-    pisitools.remove("/usr/bin/gdialog")
-    
     pisitools.dodoc("README", "TODO", "THANKS", "NEWS", "ChangeLog", "HACKING", "AUTHORS", "COPYING")

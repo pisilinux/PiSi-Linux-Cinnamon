@@ -5,4 +5,9 @@
         <Summary xml:lang="tr">Mate masaüstü</Summary>
         <Description xml:lang="tr">mate-desktop, Mate kullanıcı ortamının paylaşımlı bileşenlerini içeren temel pakettir.</Description>
     </Source>
+
+    <Package>
+        <Name>mate-desktop-devel</Name>
+        <summary xml:lang="tr">mate-desktop için geliştirme dosyaları</summary>
+    </Package>
 </PISI>

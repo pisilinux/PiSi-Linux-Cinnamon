@@ -15,6 +15,9 @@ def setup():
                          --disable-schemas-compile \
                          --disable-update-mimedb   \
                          --disable-scrollkeeper ")
+    
+    # fix unused-direct-shlib-dependency
+    pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")
 
 
 
@@ -22,6 +25,6 @@ def build():
     autotools.make()
 
 def install():
-    autotools.rawInstall("DESTDIR=%s" % get.installDIR())   
+    autotools.rawInstall("DESTDIR=%s" % get.installDIR())
 
     pisitools.dodoc("README", "COPYING", "NEWS", "ChangeLog", "AUTHORS", "TODO")

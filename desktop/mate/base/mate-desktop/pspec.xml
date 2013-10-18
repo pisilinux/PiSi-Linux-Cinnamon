@@ -8,7 +8,9 @@
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPLv2</License>
+        <License>MIT</License>
+        <License>GPLv2+</License>
+        <License>LGPLv2+</License>
         <IsA>app:gui</IsA>
         <Summary>Basic Mate libraries and dialogs</Summary>
         <Description>mate-desktop contains basic Mate libraries and information applications.</Description>
@@ -18,25 +20,17 @@
             <AdditionalFile target="mate-about/gnu-cat_navideno_v3.png">gnu-cat_navideno_v3.png</AdditionalFile>
         </AdditionalFiles>
         <BuildDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>libmateweather-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>libunique-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libXinerama-devel</Dependency>
-            <Dependency>libXrandr-devel</Dependency>
-            <Dependency>libXi-devel</Dependency>
-            <Dependency>libXcursor-devel</Dependency>
-            <Dependency>gtk-doc</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency>freetype-devel</Dependency>
+            <Dependency>mate-common</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>libunique-devel</Dependency>
+            <Dependency>libXrandr-devel</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gtk2-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
         </BuildDependencies>
         <Patches>
             <Patch level="1">mate-desktop_enable_gnucat.patch</Patch>
@@ -46,34 +40,29 @@
     <Package>
         <Name>mate-desktop</Name>
 	 <RuntimeDependencies>
-            <Dependency>mate-common</Dependency>
-            <Dependency>libmateweather</Dependency>
-            <Dependency>startup-notification</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>libunique</Dependency>            
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libXinerama</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>libXi</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>gtk-doc</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>freetype</Dependency>
+            <Dependency>libunique</Dependency>
+            <Dependency>libXrandr</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>fontconfig</Dependency>
+            <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/mate</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/MateConf</Path>
+            <Path fileType="data">/usr/share/mate-about</Path>
+            <Path fileType="data">/usr/share/backgrounds</Path>
+            <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
-            <Path fileType="config">/etc</Path>
         </Files>
         <AdditionalFiles>
             <AdditionalFile target="/usr/share/backgrounds/mate/desktop/pisi.png">pisi.png</AdditionalFile>
@@ -87,38 +76,21 @@
         <Name>mate-desktop-devel</Name>
         <summary>mate-desktop için geliştirme dosyaları</summary>
         <RuntimeDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
             <Dependency release="current">mate-desktop</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="4">
+        <Update release="1">
             <Date>2013-06-07</Date>
             <Version>1.6.1</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-22</Date>
-            <Version>1.5.7</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="1">
-            <Date>2012-12-16</Date>
-            <Version>1.4.2</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

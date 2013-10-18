@@ -14,114 +14,85 @@
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
         <Archive sha1sum="ccd8d01e14d12d09a9c807b98990c02868323c71" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-panel-1.6.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>libSM-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>libmateweather-devel</Dependency>
-            <Dependency>libmatewnck-devel</Dependency>
-            <Dependency>librsvg-devel</Dependency>
-            <Dependency>libX11-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>mate-menus-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>popt-devel</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>dconf-devel</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
             <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>dconf-devel</Dependency>
+            <Dependency>libSM-devel</Dependency>
+            <Dependency>mate-common</Dependency>
             <Dependency>libICE-devel</Dependency>
+            <Dependency>librsvg-devel</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
             <Dependency>libXrandr-devel</Dependency>
+            <Dependency>mate-menus-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libart_lgpl-devel</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>dconf-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
+            <Dependency>libmatewnck-devel</Dependency>
+            <Dependency>mate-desktop-devel</Dependency>
+            <Dependency>libmateweather-devel</Dependency>
          </BuildDependencies>
-         <Patches>
-            <Patch level="1">mate-panel_reset_fix.patch</Patch>
-         </Patches>
     </Source>
 
     <Package>
         <Name>mate-panel</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
-            <Dependency>libSM</Dependency>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>libmateweather</Dependency>
-            <Dependency>libmatewnck</Dependency>
-            <Dependency>librsvg</Dependency>
-            <Dependency>libX11</Dependency>
-            <Dependency>mate-desktop</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>mate-menus</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>popt</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>dconf</Dependency>
-            <Dependency>icon-naming-utils</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>dconf</Dependency>
+            <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
+            <Dependency>librsvg</Dependency>
             <Dependency>libXrandr</Dependency>
+            <Dependency>mate-menus</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libart_lgpl</Dependency>
+            <Dependency>libcanberra</Dependency>
+            <Dependency>libmatewnck</Dependency>
+            <Dependency>mate-desktop</Dependency>
+            <Dependency>libmateweather</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>dconf</Dependency>
         </RuntimeDependencies>
         <Files>
-           <Path fileType="executable">/usr/bin</Path>
            <Path fileType="library">/usr/lib</Path>
-           <Path fileType="executable">/usr/libexec</Path>
-           <Path fileType="data">/usr/share/</Path>
-           <Path fileType="config">/etc/mateconf/schemas/</Path>
-        </Files>        
-        <AdditionalFiles>
-            <!--<AdditionalFile target="/usr/share/mate-panel/panel-default-layout.dist">panel-default-layout.dist</AdditionalFile>-->
-        </AdditionalFiles>
+           <Path fileType="doc">/usr/share/doc</Path>
+           <Path fileType="data">/usr/share/omf</Path>
+           <Path fileType="executable">/usr/bin</Path>
+           <Path fileType="data">/usr/share/man</Path>
+           <Path fileType="data">/usr/share/mate</Path>
+           <Path fileType="data">/usr/share/icons</Path>
+           <Path fileType="data">/usr/share/dbus-1</Path>
+           <Path fileType="data">/usr/share/gir-1.0</Path>
+           <Path fileType="data">/usr/share/glib-2.0</Path>
+           <Path fileType="data">/usr/share/MateConf</Path>
+           <Path fileType="data">/usr/share/mate-panel</Path>
+           <Path fileType="localedata">/usr/share/locale</Path>
+           <Path fileType="data">/usr/share/applications</Path>
+        </Files>
     </Package>
 
     <Package>
         <Name>mate-panel-devel</Name>
         <Summary>mate-panel için geliştirme dosyaları.</Summary>
         <RuntimeDependencies>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency release="current">mate-panel</Dependency>
         </RuntimeDependencies>
         <Files>
            <Path fileType="header">/usr/include</Path>
+           <Path fileType="doc">/usr/share/gtk-doc</Path>
+           <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2013-09-10</Date>
-            <Version>1.6.1</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-22</Date>
-            <Version>1.5.5</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-12-16</Date>
-            <Version>1.4.0</Version>
+            <Date>2013-10-18</Date>
+            <Version>1.6.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

@@ -16,7 +16,10 @@ def setup():
                          --with-gtk=2.0   \
                          --disable-schemas-compile \
                          --with-pam-dir=/usr/lib/security \
-                         --with-root-certs=/etc/pki/tls/certs")         
+                         --with-root-certs=/etc/pki/tls/certs")
+    
+    # fix unused-direct-shlib-dependency
+    pisitools.dosed("libtool", "( -shared )", " -Wl,-O1,--as-needed\\1")
 
 def build():
     autotools.make()

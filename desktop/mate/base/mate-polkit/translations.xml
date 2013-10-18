@@ -8,6 +8,6 @@
 
     <Package>
         <Name>mate-polkit-devel</Name>
-        <Summary>mate-polkit için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">mate-polkit için geliştirme dosyaları</Summary>
     </Package>
 </PISI>
