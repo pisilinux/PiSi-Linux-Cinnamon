@@ -84,6 +84,7 @@
         <Name>mate-window-manager-devel</Name>
         <Summary>mate-window-manager için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency release="current">mate-window-manager</Dependency>
          </RuntimeDependencies>
         <Files>
