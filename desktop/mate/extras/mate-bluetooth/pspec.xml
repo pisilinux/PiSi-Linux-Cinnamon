@@ -44,6 +44,7 @@
             <Path fileType="config">/etc/xdg/autostart</Path>
             <Path fileType="data">/usr/share/applications</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/mate-bluetooth</Path>
         </Files>
     </Package>
 
