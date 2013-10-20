@@ -29,7 +29,17 @@
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icons</Path>
-        </Files>
+        </Files>        
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/icons/matefaenza/22x22/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenza/24x24/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenza/32x32/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenza/48x48/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenza/64x64/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenza/96x96/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenzadark/24x24/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/matefaenzagray/24x24/places/start-here.png">start-here.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>

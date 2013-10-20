@@ -32,6 +32,18 @@
             <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/pkgconfig/mate-icon-theme.pc</Path>
         </Files>
+        <AdditionalFiles>
+            <AdditionalFile target="/usr/share/icons/mate/16x16/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/mate/22x22/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/mate/24x24/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/mate/32x32/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/mate/48x48/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/menta/16x16/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/menta/22x22/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/menta/24x24/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/menta/32x32/places/start-here.png">start-here.png</AdditionalFile>
+            <AdditionalFile target="/usr/share/icons/menta/48x48/places/start-here.png">start-here.png</AdditionalFile>
+        </AdditionalFiles>
     </Package>
 
     <History>
