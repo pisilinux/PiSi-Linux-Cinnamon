@@ -5,4 +5,9 @@
         <Summary xml:lang="tr">Mate Konfigürasyon Sistemi</Summary>
         <Description xml:lang="tr">Mate masaüstüsü için bluetooth sağlayıcısı.</Description>
     </Source>
+
+    <Package>
+        <Name>mate-bluetooth-devel</Name>
+        <Summary xml:lang="tr">mate-bluetooth için geliştirme dosyaları</Summary>
+    </Package>
 </PISI>

@@ -10,8 +10,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
     shelltools.system("./autogen.sh --disable-schemas-compile                \
                                     --disable-scrollkeeper                   \
@@ -23,7 +21,7 @@ def setup():
                                     --enable-networkmanager                  \
                                     --enable-ipv6                            \
                                     --disable-timer-applet                   \
-                                    --libexecdir=/usr/libs/mate-applets ")
+                                    --libexecdir=/usr/lib/mate-applets ")
 
 def build():
     autotools.make()

@@ -10,8 +10,6 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--prefix=/usr \
@@ -19,6 +17,9 @@ def setup():
                          --with-gtk=2.0 \
                          --disable-scrollkeeper \
                          --enable-introspection")
+    
+    # for fix unused dependency
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 
 def build():
     autotools.make()

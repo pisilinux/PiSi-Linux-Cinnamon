@@ -8,19 +8,14 @@
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPLv3.0</License>
-        <Icon>mate-file-manager-share</Icon>
+        <License>GPLv3</License>
         <IsA>app:gui</IsA>
         <Summary>Allows to quickly share a folder from the MATE Caja file manager</Summary>
         <Description>Allows to quickly share a folder from the MATE Caja file manager.</Description>
         <Archive sha1sum="28e8ec54330e41aa44866107c23f48b47ea198e4" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-file-manager-share-1.6.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>atk-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>mate-common</Dependency>
             <Dependency>mate-file-manager-devel</Dependency>
         </BuildDependencies>
     </Source>
@@ -29,32 +24,22 @@
         <Name>mate-file-manager-share</Name>
         <RuntimeDependencies>
             <Dependency>gtk2</Dependency>
-            <Dependency>atk</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>mate-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/mate-file-manager-share</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-02-23</Date>
-            <Version>1.5.0</Version>
-            <Comment>V.bump</Comment>
+            <Date>2013-10-20</Date>
+            <Version>1.6.0</Version>
+            <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Update>

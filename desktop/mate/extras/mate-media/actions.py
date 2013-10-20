@@ -10,19 +10,17 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
     shelltools.export("LDFLAGS", "%s -lm" % get.LDFLAGS())
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static \
-			 --enable-gstmix \
-			 --disable-schemas-install \
-			 --disable-scrollkeeper \
-			 --enable-gst-mixer-applet \
-			 --enable-pulseaudio \
+                         --enable-gstmix \
+                         --disable-schemas-install \
+                         --disable-scrollkeeper \
+                         --enable-gst-mixer-applet \
+                         --enable-pulseaudio \
                          --enable-gstreamer \
-			 --with-gnu-ld")
+                         --with-gnu-ld")
 
 def build():
     autotools.make()

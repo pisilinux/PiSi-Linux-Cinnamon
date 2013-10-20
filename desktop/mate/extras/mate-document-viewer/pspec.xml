@@ -6,104 +6,89 @@
         <Homepage>http://www.mate-desktop.org</Homepage>
         <Packager>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPLv3.0</License>
-        <Icon>mate-document-viewer</Icon>
+        <License>GPLv3</License>
+        <Icon>atril</Icon>
         <IsA>app:gui</IsA>
         <Summary>Mate için döküman görüntüleyicisi</Summary>
         <Description>mate-document-viewer, mate masaüstü için döküman görüntüleyicidir.</Description>
         <Archive sha1sum="5b3d1643b7945d56214ec13dc38cb641dfb688e1" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-document-viewer-1.6.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>mate-icon-theme</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gtk2-devel</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>tiff-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
+            <Dependency>mate-common</Dependency>
             <Dependency>libSM-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>libmatekeyring-devel</Dependency>
-            <Dependency>mate-file-manager-devel</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
             <Dependency>t1lib-devel</Dependency>
+            <Dependency>libICE-devel</Dependency>
+            <Dependency>mate-doc-utils</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libspectre-devel</Dependency>
             <Dependency>poppler-glib-devel</Dependency>
-            <Dependency>libXt-devel</Dependency>
-            <Dependency>libglade-devel</Dependency>
-            <Dependency>texlive-bin-devel</Dependency>
+            <Dependency>libmatekeyring-devel</Dependency>
+            <Dependency>mate-file-manager-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-document-viewer</Name>
         <RuntimeDependencies>
-            <Dependency>mate-icon-theme</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gtk2</Dependency>
             <Dependency>atk</Dependency>
             <Dependency>tiff</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libSM</Dependency>
-            <Dependency>libICE</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libmatekeyring</Dependency>
-            <Dependency>mate-file-manager</Dependency>
-            <Dependency>libmatekeyring</Dependency>
-            <Dependency>mate-doc-utils</Dependency>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>gobject-introspection</Dependency>
             <Dependency>t1lib</Dependency>
+            <Dependency>libICE</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libspectre</Dependency>
             <Dependency>poppler-glib</Dependency>
-            <Dependency>libXt</Dependency>
-            <Dependency>libglade</Dependency>
+            <Dependency>libmatekeyring</Dependency>
+            <Dependency>mate-file-manager</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="bin">/usr/bin</Path>
-            <Path fileType="config">/etc/</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/mate*</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/MateConf</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/thumbnailers</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-document-viewer-devel</Name>
+        <Summary>mate-document-viewer için geliştirme dosyaları</Summary>
+        <RuntimeDependencies>
+            <Dependency>gtk2-devel</Dependency>
+            <Dependency release="current">mate-document-viewer</Dependency>
+        </RuntimeDependencies>
+        <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="4">
-            <Date>2013-09-10</Date>
-            <Version>1.6.1</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="3">
-            <Date>2013-06-09</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-23</Date>
-            <Version>1.5.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-12-16</Date>
-            <Version>1.4.0</Version>
+            <Date>2013-10-20</Date>
+            <Version>1.6.1</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
-            <Email>namso-01@hotmail.it</Email>
+            <Email>osman.erkan@yandex.com</Email>
         </Update>
     </History>
 </PISI>

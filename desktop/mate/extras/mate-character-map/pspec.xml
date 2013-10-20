@@ -10,37 +10,39 @@
         </Packager>
         <License>GPLv2.0</License>        
         <License>LGPLv2.1</License>
-        <Icon>mate-character-map</Icon>
+        <Icon>accessories-character-map</Icon>
         <IsA>app:gui</IsA>
         <Summary>MATE Unicode Charmap</Summary>
         <Description>Unicode character map viewer</Description>
         <Archive sha1sum="e378e26ebe493d3f849771d10930504b8980448e" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-character-map-1.6.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>atk-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>icon-theme-hicolor</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-character-map</Name>
         <RuntimeDependencies>
-            <Dependency>icon-theme-hicolor</Dependency>
             <Dependency>atk</Dependency>
-            <Dependency>cairo</Dependency>
             <Dependency>gtk2</Dependency>
+            <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>fontconfig</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="bin">/usr/bin</Path>
-            <Path fileType="config">/usr/lib/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/mate</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
 
@@ -48,24 +50,19 @@
         <Name>mate-character-map-devel</Name>
         <Summary>mate-character-map için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency release="current">mate-character-map</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="config">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-02-23</Date>
-            <Version>1.5.0</Version>
+            <Date>2013-10-20</Date>
+            <Version>1.6.0</Version>
             <Comment>First Release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>

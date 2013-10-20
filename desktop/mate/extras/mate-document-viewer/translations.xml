@@ -5,4 +5,9 @@
         <Summary xml:lang="tr">Mate için döküman görüntüleyicisi</Summary>
         <Description xml:lang="en">mate-document-viewer, mate masaüstü için döküman görüntüleyicidir.</Description>
     </Source>
+
+    <Package>
+        <Name>mate-document-viewer-devel</Name>
+        <Summary xml:lang="tr">mate-document-viewer için geliştirme dosyaları</Summary>
+    </Package>
 </PISI>

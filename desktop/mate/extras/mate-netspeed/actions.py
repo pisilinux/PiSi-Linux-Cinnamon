@@ -10,15 +10,13 @@ from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
-shelltools.export("HOME", get.workDIR())
-
 def setup():
     shelltools.export("LDFLAGS", "%s -lm"  % get.LDFLAGS())
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-static           \
-			 --disable-scrollkeeper     \
-			 --disable-schemas-compile  \
-			 --with-gnu-ld")
+                         --disable-scrollkeeper     \
+                         --disable-schemas-compile  \
+                         --with-gnu-ld")
 
 def build():
     autotools.make()

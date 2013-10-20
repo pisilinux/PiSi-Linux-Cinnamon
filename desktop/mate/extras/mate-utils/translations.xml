@@ -8,6 +8,6 @@
     
     <Package>
         <Name>mate-utils-devel</Name>
-	<Summary xml:lang="tr">mate-utils için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">mate-utils için geliştirme dosyaları</Summary>
     </Package>
 </PISI>

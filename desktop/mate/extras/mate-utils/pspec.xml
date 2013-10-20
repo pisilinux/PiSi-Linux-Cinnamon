@@ -8,58 +8,59 @@
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
-        <License>GPLv3.0</License>
-        <Icon>mate-utils</Icon>
-        <IsA>library</IsA>
+        <License>GPLv3</License>
+        <Icon>system-search</Icon>
+        <IsA>app:gui</IsA>
         <Summary>MATE utility programs</Summary>
         <Description>The mate-utils package contains a set of small "desk accessory" utility applications for MATE, such as a dictionary, a disk usage analyzer, a screenshot tool and others.</Description>
         <Archive sha1sum="a43b45cccffd6116c49475d7511cf58b219c0d72" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-utils-1.6.0.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gtk2-devel</Dependency>
-            <Dependency>libcanberra-devel</Dependency>
-            <Dependency>mate-desktop-devel</Dependency>
-            <Dependency>mate-panel-devel</Dependency>
             <Dependency>atk-devel</Dependency>
+            <Dependency>gtk2-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
             <Dependency>libgtop-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
-            <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
+            <Dependency>gdk-pixbuf-devel</Dependency>
+            <Dependency>mate-panel-devel</Dependency>
+            <Dependency>libcanberra-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-utils</Name>
         <RuntimeDependencies>
-            <Dependency>desktop-file-utils</Dependency>
-            <Dependency>mate-common</Dependency>
-            <Dependency>gtk2</Dependency>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>mate-desktop</Dependency>
-            <Dependency>mate-panel</Dependency>
             <Dependency>atk</Dependency>
+            <Dependency>gtk2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libSM</Dependency>
             <Dependency>libICE</Dependency>
             <Dependency>libgtop</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>mate-panel</Dependency>
+            <Dependency>libcanberra</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="data">/usr/share/</Path>
-            <Path fileType="executable">/usr/bin</Path>
-            <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="config">/etc/</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/mate*</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="executable">/usr/libexec</Path>
+            <Path fileType="data">/usr/share/pixmaps</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/MateConf</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
         </Files>
     </Package>
     
@@ -67,31 +68,18 @@
         <Name>mate-utils-devel</Name>
         <Summary>mate-utils için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
-            <Dependency>mate-utils</Dependency>
+            <Dependency release="current">mate-utils</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkg/config</Path>
         </Files>
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2013-04-04</Date>
-            <Version>1.6.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
-        <Update release="2">
-            <Date>2013-02-23</Date>
-            <Version>1.5.0</Version>
-            <Comment>V.bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@yandex.com</Email>
-        </Update>
         <Update release="1">
-            <Date>2012-12-19</Date>
-            <Version>1.4.0</Version>
+            <Date>2013-10-20</Date>
+            <Version>1.6.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@yandex.com</Email>
