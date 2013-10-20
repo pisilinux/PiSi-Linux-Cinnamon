@@ -9,20 +9,19 @@
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <IsA>app:console</IsA>
+        <Icon>mate-notification-properties</Icon>
+        <IsA>app:gui</IsA>
         <Summary>Mate notification daemon</Summary>
         <Description>mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
         <Archive sha1sum="9988ac0d63ee8d2b7abd2ab47a8f57ad3d5c4c80" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-notification-daemon-1.6.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>mate-doc-utils</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>fontconfig-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
             <Dependency>libmatewnck-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
@@ -35,15 +34,11 @@
          <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk2</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libnotify</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
-            <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libmatewnck</Dependency>
-            <Dependency>libcanberra</Dependency>
-            <Dependency>mate-desktop</Dependency>
+            <Dependency>libcanberra-gtk</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>

@@ -9,6 +9,7 @@
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
+        <Icon>mate-panel</Icon>
         <IsA>app:gui</IsA>
         <Summary>GNOME panel</Summary>
         <Description>GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>

@@ -17,6 +17,9 @@ def setup():
                          --enable-gstreamer \
                          --with-x \
                          --with-nssdb")
+    
+    # for fix unused dependency
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
                        
 def build():
     autotools.make()

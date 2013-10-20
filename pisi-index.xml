@@ -3046,23 +3046,22 @@
                 <Email>osman.erkan@yandex.com</Email>
             </Packager>
             <License>GPLv2</License>
-            <IsA>app:console</IsA>
+            <IsA>app:gui</IsA>
             <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">Mate notification daemon</Summary>
             <Summary xml:lang="tr">Mate masaüstü bilgilendirme hizmeti</Summary>
             <Description xml:lang="en">mate-notification-daemon is the server implementation of the Mate desktop notification specification.</Description>
             <Description xml:lang="tr">mate-notification-daemon Mate projesinin masaüstü bilgilendirme hizmeti uygulamasını içerir.</Description>
+            <Icon>mate-notification-properties</Icon>
             <Archive type="tarxz" sha1sum="9988ac0d63ee8d2b7abd2ab47a8f57ad3d5c4c80">http://pub.mate-desktop.org/releases/1.6/mate-notification-daemon-1.6.0.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
-                <Dependency>pango-devel</Dependency>
                 <Dependency>cairo-devel</Dependency>
                 <Dependency>mate-common</Dependency>
                 <Dependency>mate-doc-utils</Dependency>
                 <Dependency>libnotify-devel</Dependency>
                 <Dependency>libcanberra-gtk</Dependency>
-                <Dependency>fontconfig-devel</Dependency>
                 <Dependency>gdk-pixbuf-devel</Dependency>
                 <Dependency>libmatewnck-devel</Dependency>
                 <Dependency>libcanberra-devel</Dependency>
@@ -3075,15 +3074,11 @@
             <RuntimeDependencies>
                 <Dependency>atk</Dependency>
                 <Dependency>gtk2</Dependency>
-                <Dependency>pango</Dependency>
                 <Dependency>cairo</Dependency>
                 <Dependency>libnotify</Dependency>
-                <Dependency>libcanberra-gtk</Dependency>
-                <Dependency>fontconfig</Dependency>
                 <Dependency>gdk-pixbuf</Dependency>
                 <Dependency>libmatewnck</Dependency>
-                <Dependency>libcanberra</Dependency>
-                <Dependency>mate-desktop</Dependency>
+                <Dependency>libcanberra-gtk</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="library">/usr/lib</Path>
@@ -3188,7 +3183,7 @@
                 <Dependency>mate-common</Dependency>
             </RuntimeDependencies>
             <Files>
-                <Path fileType="doc">/usr/share/docs</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
                 <Path fileType="data">/usr/share/icons</Path>
             </Files>
         </Package>
@@ -3219,6 +3214,7 @@
             <Summary xml:lang="tr">Mate masaüstü</Summary>
             <Description xml:lang="en">mate-desktop contains basic Mate libraries and information applications.</Description>
             <Description xml:lang="tr">mate-desktop, Mate kullanıcı ortamının paylaşımlı bileşenlerini içeren temel pakettir.</Description>
+            <Icon>desktop</Icon>
             <Archive type="tarxz" sha1sum="f259a432d4f5847ad98e00ecb4cc593153f61df9">http://pub.mate-desktop.org/releases/1.6/mate-desktop-1.6.1.tar.xz</Archive>
             <AdditionalFiles>
                 <AdditionalFile target="mate-about/gnu-cat.gif">gnu-cat.gif</AdditionalFile>
@@ -3358,17 +3354,12 @@
             <Description xml:lang="en">gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
             <Archive type="tarxz" sha1sum="18c3af496e908d1033389e251ade560373897312">http://pub.mate-desktop.org/releases/1.6/mate-settings-daemon-1.6.1.tar.xz</Archive>
             <BuildDependencies>
-                <Dependency>atk-devel</Dependency>
                 <Dependency>nss-devel</Dependency>
                 <Dependency>gtk2-devel</Dependency>
                 <Dependency>dconf-devel</Dependency>
-                <Dependency>pango-devel</Dependency>
                 <Dependency>mate-common</Dependency>
                 <Dependency>cairo-devel</Dependency>
                 <Dependency>libXi-devel</Dependency>
-                <Dependency>libSM-devel</Dependency>
-                <Dependency>libICE-devel</Dependency>
-                <Dependency>libXext-devel</Dependency>
                 <Dependency>gstreamer-devel</Dependency>
                 <Dependency>libnotify-devel</Dependency>
                 <Dependency>fontconfig-devel</Dependency>
@@ -3378,23 +3369,17 @@
                 <Dependency>mate-desktop-devel</Dependency>
                 <Dependency>libXxf86misc-devel</Dependency>
                 <Dependency>gst-plugins-base-devel</Dependency>
-                <Dependency>startup-notification-devel</Dependency>
             </BuildDependencies>
             <SourceURI>desktop/mate/base/mate-settings-daemon/pspec.xml</SourceURI>
         </Source>
         <Package>
             <Name>mate-settings-daemon</Name>
             <RuntimeDependencies>
-                <Dependency>atk</Dependency>
                 <Dependency>nss</Dependency>
                 <Dependency>gtk2</Dependency>
                 <Dependency>dconf</Dependency>
-                <Dependency>pango</Dependency>
                 <Dependency>cairo</Dependency>
                 <Dependency>libXi</Dependency>
-                <Dependency>libSM</Dependency>
-                <Dependency>libICE</Dependency>
-                <Dependency>libXext</Dependency>
                 <Dependency>gstreamer</Dependency>
                 <Dependency>libnotify</Dependency>
                 <Dependency>fontconfig</Dependency>
@@ -3404,7 +3389,6 @@
                 <Dependency>mate-desktop</Dependency>
                 <Dependency>libXxf86misc</Dependency>
                 <Dependency>gst-plugins-base</Dependency>
-                <Dependency>startup-notification</Dependency>
             </RuntimeDependencies>
             <Files>
                 <Path fileType="config">/etc</Path>
@@ -3512,7 +3496,7 @@
             <Summary xml:lang="tr">Mate masasütü için öntanımlı dosya yöneticisi</Summary>
             <Description xml:lang="en">Caja is a file manager that allows to browse directories, preview files and launch applications.</Description>
             <Description xml:lang="tr">Caja; dizinlerde gezinmeyi, dosyaları gözatmayı ve uygulamalar başlatmayı sağlayan bir dosya yöneticisidir.</Description>
-            <Icon>caja</Icon>
+            <Icon>system-file-manager</Icon>
             <Archive type="tarxz" sha1sum="bb14e653cbff4ead7276249accec39661c8dd41f">http://pub.mate-desktop.org/releases/1.6/mate-file-manager-1.6.2.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
@@ -3605,6 +3589,7 @@
             <PartOf>desktop.mate.base</PartOf>
             <Summary xml:lang="en">MATE Session Manager</Summary>
             <Description xml:lang="en">MATE session manager, as well as a configuration program to choose applications starting on login.</Description>
+            <Icon>mate-session-properties</Icon>
             <Archive type="tarxz" sha1sum="46188f6c02cc5978688af9d5db4be09f1b9199a5">http://pub.mate-desktop.org/releases/1.6/mate-session-manager-1.6.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>gtk2-devel</Dependency>
@@ -4101,6 +4086,7 @@
             <Summary xml:lang="tr">Mate paneli</Summary>
             <Description xml:lang="en">GNOME panel is located in the edge of screen that provides contains widgets such as application launcher, cpu monitor and workspace switcher.</Description>
             <Description xml:lang="tr">Mate paneli ekranın kenarlarında bulunur ve  programcıkları (işlemci yükü, program başlatıcısı, çalışma alanı değiştiricisi gibi) barındırmayı sağlar.</Description>
+            <Icon>mate-panel</Icon>
             <Archive type="tarxz" sha1sum="ccd8d01e14d12d09a9c807b98990c02868323c71">http://pub.mate-desktop.org/releases/1.6/mate-panel-1.6.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>
@@ -4249,6 +4235,7 @@
             <Summary xml:lang="tr">Mate yapılandırma araçları</Summary>
             <Description xml:lang="en">mate-control-center is Mate&apos;s main interface for configuration of various aspects of your Mate desktop.</Description>
             <Description xml:lang="tr">mate-control-center Mate masaüstünüzün çeşitli ayarlarını değiştiren, Mate&apos;in ana arayüzüdür.</Description>
+            <Icon>preferences-desktop</Icon>
             <Archive type="tarxz" sha1sum="7908a1bdbbcce9d2b7a8604c83fdd30f2c19b106">http://pub.mate-desktop.org/releases/1.6/mate-control-center-1.6.1.tar.xz</Archive>
             <BuildDependencies>
                 <Dependency>atk-devel</Dependency>

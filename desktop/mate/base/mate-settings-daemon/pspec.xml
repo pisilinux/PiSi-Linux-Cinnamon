@@ -14,17 +14,12 @@
         <Description>gnome-settings-daemon shares MATE specific settings with other applications via DBus connection.</Description>
         <Archive sha1sum="18c3af496e908d1033389e251ade560373897312" type="tarxz">http://pub.mate-desktop.org/releases/1.6/mate-settings-daemon-1.6.1.tar.xz</Archive>
         <BuildDependencies>
-            <Dependency>atk-devel</Dependency>
             <Dependency>nss-devel</Dependency>
             <Dependency>gtk2-devel</Dependency>
             <Dependency>dconf-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
             <Dependency>mate-common</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
-            <Dependency>libSM-devel</Dependency>
-            <Dependency>libICE-devel</Dependency>
-            <Dependency>libXext-devel</Dependency>
             <Dependency>gstreamer-devel</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>fontconfig-devel</Dependency>
@@ -34,23 +29,17 @@
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>libXxf86misc-devel</Dependency>
             <Dependency>gst-plugins-base-devel</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
          </BuildDependencies>
     </Source>
 
     <Package>
         <Name>mate-settings-daemon</Name>
         <RuntimeDependencies>
-            <Dependency>atk</Dependency>
             <Dependency>nss</Dependency>
             <Dependency>gtk2</Dependency>
             <Dependency>dconf</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libXi</Dependency>
-            <Dependency>libSM</Dependency>
-            <Dependency>libICE</Dependency>
-            <Dependency>libXext</Dependency>
             <Dependency>gstreamer</Dependency>
             <Dependency>libnotify</Dependency>
             <Dependency>fontconfig</Dependency>
@@ -60,7 +49,6 @@
             <Dependency>mate-desktop</Dependency>
             <Dependency>libXxf86misc</Dependency>
             <Dependency>gst-plugins-base</Dependency>
-            <Dependency>startup-notification</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="config">/etc</Path>

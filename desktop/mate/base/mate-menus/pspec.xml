@@ -9,7 +9,6 @@
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2</License>
-        <PartOf>desktop.mate.base</PartOf>
         <IsA>app:gui</IsA>
         <Summary>Mate Menus</Summary>
         <Description>mate-menus has got desktop-directories, Mate menus library and its python bindings.</Description>

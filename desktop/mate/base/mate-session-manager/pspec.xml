@@ -9,6 +9,7 @@
             <Email>osman.erkan@yandex.com</Email>
         </Packager>
         <License>GPLv2+</License>
+        <Icon>mate-session-properties</Icon>
         <IsA>app:gui</IsA>
         <Summary>MATE Session Manager</Summary>
         <Description>This package contains a session that can be started from a display manager such as MDM. It will load all necessary applications for a full-featured user session.</Description>

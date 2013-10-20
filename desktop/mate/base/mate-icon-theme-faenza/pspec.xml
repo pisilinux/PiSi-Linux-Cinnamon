@@ -27,7 +27,7 @@
             <Dependency>mate-common</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="doc">/usr/share/docs</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icons</Path>
         </Files>
     </Package>

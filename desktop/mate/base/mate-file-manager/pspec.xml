@@ -10,6 +10,7 @@
         </Packager>
         <License>GPLv2+</License>
         <License>LGPLv2+</License>
+        <Icon>system-file-manager</Icon>
         <Icon>caja</Icon>
         <IsA>app:gui</IsA>
         <Summary>Default file manager for the Mate desktop.</Summary>

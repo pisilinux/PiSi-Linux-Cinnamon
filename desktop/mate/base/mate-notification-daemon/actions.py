@@ -14,6 +14,9 @@ def setup():
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
     autotools.configure("--disable-schemas-compile \
                          --with-gtk=2.0")
+    
+    # for fix unused dependency
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 
 def build():
     autotools.make()
