@@ -85,8 +85,18 @@
         </RuntimeDependencies>
         <Files>
            <Path fileType="header">/usr/include</Path>
-           <Path fileType="doc">/usr/share/gtk-doc</Path>
            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-panel-doc</Name>
+        <Summary>mate-panel için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-panel</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

@@ -9,4 +9,9 @@
         <Name>libmateweather-devel</Name>
         <summary xml:lang="tr">libmateweather için geliştirme dosyaları</summary>
     </Package>
+
+    <Package>
+        <Name>libmateweather-doc</Name>
+        <Summary xml:lang="tr">libmateweather için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

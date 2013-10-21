@@ -10,4 +10,9 @@
         <Name>mate-panel-devel</Name>
         <Summary xml:lang="tr">mate-panel için geliştirme dosyaları.</Summary>
     </Package>
+
+    <Package>
+        <Name>mate-panel-doc</Name>
+        <Summary xml:lang="tr">mate-panel için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

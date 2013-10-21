@@ -8,6 +8,11 @@
     
     <Package>
         <Name>mate-file-manager-sendto-devel</Name>
-	<Summary xml:lang="tr">mate-file-manager-sendto için geliştirme dosyaları</Summary>
+        <Summary xml:lang="tr">mate-file-manager-sendto için geliştirme dosyaları</Summary>
+    </Package>
+
+    <Package>
+        <Name>mate-file-manager-sendto-doc</Name>
+        <Summary xml:lang="tr">mate-file-manager-sendto için döküman belgeleri.</Summary>
     </Package>
 </PISI>

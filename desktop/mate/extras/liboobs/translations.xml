@@ -9,5 +9,10 @@
     <Package>
         <Name>liboobs-devel</Name>
         <Summary xml:lang="tr">liboobs için geliştirme dosyaları</Summary>
-    </Package>  
+    </Package>
+
+    <Package>
+        <Name>liboobs-doc</Name>
+        <Summary xml:lang="tr">liboobs için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

@@ -9,4 +9,9 @@
         <Name>libmatewnck-devel</Name>
         <summary xml:lang="tr">libmatewnck için geliştirme dosyaları</summary>
     </Package>
+
+    <Package>
+        <Name>libmatewnck-doc</Name>
+        <Summary xml:lang="tr">libmatewnck için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

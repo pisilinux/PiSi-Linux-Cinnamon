@@ -15,7 +15,7 @@ def setup():
     autotools.configure("--disable-static \
                          --with-gtk=2.0   \
                          --disable-schemas-compile \
-                         --with-pam-dir=/usr/lib/security \
+                         --with-pam-dir=/lib/security \
                          --with-root-certs=/etc/pki/tls/certs")
     
     # fix unused-direct-shlib-dependency

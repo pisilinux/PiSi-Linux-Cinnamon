@@ -68,8 +68,18 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="library">/usr/lib/pkgconfig/</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-image-viewer-doc</Name>
+        <Summary>mate-image-viewer için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-image-viewer</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

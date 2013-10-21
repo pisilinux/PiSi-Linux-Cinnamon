@@ -48,6 +48,17 @@
         </Files>
     </Package>
 
+    <Package>
+        <Name>libmatekeyring-doc</Name>
+        <Summary>libmatekeyring için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libmatekeyring</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+
     <History>
         <Update release="1">
             <Date>2013-04-04</Date>

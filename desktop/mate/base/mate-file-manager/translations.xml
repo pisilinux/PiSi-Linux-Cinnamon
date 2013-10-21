@@ -10,4 +10,9 @@
         <Name>mate-file-manager-devel</Name>
         <Summary xml:lang="tr">mate-file-manager için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>mate-file-manager-doc</Name>
+        <Summary xml:lang="tr">mate-file-manager için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

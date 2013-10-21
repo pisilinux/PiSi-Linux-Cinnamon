@@ -10,4 +10,9 @@
         <Name>mate-document-viewer-devel</Name>
         <Summary xml:lang="tr">mate-document-viewer için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>mate-document-viewer-doc</Name>
+        <Summary xml:lang="tr">mate-document-viewer için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

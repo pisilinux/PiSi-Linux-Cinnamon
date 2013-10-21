@@ -9,4 +9,9 @@
         <Name>libmatekeyring-devel</Name>
         <Summary xml:lan="tr">libmatekeyring için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>libmatekeyring-doc</Name>
+        <Summary xml:lang="tr">libmatekeyring için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

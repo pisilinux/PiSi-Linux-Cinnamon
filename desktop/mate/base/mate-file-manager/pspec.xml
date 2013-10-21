@@ -80,8 +80,18 @@
          </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-file-manager-doc</Name>
+        <Summary>mate-file-manager için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-file-manager</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

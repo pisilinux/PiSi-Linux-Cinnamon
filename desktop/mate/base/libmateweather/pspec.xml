@@ -51,9 +51,19 @@
             <Dependency release="current">libmateweather</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="doc">/usr/share/gtk-doc</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include/libmateweather/</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>libmateweather-doc</Name>
+        <Summary>libmateweather için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">libmateweather</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

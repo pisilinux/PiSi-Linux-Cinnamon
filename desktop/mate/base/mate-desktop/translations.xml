@@ -10,4 +10,9 @@
         <Name>mate-desktop-devel</Name>
         <summary xml:lang="tr">mate-desktop için geliştirme dosyaları</summary>
     </Package>
+
+    <Package>
+        <Name>mate-desktop-doc</Name>
+        <Summary xml:lang="tr">mate-desktop için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

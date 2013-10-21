@@ -57,8 +57,18 @@
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share/gtk-doc</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-bluetooth-doc</Name>
+        <Summary>mate-bluetooth için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-bluetooth</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

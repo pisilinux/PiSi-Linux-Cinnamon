@@ -10,4 +10,9 @@
         <Name>mate-bluetooth-devel</Name>
         <Summary xml:lang="tr">mate-bluetooth için geliştirme dosyaları</Summary>
     </Package>
+
+    <Package>
+        <Name>mate-bluetooth-doc</Name>
+        <Summary xml:lang="tr">mate-bluetooth için döküman belgeleri.</Summary>
+    </Package>
 </PISI>

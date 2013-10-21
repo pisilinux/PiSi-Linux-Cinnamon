@@ -38,6 +38,7 @@
             <Path fileType="library">/usr/lib</Path>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/lib/security</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
             <Path fileType="executable">/usr/libexec</Path>
             <Path fileType="data">/usr/share/mategcr</Path>
@@ -57,8 +58,18 @@
          </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
-            <Path fileType="data">/usr/share/gtk-doc</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>mate-keyring-doc</Name>
+        <Summary>mate-keyring için döküman belgeleri.</Summary>
+        <RuntimeDependencies>
+            <Dependency release="current">mate-keyring</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gtk-doc</Path>
         </Files>
     </Package>
 

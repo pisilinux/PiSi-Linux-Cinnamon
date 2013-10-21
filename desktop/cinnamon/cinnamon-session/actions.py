@@ -6,14 +6,13 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vif")
-    autotools.configure("--disable-static \
-                         --enable-profiling \
-                         --libexecdir=/usr/lib/cinnamon-settings-daemon \
+    autotools.configure("--disable-gconf \
+                         --disable-schemas-compile \
+                         --libexecdir=/usr/lib/cinnamon-session \
                          --disable-systemd")
 
 def build():
