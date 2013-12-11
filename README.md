@@ -1,4 +1,4 @@
-PiSiLiux-Mate
+PiSi-Linux-Cinnamon
 =============
 
-PiSiLiux için mate paketlerinin inşaa dosyalarını içeren repo
+PiSi-Linux  için Cinnamon paketlerinin inşaa dosyalarını içeren repo
