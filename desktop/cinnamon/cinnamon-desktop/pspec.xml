@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop</Summary>
         <Description>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop, and also some data files and other shared components of the CINNAMON user environment.</Description>
-        <Archive sha1sum="f6d046c2c98769c5b2f82e8d633b10f77e920cfd" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-desktop/source/cinnamon-desktop-2.0.1.tar.gz</Archive>
+        <Archive sha1sum="76108c4eed1d1ebbb3184cbe15fdc36dc8cd7c4c" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-desktop/source/cinnamon-desktop-2.0.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -56,16 +56,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.0.0</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.4</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

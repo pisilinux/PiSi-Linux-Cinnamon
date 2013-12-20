@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>File manager for Cinnamon</Summary>
         <Description>Nemo is the file manager and graphical shell for the Cinnamon desktop that makes it easy to manage your files and the rest of your system.</Description>
-        <Archive sha1sum="55639595f733ae64d8a1c1e98f235a24c5992a73" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo/source/nemo-2.0.0.tar.gz</Archive>
+        <Archive sha1sum="32b7b5c72cc6e5d9348cd9f0aa4099a47e0ea29e" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo/source/nemo-2.0.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -44,22 +44,22 @@
             <Dependency>cinnamon-desktop</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="library">/usr/lib</Path>            
-            <Path fileType="library">/usr/lib/nemo</Path>
-            <Path fileType="library">/usr/share/gtksourceview-3.0</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/man</Path>
-            <Path fileType="data">/usr/share/GConf</Path>
-            <Path fileType="data">/usr/share/gtksourceview-2.0/</Path>
-            <Path fileType="data">/usr/share/mime/packages</Path>
-            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="data">/usr/share/nemo</Path>
             <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib/nemo</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
             <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="config">/etc/xdg/autostart</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0/</Path>
+            <Path fileType="config">/etc/xdg/autostart</Path>
+            <Path fileType="data">/usr/share/applications</Path>
+            <Path fileType="data">/usr/share/mime/packages</Path>
+            <Path fileType="data">/usr/share/gtksourceview-2.0/</Path>
+            <Path fileType="library">/usr/share/gtksourceview-3.0</Path>
         </Files>
     </Package>
 
@@ -70,24 +70,17 @@
             <Dependency release="current">nemo</Dependency>
         </RuntimeDependencies>
         <Files>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="header">/usr/include/nemo</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="data">/usr/lib/girepository-1.0</Path>
-            <Path fileType="data">/usr/share/gir-1.0</Path>
         </Files>
     </Package>
     
     <History>
-        <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.0</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-09-02</Date>
-            <Version>1.8.6</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.8</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

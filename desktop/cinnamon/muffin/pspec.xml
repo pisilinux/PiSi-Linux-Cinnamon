@@ -12,47 +12,53 @@
         <IsA>app:gui</IsA>
         <Summary>The Cinnamon Window Manager</Summary>
         <Description>Cinnamon masaüstünün pencere uygulamasıdır.</Description>
-        <Archive sha1sum="32cb895c5f7a5dfe43ccd786d8261e684fc1fcdf" type="targz">http://leigh123linux.fedorapeople.org/pub/muffin/source/muffin-2.0.1.tar.gz</Archive>
+        <Archive sha1sum="4c4ebf5d2702fadfcc1191689015ac8d4041c7b0" type="targz">http://leigh123linux.fedorapeople.org/pub/muffin/source/muffin-2.0.5.tar.gz</Archive>
         <BuildDependencies>
-            <Dependency>clutter-devel</Dependency>
-            <Dependency>gconf-devel</Dependency>
-            <Dependency>cinnamon-desktop-devel</Dependency>
-            <Dependency>gobject-introspection-devel</Dependency>
-            <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>startup-notification-devel</Dependency>
-            <Dependency>libXxf86vm-devel</Dependency>
-            <Dependency>pango-devel</Dependency>
-            <Dependency>cairo-devel</Dependency>
+            <Dependency>zenity</Dependency>
             <Dependency>cogl-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
+            <Dependency>gconf-devel</Dependency>
+            <Dependency>pango-devel</Dependency>
+            <Dependency>cairo-devel</Dependency>
+            <Dependency>clutter-devel</Dependency>
             <Dependency>libXcursor-devel</Dependency>
-            <Dependency>zenity</Dependency>
-            <Dependency>gsettings-desktop-schemas3</Dependency>
+            <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>libXxf86vm-devel</Dependency>
+            <Dependency>cinnamon-desktop-devel</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
+            <Dependency>startup-notification-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
         </BuildDependencies>
     </Source>
 
     <Package>
         <Name>muffin</Name>
         <RuntimeDependencies>
-            <Dependency>clutter</Dependency>
+            <Dependency>cogl</Dependency>
+            <Dependency>gtk3</Dependency>
             <Dependency>gconf</Dependency>
-            <Dependency>gobject-introspection</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>cairo</Dependency>
+            <Dependency>zenity</Dependency>
+            <Dependency>clutter</Dependency>
+            <Dependency>libXcursor</Dependency>
+            <Dependency>libXxf86vm</Dependency>
             <Dependency>cinnamon-desktop</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
             <Dependency>startup-notification</Dependency>
-            <Dependency>libXxf86vm</Dependency>
-            <Dependency>pango</Dependency>
-            <Dependency>cairo</Dependency>
-            <Dependency>cogl</Dependency>
-            <Dependency>gtk3</Dependency>
-            <Dependency>libXcursor</Dependency>
-            <Dependency>zenity</Dependency>
-            <Dependency>gsettings-desktop-schemas3</Dependency>
+            <Dependency>gobject-introspection</Dependency>
+            <Dependency>gsettings-desktop-schemas</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share/GConf</Path>
+            <Path fileType="data">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/muffin</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="data">/usr/share/applications</Path>
         </Files>
     </Package>
 
@@ -63,22 +69,15 @@
             <Dependency release="current">muffin</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib/pkgconfig</Path>
             <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
         </Files>
     </Package>
 
     <History>
         <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
-        <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.8.2</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

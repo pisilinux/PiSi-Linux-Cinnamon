@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü</Summary>
         <Description>Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
-        <Archive sha1sum="45c51563159c4f771e3196c7ea62d5bd257adbd7" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/Cinnamon-2.0.2.tar.gz</Archive>
+        <Archive sha1sum="c2a14f13139cbb81942647b59f74d0f280ce9328" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/Cinnamon-2.0.14.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gjs-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -95,16 +95,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.2</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.8.8.1</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.14</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

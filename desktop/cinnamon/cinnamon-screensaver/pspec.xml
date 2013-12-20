@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Cinnamon Screensaver</Summary>
         <Description>cinnamon-screensaver is a screen saver and locker.</Description>
-        <Archive sha1sum="4687792177c8c0c252fe905e9e1bef44ac9ee7e6" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-screensaver/source/cinnamon-screensaver-1.8.1.git94ca899.tar.gz</Archive>
+        <Archive sha1sum="4687792177c8c0c252fe905e9e1bef44ac9ee7e6" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-screensaver/source/cinnamon-screensaver-2.0.3.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
@@ -54,8 +54,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.8.1</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.3</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

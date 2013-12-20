@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
         <Description>A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
-        <Archive sha1sum="b4767795249e13ec340b89062017b5eeefc7e954" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-settings-daemon/source/cinnamon-settings-daemon-2.0.1.tar.gz</Archive>
+        <Archive sha1sum="a188594e7d27bc54ff5ba4adfc2285f24ee3cff0" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-settings-daemon/source/cinnamon-settings-daemon-2.0.8.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>nss-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -65,18 +65,18 @@
             <Dependency>libcanberra-gtk3</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="config">/etc/cinnamon-settings-daemon/</Path>
-            <Path fileType="config">/etc/xdg/autostart/</Path>
-            <Path fileType="config">/etc/dbus-1/system.d</Path>
             <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/cinnamon-settings-daemon*</Path>
-            <Path fileType="data">/usr/share/dbus-1</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
-            <Path fileType="data">/usr/share/glib-2.0</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
+            <Path fileType="config">/etc/dbus-1/system.d</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/applications/</Path>
+            <Path fileType="config">/etc/cinnamon-settings-daemon/</Path>
+            <Path fileType="data">/usr/share/cinnamon-settings-daemon*</Path>
         </Files>
     </Package>
 
@@ -93,16 +93,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.0.0</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.8</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

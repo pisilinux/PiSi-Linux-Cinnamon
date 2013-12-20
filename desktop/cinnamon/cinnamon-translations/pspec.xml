@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>Cinnamon localization package</Summary>
         <Description>Cinnamon localization package.</Description>
-        <Archive sha1sum="249b97c626470cb972722e8f01e7cc5d011cb8d2" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-translations/source/cinnamon-translations-2.0.1.tar.gz</Archive>
+        <Archive sha1sum="249b97c626470cb972722e8f01e7cc5d011cb8d2" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-translations/source/cinnamon-translations-2.0.3.tar.gz</Archive>
     </Source>
 
     <Package>
@@ -30,16 +30,9 @@
     </Package>
 
     <History>
-        <Update release="2">
-            <Date>2013-10.14</Date>
-            <Version>2.0.1</Version>
-            <Comment>Version Bump</Comment>
-            <Name>Osman Erkan</Name>
-            <Email>osman.erkan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
-            <Date>2013-08-30</Date>
-            <Version>1.9.2</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.3</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

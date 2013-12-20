@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Cinnamon session manager</Summary>
         <Description>The Cinnamon Session Handler.</Description>
-        <Archive sha1sum="d45af9a4cc8fb9cbea4d65a9d53bc0a4736a6faf" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-session/source/cinnamon-session-2.0.1.tar.gz</Archive>
+        <Archive sha1sum="cff5d738fb406787698291aebe5bca9151896770" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-session/source/cinnamon-session-2.0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -58,8 +58,8 @@
 
     <History>
         <Update release="1">
-            <Date>2013-10.20</Date>
-            <Version>2.0.1</Version>
+            <Date>2013-12-12</Date>
+            <Version>2.0.5</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>

@@ -2,7 +2,7 @@
 <!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
 <PISI>
     <Source>
-        <Name>cinnamon-control-center</Name>
+        <Name>cinnamon-control-center-sounds</Name>
         <Homepage>http://cinnamon.linuxmint.com/</Homepage>
         <Packager>
             <Name>Osman Erkan</Name>
@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>Utilities to configure the Cinnamon desktop</Summary>
         <Description>This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
-        <Archive sha1sum="9e47f666d9b0e052d45a4e39d4a79a5b461ff65c" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center/source/cinnamon-control-center-2.0.9.tar.gz</Archive>
+        <Archive sha1sum="4246f5e5035b751aab2ed1018a40c8f09cfc31a1" type="tarxz">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center-sounds/source/cinnamon-control-center-sounds-1.0.0.tar.xz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -52,7 +52,7 @@
     </Source>
 
     <Package>
-        <Name>cinnamon-control-center</Name>
+        <Name>cinnamon-control-center-sounds</Name>
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
@@ -90,37 +90,32 @@
             <Dependency>cinnamon-settings-daemon</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="library">/usr/lib</Path>
-            <Path fileType="data">/usr/share/doc</Path>
-            <Path fileType="executable">/usr/bin/</Path>
-            <Path fileType="config">/etc/xdg/menus</Path>
-            <Path fileType="data">/usr/share/icons</Path>
-            <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="config">/etc/xdg/autostart/</Path>
-            <Path fileType="data">/usr/share/applications</Path>
-            <Path fileType="data">/usr/share/desktop-directories</Path>
-            <Path fileType="data">/usr/share/cinnamon-control-center</Path>
+            <Path fileType="executable">/usr/bin/</Path>
+            <Path fileType="data">/usr/share/</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="config">/etc/xdg/menus</Path>
         </Files>
     </Package>
 
     <Package>
-        <Name>cinnamon-control-center-devel</Name>
-        <Summary>cinnamon-control-center için geliştirme dosyaları</Summary>
+        <Name>cinnamon-control-center-sounds-devel</Name>
+        <Summary>cinnamon-control-center-sounds için geliştirme dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
+            <Dependency release="current">cinnamon-control-center-sounds</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/gir-1.0</Path>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
-            <Path fileType="header">/usr/include/cinnamon-control-center-1/</Path>
+            <Path fileType="header">/usr/include/cinnamon-control-center-sounds-1/</Path>
         </Files>
     </Package>
     
     <History>
         <Update release="1">
             <Date>2013-12-12</Date>
-            <Version>2.0.9</Version>
+            <Version>1.0.0</Version>
             <Comment>First release</Comment>
             <Name>Osman Erkan</Name>
             <Email>osman.erkan@pisilinux.org</Email>
