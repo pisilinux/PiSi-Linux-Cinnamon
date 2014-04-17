@@ -10,24 +10,14 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("sed -i -e 's/cinnamon-fallback-mount-helper;/polkit-gnome-authentication-agent-1;/' files/usr/share/cinnamon-session/sessions/cinnamon*.session")
-    shelltools.system("sed -i -e 's:import PAM:import pam:' files/usr/lib/cinnamon-settings/modules/cs_user.py")
-    shelltools.system("sed -i -e 's|/usr/bin/cinnamon-control-center|/usr/lib/cinnamon-control-center-1/panels|' files/usr/bin/cinnamon-settings")
     shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
                          --sysconfdir=/etc \
                          --libexecdir=/usr/lib/cinnamon \
                          --localstatedir=/var \
                          --disable-static \
-                         --disable-systemd \
-                         --enable-polkit \
-                         --with-x \
-                         --enable-compile-warnings=yes")
-    
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
-    
-    #rpath fix
-    #pisitools.dosed("libtool", "^runpath_var=LD_RUN_PATH", "runpath_var=DIE_RPATH_DIE")
+                         --disable-schemas-compile \
+                         --enable-compile-warnings=yes ")
 
 def build():
     autotools.make()
