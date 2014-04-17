@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
         <Description>A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
-        <Archive sha1sum="b4767795249e13ec340b89062017b5eeefc7e954" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo-extensions/source/nemo-extensions-2.0.0.gitfd3cc88.tar.gz</Archive>
+        <Archive sha1sum="dbd4c3df6f0070590d4136e4b81bad2249593883" type="targz">http://leigh123linux.fedorapeople.org/pub/nemo-extensions/source/nemo-extensions-2.0.0.gitfd3cc88.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>nss-devel</Dependency>
             <Dependency>atk-devel</Dependency>

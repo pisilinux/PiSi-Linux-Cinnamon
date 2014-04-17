@@ -11,10 +11,22 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vif")
-    autotools.configure("--disable-static \
+    shelltools.system("./autogen.sh")
+    autotools.configure("--libexecdir=/usr/lib/cinnamon-settings-daemon \
+                         --disable-static \
+                         --disable-pulse  \
                          --enable-profiling \
-                         --libexecdir=/usr/lib/cinnamon-settings-daemon \
-                         --disable-systemd")
+                         --enable-polkit \
+                         --disable-schemas-compile \
+                         --with-x \
+                         --with-dbus-services=/usr/share/dbus-1/services/ \
+                         --with-dbus-sys=/usr/share/dbus-1/system-services/ \
+                         --with-nssdb")
+    
+    pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
+    
+    #rpath fix
+    #pisitools.dosed("libtool", "^runpath_var=LD_RUN_PATH", "runpath_var=DIE_RPATH_DIE")
 
 def build():
     autotools.make()

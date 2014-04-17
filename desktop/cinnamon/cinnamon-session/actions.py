@@ -6,14 +6,19 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
+from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vif")
-    autotools.configure("--disable-gconf \
-                         --disable-schemas-compile \
+    shelltools.system("./autogen.sh")
+    autotools.configure("--disable-schemas-compile \
+                         --disable-gconf \
                          --libexecdir=/usr/lib/cinnamon-session \
-                         --disable-systemd")
+                         --disable-static \
+                         --enable-ipv6 \
+                         --with-default-wm=muffin \
+                         --with-x")
 
 def build():
     autotools.make()

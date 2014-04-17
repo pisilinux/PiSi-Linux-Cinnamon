@@ -13,16 +13,11 @@
         <IsA>app:gui</IsA>
         <Summary>Cinnamon localization package</Summary>
         <Description>Cinnamon localization package.</Description>
-        <Archive sha1sum="249b97c626470cb972722e8f01e7cc5d011cb8d2" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-translations/source/cinnamon-translations-2.0.3.tar.gz</Archive>
+        <Archive sha1sum="261c061d076b65f33a588ff05b54d6d101a19631" type="targz">https://github.com/linuxmint/cinnamon-translations/archive/2.2.0.tar.gz</Archive>
     </Source>
 
     <Package>
         <Name>cinnamon-translations</Name>
-        <RuntimeDependencies>
-            <Dependency release="current">nemo</Dependency>
-            <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency release="current">cinnamon-control-center</Dependency>
-        </RuntimeDependencies>
         <Files>
             <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="localedata">/usr/share/locale</Path>
@@ -30,6 +25,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2014-04-14</Date>
+            <Version>2.2.0</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-04-11</Date>
+            <Version>2.0.3</Version>
+            <Comment>Fix sha1sum</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-12-12</Date>
             <Version>2.0.3</Version>

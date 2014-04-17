@@ -13,7 +13,7 @@
         <IsA>app:gui</IsA>
         <Summary>The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
         <Description>A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
-        <Archive sha1sum="a188594e7d27bc54ff5ba4adfc2285f24ee3cff0" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-settings-daemon/source/cinnamon-settings-daemon-2.0.8.tar.gz</Archive>
+        <Archive sha1sum="95d8fdc28fbaa5ba69e3f3320e55fd22ee00686d" type="targz">https://github.com/linuxmint/cinnamon-settings-daemon/archive/2.2.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>nss-devel</Dependency>
             <Dependency>atk-devel</Dependency>
@@ -23,6 +23,8 @@
             <Dependency>cairo-devel</Dependency>
             <Dependency>libXi-devel</Dependency>
             <Dependency>pango-devel</Dependency>
+            <Dependency>gnome-common</Dependency>
+            <Dependency>intltool</Dependency>
             <Dependency>colord-devel</Dependency>
             <Dependency>upower-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
@@ -43,13 +45,11 @@
         <Name>cinnamon-settings-daemon</Name>
         <RuntimeDependencies>
             <Dependency>nss</Dependency>
-            <Dependency>atk</Dependency>
             <Dependency>cups</Dependency>
             <Dependency>gtk3</Dependency>
             <Dependency>lcms2</Dependency>
             <Dependency>cairo</Dependency>
             <Dependency>libXi</Dependency>
-            <Dependency>pango</Dependency>
             <Dependency>colord</Dependency>
             <Dependency>upower</Dependency>
             <Dependency>libXext</Dependency>
@@ -57,12 +57,15 @@
             <Dependency>libXfixes</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>libgnomekbd</Dependency>
+            <Dependency>libxklavier</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>mit-kerberos</Dependency>
+            <Dependency>libgnomekbd</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>cinnamon-desktop</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
+            <Dependency>librsvg</Dependency>
+            <Dependency>ibus</Dependency>
+            <Dependency>alsa-plugins-pulseaudio</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -93,6 +96,20 @@
     </Package>
 
     <History>
+        <Update release="3">
+            <Date>2014-04-14</Date>
+            <Version>2.2.1</Version>
+            <Comment>Version bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-04-11</Date>
+            <Version>2.0.8</Version>
+            <Comment>Some fix</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-12-12</Date>
             <Version>2.0.8</Version>
