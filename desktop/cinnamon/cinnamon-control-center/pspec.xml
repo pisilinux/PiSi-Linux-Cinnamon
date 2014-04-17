@@ -12,8 +12,10 @@
         <IsA>app:gui</IsA>
         <Summary>Utilities to configure the Cinnamon desktop</Summary>
         <Description>This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
-        <Archive sha1sum="9e47f666d9b0e052d45a4e39d4a79a5b461ff65c" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center/source/cinnamon-control-center-2.0.9.tar.gz</Archive>
+        <Archive sha1sum="e3b145bc4a03694b78333092dbeea2d1afeeb82f" type="targz">https://github.com/linuxmint/cinnamon-control-center/archive/2.2.3.tar.gz</Archive>
         <BuildDependencies>
+            <Dependency>intltool</Dependency>
+            <Dependency>gnome-common</Dependency>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
@@ -23,6 +25,7 @@
             <Dependency>pango-devel</Dependency>
             <Dependency>mit-kerberos</Dependency>
             <Dependency>cheese-devel</Dependency>
+            <Dependency>ibus-devel</Dependency>
             <Dependency>colord-devel</Dependency>
             <Dependency>upower-devel</Dependency>
             <Dependency>cheese-devel</Dependency>
@@ -56,38 +59,26 @@
         <RuntimeDependencies>
             <Dependency>atk</Dependency>
             <Dependency>gtk3</Dependency>
-            <Dependency>mesa</Dependency>
-            <Dependency>cogl</Dependency>
             <Dependency>cairo</Dependency>
-            <Dependency>libXi</Dependency>
             <Dependency>pango</Dependency>
-            <Dependency>cheese</Dependency>
             <Dependency>colord</Dependency>
             <Dependency>upower</Dependency>
-            <Dependency>cheese</Dependency>
-            <Dependency>clutter</Dependency>
-            <Dependency>libXext</Dependency>
-            <Dependency>json-glib</Dependency>
             <Dependency>libnotify</Dependency>
-            <Dependency>libXrandr</Dependency>
-            <Dependency>libXfixes</Dependency>
-            <Dependency>libXdamage</Dependency>
             <Dependency>fontconfig</Dependency>
             <Dependency>gdk-pixbuf</Dependency>
-            <Dependency>gnome-menus</Dependency>
-            <Dependency>clutter-gtk</Dependency>
             <Dependency>libxklavier</Dependency>
             <Dependency>libgnomekbd</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>mit-kerberos</Dependency>
-            <Dependency>libXcomposite</Dependency>
             <Dependency>NetworkManager</Dependency>
-            <Dependency>gnome3-desktop</Dependency>
-            <Dependency>gnome-bluetooth</Dependency>
+            <Dependency>cinnamon-menus</Dependency>
             <Dependency>pulseaudio-libs</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>network-manager-applet</Dependency>
+            <Dependency>cinnamon-desktop</Dependency>
+            <Dependency>gnome-color-manager</Dependency>
+            <Dependency>cinnamon-translations</Dependency>
+            <Dependency>network-manager-applet</Dependency>         
             <Dependency>cinnamon-settings-daemon</Dependency>
+            <Dependency>cinnamon-control-center-sounds</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -95,6 +86,7 @@
             <Path fileType="executable">/usr/bin/</Path>
             <Path fileType="config">/etc/xdg/menus</Path>
             <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
             <Path fileType="data">/usr/share/polkit-1</Path>
             <Path fileType="config">/etc/xdg/autostart/</Path>
             <Path fileType="data">/usr/share/applications</Path>
@@ -118,6 +110,20 @@
     </Package>
     
     <History>
+        <Update release="3">
+            <Date>2014-04-14</Date>
+            <Version>2.2.3</Version>
+            <Comment>Verison bump.</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+        <Update release="2">
+            <Date>2014-04-11</Date>
+            <Version>2.0.9</Version>
+            <Comment>Some fix</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
         <Update release="1">
             <Date>2013-12-12</Date>
             <Version>2.0.9</Version>
