@@ -11,13 +11,8 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vif")
-    shelltools.system("./autogen.sh")
     autotools.configure("--with-mit-ext=no \
-                         --with-pam-prefix=/etc/pam.d/cinnamon-screensaver \
-                         --with-x \
-                         --without-systemd \
-                         --with-console-kit \
-                         --with-xf86gamma-ext \
+                         --without-console-kit \
                          --libexecdir=/usr/lib/cinnamon-screensaver")
 
 def build():

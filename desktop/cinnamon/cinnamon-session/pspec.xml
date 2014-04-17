@@ -12,15 +12,13 @@
         <IsA>app:gui</IsA>
         <Summary>Cinnamon session manager</Summary>
         <Description>The Cinnamon Session Handler.</Description>
-        <Archive sha1sum="77faf264a579201f7640319e3c99761931b81c52" type="targz">https://github.com/linuxmint/cinnamon-session/archive/2.2.0.tar.gz</Archive>
+        <Archive sha1sum="cff5d738fb406787698291aebe5bca9151896770" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-session/source/cinnamon-session-2.0.5.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>gtk3-devel</Dependency>
             <Dependency>mesa-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>libSM-devel</Dependency>
             <Dependency>libICE-devel</Dependency>
-            <Dependency>gnome-common</Dependency>
-            <Dependency>intltool</Dependency>
             <Dependency>upower-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
             <Dependency>libXext-devel</Dependency>
@@ -28,9 +26,6 @@
             <Dependency>libXrender-devel</Dependency>
             <Dependency>libXcomposite-devel</Dependency>
         </BuildDependencies>
-        <Patches>
-            <Patch level="1">timeout.patch</Patch>
-        </Patches>
     </Source>
 
     <Package>
@@ -44,11 +39,9 @@
             <Dependency>upower</Dependency>
             <Dependency>libXtst</Dependency>
             <Dependency>libXext</Dependency>
-            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXrender</Dependency>
-            <Dependency>libcanberra</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
             <Dependency>libXcomposite</Dependency>
-            <Dependency>cinnamon-desktop</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib</Path>
@@ -64,20 +57,6 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2014-04-14</Date>
-            <Version>2.2.0</Version>
-            <Comment>Version bump.</Comment>
-            <Name>Alihan Öztürk</Name>
-            <Email>alihan@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-04-11</Date>
-            <Version>2.0.5</Version>
-            <Comment>Some Fix</Comment>
-            <Name>Alihan Öztürk</Name>
-            <Email>alihan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
             <Date>2013-12-12</Date>
             <Version>2.0.5</Version>

@@ -11,10 +11,7 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fi")
-    shelltools.system("./autogen.sh")
     autotools.configure("--disable-static ")
-    
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
 
 def build():
     autotools.make()

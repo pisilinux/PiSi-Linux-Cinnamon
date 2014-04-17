@@ -1,0 +1,28 @@
+<PISI>
+  <Groups>
+    <Group>
+      <Name>mate.desktop</Name>
+      <LocalName xml:lang="en">Mate Desktop</LocalName>
+      <LocalName xml:lang="nl">Mate Desktop</LocalName>
+      <LocalName xml:lang="sv">Skrivbord, GNOME</LocalName>
+      <LocalName xml:lang="tr">Mate Masaüstü</LocalName>
+      <LocalName xml:lang="fr">Bureau Mate</LocalName>
+      <LocalName xml:lang="es">Escritorio Mate</LocalName>
+      <LocalName xml:lang="de">Mate</LocalName>
+      <LocalName xml:lang="it">Mate</LocalName>
+      <Icon>preferences-desktop</Icon> <!-- FIXME: Mate Desktop Icon -->
+    </Group>
+    <Group>
+      <Name>all</Name>
+      <LocalName xml:lang="en">All</LocalName>
+      <LocalName xml:lang="nl">Alles</LocalName>
+      <LocalName xml:lang="sv">Samtliga</LocalName>
+      <LocalName xml:lang="tr">Tümü</LocalName>
+      <LocalName xml:lang="fr">Tout</LocalName>
+      <LocalName xml:lang="es">Todos</LocalName>
+      <LocalName xml:lang="de">Alle</LocalName>
+      <LocalName xml:lang="it">Tutti</LocalName>
+      <Icon>media-optical</Icon>
+    </Group>
+  </Groups>
+</PISI>

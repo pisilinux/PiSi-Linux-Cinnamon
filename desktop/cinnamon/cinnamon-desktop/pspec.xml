@@ -12,7 +12,7 @@
         <IsA>app:gui</IsA>
         <Summary>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop</Summary>
         <Description>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop, and also some data files and other shared components of the CINNAMON user environment.</Description>
-        <Archive sha1sum="e3394c45b3ee5f5f209c243bc7fe401172a54874" type="targz">https://github.com/linuxmint/cinnamon-desktop/archive/2.2.0.tar.gz</Archive>
+        <Archive sha1sum="76108c4eed1d1ebbb3184cbe15fdc36dc8cd7c4c" type="targz">http://leigh123linux.fedorapeople.org/pub/cinnamon-desktop/source/cinnamon-desktop-2.0.4.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>atk-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
@@ -22,8 +22,6 @@
             <Dependency>libXrandr-devel</Dependency>            
             <Dependency>libxkbfile-devel</Dependency>
             <Dependency>gdk-pixbuf-devel</Dependency>
-            <Dependency>gnome-common</Dependency>
-            <Dependency>intltool</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -50,8 +48,6 @@
         <Summary>cinnamon-desktop için geliştirm dosyaları</Summary>
         <RuntimeDependencies>
             <Dependency release="current">cinnamon-desktop</Dependency>
-            <Dependency>gtk3-devel</Dependency>
-            <Dependency>libxkbfile-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="library">/usr/lib/pkgconfig</Path>
@@ -60,20 +56,6 @@
     </Package>
 
     <History>
-        <Update release="3">
-            <Date>2014-04-14</Date>
-            <Version>2.2.0</Version>
-            <Comment>Verison bump.</Comment>
-            <Name>ALihan Öztürk</Name>
-            <Email>alihan@pisilinux.org</Email>
-        </Update>
-        <Update release="2">
-            <Date>2014-04-11</Date>
-            <Version>2.0.4</Version>
-            <Comment>Some fix and rebuild</Comment>
-            <Name>ALihan Öztürk</Name>
-            <Email>alihan@pisilinux.org</Email>
-        </Update>
         <Update release="1">
             <Date>2013-12-12</Date>
             <Version>2.0.4</Version>

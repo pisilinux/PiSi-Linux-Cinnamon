@@ -11,16 +11,9 @@ from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-vif")
-    shelltools.system("./autogen.sh")
-    autotools.configure("--disable-static \
-                         --with-pnp-ids-path=/usr/share/libcinnamon-desktop/pnp.ids \
-                         --with-x \
-                         --disable-schemas-compile \
-                         --disable-scrollkeeper \
+    autotools.configure("--with-pnp-ids-path=/usr/share/hwdata/pnp.ids \
                          --libexecdir=/usr/lib/cinnamon-desktop")
-    
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
-    
+
 def build():
     autotools.make()
 

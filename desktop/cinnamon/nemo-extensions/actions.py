@@ -10,7 +10,11 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./buildall")
+    autotools.autoreconf("-vif")
+    autotools.configure("--disable-static \
+                         --enable-profiling \
+                         --libexecdir=/usr/lib/cinnamon-settings-daemon \
+                         --disable-systemd")
 
 def build():
     autotools.make()

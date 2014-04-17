@@ -1,0 +1,1396 @@
+<PISI>
+    <Distribution>
+        <SourceName>PisiLinux</SourceName>
+        <Description xml:lang="nl">PisiLinux 1.0 Opslagplaats</Description>
+        <Description xml:lang="en">PisiLinux 1.0 Repository</Description>
+        <Description xml:lang="tr">PisiLinux 1.0 Deposu</Description>
+        <Description xml:lang="es">PisiLinux 1.0 Repositorio</Description>
+        <Version>1.0</Version>
+        <Type>Core</Type>
+        <BinaryName>PisiLinux</BinaryName>
+    </Distribution>
+    <SpecFile>
+        <Source>
+            <Name>js185</Name>
+            <Homepage>https://developer.mozilla.org/En/SpiderMonkey/1.8.5</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>NPL-1.1</License>
+            <IsA>library</IsA>
+            <PartOf>system.base</PartOf>
+            <Summary xml:lang="en">Stand-alone JavaScript C Library</Summary>
+            <Summary xml:lang="tr">Javascript C Kitaplığı</Summary>
+            <Description xml:lang="fr">Spidermonkey est l&apos;Implémentation C de Javascript par Mozilla.</Description>
+            <Description xml:lang="en">Spidermonkey is Mozilla&apos;s C implementation of JavaScript.</Description>
+            <Description xml:lang="tr">Mozilla&apos;nın Javascript&apos;in C implementasyonu.</Description>
+            <Description xml:lang="es">Spidermonkey es la implementación de JavaScript con C de Mozilla.</Description>
+            <Archive type="targz" sha1sum="52a01449c48d7a117b35f213d3e4263578d846d6">http://ftp.mozilla.org/pub/mozilla.org/js/js185-1.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>zlib-devel</Dependency>
+                <Dependency>nspr-devel</Dependency>
+                <Dependency>readline-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>system/base/js185/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>js185</Name>
+            <RuntimeDependencies>
+                <Dependency>nspr</Dependency>
+                <Dependency>zlib</Dependency>
+                <Dependency>libgcc</Dependency>
+                <Dependency>readline</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>js185-devel</Name>
+            <Summary xml:lang="en">Development files for js185</Summary>
+            <Summary xml:lang="tr">js185 için geliştirme dosyaları</Summary>
+            <PartOf>system.devel</PartOf>
+            <RuntimeDependencies>
+                <Dependency release="1">js185</Dependency>
+                <Dependency>nspr-devel</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="data">/usr/lib/pkgconfig</Path>
+                <Path fileType="executable">/usr/bin/js17-config</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-09-09</Date>
+                <Version>1.8.5</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-desktop</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop</Summary>
+            <Summary>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop</Summary>
+            <Description xml:lang="en">The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop, and also some data files and other shared components of the CINNAMON user environment.</Description>
+            <Description>The cinnamon-desktop package contains an internal library (libcinnamondesktop) used to implement some portions of the CINNAMON desktop, and also some data files and other shared components of the CINNAMON user environment.</Description>
+            <Archive type="targz" sha1sum="76108c4eed1d1ebbb3184cbe15fdc36dc8cd7c4c">http://leigh123linux.fedorapeople.org/pub/cinnamon-desktop/source/cinnamon-desktop-2.0.4.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libxkbfile-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-desktop/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-desktop</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libxkbfile</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cinnamon-desktop-devel</Name>
+            <Summary xml:lang="en">cinnamon-desktop için geliştirm dosyaları</Summary>
+            <Summary>cinnamon-desktop için geliştirm dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">cinnamon-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/cinnamon-desktop/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.4</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cjs-internals</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Javascript Bindings for Cinnamon</Summary>
+            <Description xml:lang="en">Cjs allows using Cinnamon libraries from Javascript. It&apos;s based on the Spidermonkey Javascript engine from Mozilla and the GObject introspection framework.</Description>
+            <Archive type="targz" sha1sum="67b965f8d22ba99fd2434f197d45272c73511d4f">http://leigh123linux.fedorapeople.org/pub/cjs/source/cjs-2.0.0.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>js185-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cjs-internals/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cjs-internals</Name>
+            <RuntimeDependencies>
+                <Dependency>js185</Dependency>
+                <Dependency>cairo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/cjs-1.0</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cjs-internals-devel</Name>
+            <Summary xml:lang="en">cjs-internals için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">cjs-internals</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include/</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>muffin</Name>
+            <Homepage>https://github.com/linuxmint/muffin</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2.0</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">The Cinnamon Window Manager</Summary>
+            <Description xml:lang="en">Cinnamon masaüstünün pencere uygulamasıdır.</Description>
+            <Description xml:lang="tr">Cinnamon masaüstünün pencere uygulamasıdır..</Description>
+            <Archive type="targz" sha1sum="32cb895c5f7a5dfe43ccd786d8261e684fc1fcdf">http://leigh123linux.fedorapeople.org/pub/muffin/source/muffin-2.0.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>clutter-devel</Dependency>
+                <Dependency>gconf-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+                <Dependency>gobject-introspection-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>startup-notification-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>cogl-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>libXcursor-devel</Dependency>
+                <Dependency>zenity</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/muffin/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>muffin</Name>
+            <RuntimeDependencies>
+                <Dependency>clutter</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>libXcursor</Dependency>
+                <Dependency>zenity</Dependency>
+                <Dependency>gsettings-desktop-schemas</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>muffin-devel</Name>
+            <Summary xml:lang="en">Development files for muffin</Summary>
+            <RuntimeDependencies>
+                <Dependency release="2">muffin</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2013-12-12</Date>
+                <Version>2.0.5</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-control-center-sounds</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Utilities to configure the Cinnamon desktop</Summary>
+            <Description xml:lang="en">This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
+            <Archive type="tarxz" sha1sum="4246f5e5035b751aab2ed1018a40c8f09cfc31a1">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center-sounds/source/cinnamon-control-center-sounds-1.0.0.tar.xz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>cogl-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>cheese-devel</Dependency>
+                <Dependency>colord-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>cheese-devel</Dependency>
+                <Dependency>clutter-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>json-glib-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>gnome-menus-devel</Dependency>
+                <Dependency>clutter-gtk-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>NetworkManager-devel</Dependency>
+                <Dependency>gnome3-desktop-devel</Dependency>
+                <Dependency>gnome-bluetooth-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>network-manager-applet-devel</Dependency>
+                <Dependency>cinnamon-settings-daemon-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-control-center-sounds/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-control-center-sounds</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cheese</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>cheese</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>clutter-gtk</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>cinnamon-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cinnamon-control-center-sounds-devel</Name>
+            <Summary xml:lang="en">cinnamon-control-center-sounds için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency release="1">cinnamon-control-center-sounds</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/cinnamon-control-center-sounds-1/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-settings-daemon</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
+            <Description xml:lang="en">A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
+            <Archive type="targz" sha1sum="b4767795249e13ec340b89062017b5eeefc7e954">http://leigh123linux.fedorapeople.org/pub/cinnamon-settings-daemon/source/cinnamon-settings-daemon-2.0.1.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>nss-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>cups-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>lcms2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>colord-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-open-terminal/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-settings-daemon</Name>
+            <RuntimeDependencies>
+                <Dependency>nss</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/cinnamon-settings-daemon/</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="config">/etc/dbus-1/system.d</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/cinnamon-settings-daemon*</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cinnamon-settings-daemon-devel</Name>
+            <Summary xml:lang="en">cinnamon-settings-daemon için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="2">cinnamon-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="2">
+                <Date>2013-10.14</Date>
+                <Version>2.0.1</Version>
+                <Comment>Version Bump</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+            <Update release="1">
+                <Date>2013-08-30</Date>
+                <Version>1.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-control-center</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Utilities to configure the Cinnamon desktop</Summary>
+            <Description xml:lang="en">This package contains configuration utilities for the Cinnamon desktop, which allow to configure accessibility options, desktop fonts, keyboard and mouse properties, sound setup, desktop theme and background, user interface properties, screen resolution, and other settings.</Description>
+            <Archive type="targz" sha1sum="9e47f666d9b0e052d45a4e39d4a79a5b461ff65c">http://leigh123linux.fedorapeople.org/pub/cinnamon-control-center/source/cinnamon-control-center-2.0.9.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>cogl-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>cheese-devel</Dependency>
+                <Dependency>colord-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>cheese-devel</Dependency>
+                <Dependency>clutter-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>json-glib-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>gnome-menus-devel</Dependency>
+                <Dependency>clutter-gtk-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>NetworkManager-devel</Dependency>
+                <Dependency>gnome3-desktop-devel</Dependency>
+                <Dependency>gnome-bluetooth-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>network-manager-applet-devel</Dependency>
+                <Dependency>cinnamon-settings-daemon-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-control-center/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-control-center</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>cheese</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>cheese</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>clutter-gtk</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>network-manager-applet</Dependency>
+                <Dependency>cinnamon-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/desktop-directories</Path>
+                <Path fileType="data">/usr/share/cinnamon-control-center</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cinnamon-control-center-devel</Name>
+            <Summary xml:lang="en">cinnamon-control-center için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">cinnamon-control-center için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency release="1">cinnamon-control-center</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="header">/usr/include/cinnamon-control-center-1/</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.9</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>nemo-extensions</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
+            <Description xml:lang="en">A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
+            <Archive type="targz" sha1sum="b4767795249e13ec340b89062017b5eeefc7e954">http://leigh123linux.fedorapeople.org/pub/nemo-extensions/source/nemo-extensions-2.0.0.gitfd3cc88.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>nss-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>cups-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>lcms2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>colord-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/nemo-extensions/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>nemo-extensions</Name>
+            <RuntimeDependencies>
+                <Dependency>nss</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/nemo-extensions/</Path>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="config">/etc/dbus-1/system.d</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/nemo-extensions*</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>nemo-extensions-devel</Name>
+            <Summary xml:lang="en">nemo-extensions için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">nemo-extensions</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.0</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-session</Name>
+            <Homepage>https://github.com/linuxmint/cinnamon-session</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Cinnamon session manager</Summary>
+            <Description xml:lang="en">The Cinnamon Session Handler.</Description>
+            <Archive type="targz" sha1sum="cff5d738fb406787698291aebe5bca9151896770">http://leigh123linux.fedorapeople.org/pub/cinnamon-session/source/cinnamon-session-2.0.5.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libSM-devel</Dependency>
+                <Dependency>libICE-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>libXtst-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXrender-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-session/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-session</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libSM</Dependency>
+                <Dependency>libICE</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXtst</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libXrender</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXcomposite</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/cinnamon-session</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.5</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>nemo</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">File manager for Cinnamon</Summary>
+            <Description xml:lang="en">Nemo is the file manager and graphical shell for the Cinnamon desktop that makes it easy to manage your files and the rest of your system.</Description>
+            <Archive type="targz" sha1sum="32b7b5c72cc6e5d9348cd9f0aa4099a47e0ea29e">http://leigh123linux.fedorapeople.org/pub/nemo/source/nemo-2.0.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>exempi-devel</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>libexif-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="0">nemo-configurefixed.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/cinnamon/nemo/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>nemo</Name>
+            <RuntimeDependencies>
+                <Dependency>atk</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>exempi</Dependency>
+                <Dependency>libexif</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>gnome-common</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="data">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/man</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/nemo</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="library">/usr/lib/nemo</Path>
+                <Path fileType="data">/usr/share/GConf</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0/</Path>
+                <Path fileType="config">/etc/xdg/autostart</Path>
+                <Path fileType="data">/usr/share/applications</Path>
+                <Path fileType="data">/usr/share/mime/packages</Path>
+                <Path fileType="data">/usr/share/gtksourceview-2.0/</Path>
+                <Path fileType="library">/usr/share/gtksourceview-3.0</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>nemo-devel</Name>
+            <Summary xml:lang="en">nemo için geliştirme dosyaları</Summary>
+            <Summary xml:lang="tr">nemo için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">nemo</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="data">/usr/share/gir-1.0</Path>
+                <Path fileType="header">/usr/include/nemo</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+                <Path fileType="data">/usr/lib/girepository-1.0</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.8</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-settings-daemon</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2+</License>
+            <License>LGPLv2+</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">The daemon sharing settings from CINNAMON to GTK+/KDE applications</Summary>
+            <Description xml:lang="en">A daemon to share settings from CINNAMON to other applications. It also handles global keybindings, and many of desktop-wide settings.</Description>
+            <Archive type="targz" sha1sum="a188594e7d27bc54ff5ba4adfc2285f24ee3cff0">http://leigh123linux.fedorapeople.org/pub/cinnamon-settings-daemon/source/cinnamon-settings-daemon-2.0.8.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>nss-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>cups-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>lcms2-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>colord-devel</Dependency>
+                <Dependency>upower-devel</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libnotify-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+                <Dependency>fontconfig-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+            </BuildDependencies>
+            <SourceURI>desktop/cinnamon/cinnamon-settings-daemon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-settings-daemon</Name>
+            <RuntimeDependencies>
+                <Dependency>nss</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>cups</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>lcms2</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>colord</Dependency>
+                <Dependency>upower</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libnotify</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>fontconfig</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>mit-kerberos</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+                <Dependency>libcanberra-gtk3</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="man">/usr/share/man</Path>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="data">/usr/share/icons</Path>
+                <Path fileType="data">/usr/share/dbus-1</Path>
+                <Path fileType="data">/usr/share/glib-2.0</Path>
+                <Path fileType="data">/usr/share/polkit-1</Path>
+                <Path fileType="config">/etc/dbus-1/system.d</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+                <Path fileType="data">/usr/share/applications/</Path>
+                <Path fileType="config">/etc/cinnamon-settings-daemon/</Path>
+                <Path fileType="data">/usr/share/cinnamon-settings-daemon*</Path>
+            </Files>
+        </Package>
+        <Package>
+            <Name>cinnamon-settings-daemon-devel</Name>
+            <Summary xml:lang="en">cinnamon-settings-daemon için geliştirme dosyaları</Summary>
+            <RuntimeDependencies>
+                <Dependency release="1">cinnamon-settings-daemon</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="header">/usr/include</Path>
+                <Path fileType="library">/usr/lib/pkgconfig</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.8</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü</Summary>
+            <Summary xml:lang="tr">Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Summary>
+            <Description xml:lang="en">Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
+            <Description xml:lang="tr">Cinnamon, Gnome Shell çatallaması gnome2 görünümlü Cinnamon masaüstü.</Description>
+            <Archive type="targz" sha1sum="45c51563159c4f771e3196c7ea62d5bd257adbd7">http://leigh123linux.fedorapeople.org/pub/cinnamon/source/Cinnamon-2.0.14.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gjs-devel</Dependency>
+                <Dependency>atk-devel</Dependency>
+                <Dependency>mesa-devel</Dependency>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cogl-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXi-devel</Dependency>
+                <Dependency>gconf-devel</Dependency>
+                <Dependency>pango-devel</Dependency>
+                <Dependency>muffin-devel</Dependency>
+                <Dependency>clutter-devel</Dependency>
+                <Dependency>libsoup-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>libcroco-devel</Dependency>
+                <Dependency>json-glib-devel</Dependency>
+                <Dependency>libXrandr-devel</Dependency>
+                <Dependency>gstreamer-devel</Dependency>
+                <Dependency>libXfixes-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXdamage-devel</Dependency>
+                <Dependency>gnome-menus-devel</Dependency>
+                <Dependency>libcanberra-devel</Dependency>
+                <Dependency>cjs-internals-devel</Dependency>
+                <Dependency>libXcomposite-devel</Dependency>
+                <Dependency>NetworkManager-devel</Dependency>
+                <Dependency>gnome3-desktop-devel</Dependency>
+                <Dependency>gnome-bluetooth-devel</Dependency>
+                <Dependency>pulseaudio-libs-devel</Dependency>
+                <Dependency>libgnome-keyring-devel</Dependency>
+                <Dependency>startup-notification-devel</Dependency>
+                <Dependency>gobject-introspection-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">background.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/cinnamon/cinnamon/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon</Name>
+            <RuntimeDependencies>
+                <Dependency>gjs</Dependency>
+                <Dependency>atk</Dependency>
+                <Dependency>mesa</Dependency>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cogl</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXi</Dependency>
+                <Dependency>gconf</Dependency>
+                <Dependency>pango</Dependency>
+                <Dependency>muffin</Dependency>
+                <Dependency>clutter</Dependency>
+                <Dependency>libsoup</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>libcroco</Dependency>
+                <Dependency>json-glib</Dependency>
+                <Dependency>libXrandr</Dependency>
+                <Dependency>gstreamer</Dependency>
+                <Dependency>libXfixes</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXdamage</Dependency>
+                <Dependency>gnome-menus</Dependency>
+                <Dependency>libcanberra</Dependency>
+                <Dependency>cjs-internals</Dependency>
+                <Dependency>libXcomposite</Dependency>
+                <Dependency>NetworkManager</Dependency>
+                <Dependency>gnome3-desktop</Dependency>
+                <Dependency>gnome-bluetooth</Dependency>
+                <Dependency>pulseaudio-libs</Dependency>
+                <Dependency>libgnome-keyring</Dependency>
+                <Dependency>startup-notification</Dependency>
+                <Dependency>gobject-introspection</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+                <Path fileType="config">/etc/xdg/menus</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.14</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-screensaver</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Cinnamon Screensaver</Summary>
+            <Description xml:lang="en">cinnamon-screensaver is a screen saver and locker.</Description>
+            <Archive type="targz" sha1sum="4687792177c8c0c252fe905e9e1bef44ac9ee7e6">http://leigh123linux.fedorapeople.org/pub/cinnamon-screensaver/source/cinnamon-screensaver-2.0.3.tar.gz</Archive>
+            <BuildDependencies>
+                <Dependency>gtk3-devel</Dependency>
+                <Dependency>cairo-devel</Dependency>
+                <Dependency>libXext-devel</Dependency>
+                <Dependency>gdk-pixbuf-devel</Dependency>
+                <Dependency>libXxf86vm-devel</Dependency>
+                <Dependency>libgnomekbd-devel</Dependency>
+                <Dependency>libxklavier-devel</Dependency>
+                <Dependency>libXxf86misc-devel</Dependency>
+                <Dependency>cinnamon-desktop-devel</Dependency>
+            </BuildDependencies>
+            <Patches>
+                <Patch level="1">cinnamon-screensaver-2.20.0-selinux-permit.patch</Patch>
+            </Patches>
+            <SourceURI>desktop/cinnamon/cinnamon-screensaver/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-screensaver</Name>
+            <RuntimeDependencies>
+                <Dependency>gtk3</Dependency>
+                <Dependency>cairo</Dependency>
+                <Dependency>libXext</Dependency>
+                <Dependency>gdk-pixbuf</Dependency>
+                <Dependency>libXxf86vm</Dependency>
+                <Dependency>libgnomekbd</Dependency>
+                <Dependency>libxklavier</Dependency>
+                <Dependency>libXxf86misc</Dependency>
+                <Dependency>cinnamon-desktop</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="config">/etc/xdg/autostart/</Path>
+                <Path fileType="config">/etc/pam.d/cinnamon-screensaver</Path>
+                <Path fileType="executable">/usr/bin/</Path>
+                <Path fileType="data">/usr/share/</Path>
+                <Path fileType="library">/usr/lib</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <SpecFile>
+        <Source>
+            <Name>cinnamon-translations</Name>
+            <Homepage>http://cinnamon.linuxmint.com/</Homepage>
+            <Packager>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Packager>
+            <License>GPLv2</License>
+            <License>LGPLv2</License>
+            <IsA>app:gui</IsA>
+            <PartOf>desktop.cinnamon</PartOf>
+            <Summary xml:lang="en">Cinnamon localization package</Summary>
+            <Summary xml:lang="tr">Cinnamon yerelleştirme paketi</Summary>
+            <Description xml:lang="en">Cinnamon localization package.</Description>
+            <Description xml:lang="tr">Cinnamon yerelleştirme paketi.</Description>
+            <Archive type="targz" sha1sum="249b97c626470cb972722e8f01e7cc5d011cb8d2">http://leigh123linux.fedorapeople.org/pub/cinnamon-translations/source/cinnamon-translations-2.0.3.tar.gz</Archive>
+            <SourceURI>desktop/cinnamon/cinnamon-translations/pspec.xml</SourceURI>
+        </Source>
+        <Package>
+            <Name>cinnamon-translations</Name>
+            <RuntimeDependencies>
+                <Dependency release="1">nemo</Dependency>
+                <Dependency release="1">cinnamon-desktop</Dependency>
+                <Dependency release="1">cinnamon-control-center</Dependency>
+            </RuntimeDependencies>
+            <Files>
+                <Path fileType="doc">/usr/share/doc</Path>
+                <Path fileType="localedata">/usr/share/locale</Path>
+            </Files>
+        </Package>
+        <History>
+            <Update release="1">
+                <Date>2013-12-12</Date>
+                <Version>2.0.3</Version>
+                <Comment>First release</Comment>
+                <Name>Osman Erkan</Name>
+                <Email>osman.erkan@pisilinux.org</Email>
+            </Update>
+        </History>
+    </SpecFile>
+    <Component>
+        <Name>desktop</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.mate</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.mate.base</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.mate.extras</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.cinnamon</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.gnome</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.gnome.base</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.gnome.core</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.gnome.addons</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.toolkit</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.toolkit.gtk</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>desktop.toolkit.clutter</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>multimedia</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>multimedia.video</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>system</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Component>
+        <Name>system.base</Name>
+        <LocalName xml:lang="en">FIXME</LocalName>
+        <Summary xml:lang="en">FIXME</Summary>
+        <Description xml:lang="en">FIXME</Description>
+        <Group>desktop</Group>
+        <Maintainer>
+            <Name>Osman Erkan</Name>
+            <Email>osman.erkan@pisilinux.org</Email>
+        </Maintainer>
+    </Component>
+    <Group>
+        <Name>mate.desktop</Name>
+        <LocalName xml:lang="fr">Bureau Mate</LocalName>
+        <LocalName xml:lang="en">Mate Desktop</LocalName>
+        <LocalName xml:lang="nl">Mate Desktop</LocalName>
+        <LocalName xml:lang="de">Mate</LocalName>
+        <LocalName xml:lang="tr">Mate Masaüstü</LocalName>
+        <LocalName xml:lang="sv">Skrivbord, GNOME</LocalName>
+        <LocalName xml:lang="it">Mate</LocalName>
+        <LocalName xml:lang="es">Escritorio Mate</LocalName>
+        <Icon>preferences-desktop</Icon>
+    </Group>
+    <Group>
+        <Name>all</Name>
+        <LocalName xml:lang="fr">Tout</LocalName>
+        <LocalName xml:lang="en">All</LocalName>
+        <LocalName xml:lang="nl">Alles</LocalName>
+        <LocalName xml:lang="de">Alle</LocalName>
+        <LocalName xml:lang="tr">Tümü</LocalName>
+        <LocalName xml:lang="sv">Samtliga</LocalName>
+        <LocalName xml:lang="it">Tutti</LocalName>
+        <LocalName xml:lang="es">Todos</LocalName>
+        <Icon>media-optical</Icon>
+    </Group>
+</PISI>

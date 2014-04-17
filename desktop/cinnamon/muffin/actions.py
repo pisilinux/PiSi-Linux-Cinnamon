@@ -6,24 +6,24 @@
 
 from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
-from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
     autotools.autoreconf("-fiv")
-    shelltools.system("./autogen.sh")
     autotools.configure("--prefix=/usr \
-                         --sysconfdir=/etc \
-                         --libexecdir=/usr/lib/muffin \
-                         --localstatedir=/var \
-                         --disable-static \
-                         --disable-schemas-compile \
-                         --enable-compile-warnings=minimum \
-                         --disable-scrollkeeper \
-                         --with-x \
-                         --with-omf-dir=/usr/share/applications/muffin.desktop")
-    
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")    
+                          --sysconfdir=/etc \
+                          --libexecdir=/usr/lib/muffin \
+                          --localstatedir=/var \
+                          --disable-static \
+                          --enable-compile-warnings=no \
+                          --disable-static \
+                          --enable-shape \
+                          --enable-sm \
+                          --enable-startup-notification \
+                          --enable-xsync \
+                          --enable-verbose-mode \
+                          --enable-compile-warnings=maximum \
+                          --with-libcanberra")
 
 def build():
     autotools.make()

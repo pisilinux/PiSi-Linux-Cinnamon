@@ -10,21 +10,13 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("sed -i -e '/AC_SUBST(DISABLE_DEPRECATED_CFLAGS)/d' configure.in")
     shelltools.system("NOCONFIGURE=1 ./autogen.sh")
-    autotools.configure("--prefix=/usr \
+    autotools.configure("--disable-more-warnings \
+                         --prefix=/usr \
                          --libexecdir=/usr/lib/nemo \
-                         --disable-static \
-                         --enable-unique \
-                         --disable-packagekit \
-                         --disable-tracker \
                          --disable-update-mimedb \
                          --disable-gtk-doc-html \
-                         --disable-schemas-compile \
-                         --with-gnu-ld \
-                         --with-x ")
-    
-    #pisitools.dosed("libtool"," -shared ", " -Wl,--as-needed -shared ")
+                         --disable-schemas-compile")
 
 def build():
     autotools.make()
